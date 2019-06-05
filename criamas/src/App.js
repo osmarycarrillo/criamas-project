@@ -1,4 +1,5 @@
 import React from 'react';
+import Bstatic from './Bstatic';
 import './App.css';
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
         <h1> Enjoy Learning </h1>
 
         <p>Team:<b>Osmary Carrillo, Adriana Montilla, Lourdes Rosales y Mercedes Ventocilla</b></p>
-        
+        <Bstatic></Bstatic>
       </header>
     </div>
   );
