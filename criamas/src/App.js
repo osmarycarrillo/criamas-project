@@ -9,6 +9,8 @@ function App() {
         <p>
           SKY CODE WORKING
         </p>
+        <h1> Enjoy Learning </h1>
+
         <p>Team:<b>Osmary Carrillo, Adriana Montilla, Lourdes Rosales y Mercedes Ventocilla</b></p>
 
       </header>
