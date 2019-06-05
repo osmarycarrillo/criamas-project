@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Bslider></Bslider>
+        <Bstatic></Bstatic>
         <p>
           SKY CODE WORKING
         </p>
@@ -15,7 +16,7 @@ function App() {
         <h1> Enjoy Learning </h1>
 
         <p>Team:<b>Osmary Carrillo, Adriana Montilla, Lourdes Rosales y Mercedes Ventocilla</b></p>
-        <Bstatic></Bstatic>
+        
       </header>
 
     </div>
