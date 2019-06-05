@@ -5,7 +5,7 @@ class Bstatic extends React.Component{
     render(){
         return(
             <div>
-                <P>SOY EL COMPONENTE DE ADRI </P>
+                <p>SOY EL COMPONENTE DE ADRI </p>
             </div>
         )
     }
