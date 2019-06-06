@@ -7,9 +7,9 @@ class Textb extends Component {
         return (
             <div className="box-p">
             <p className="red-trans"> Bienvenido a Traslados</p>
-            <h2>Aquí encontrará información</h2>
-            <h2>sobre nuestro servicio</h2>
-            <p>Ante cualquier duda,podemos ayudarte</p>
+            <p className="tinfo">Aquí encontrará información</p>
+            <p className="tinfo">sobre nuestro servicio</p>
+            <p>Ante cualquier duda, podemos ayudarte.</p>
       
 
             </div>
