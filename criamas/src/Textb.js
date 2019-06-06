@@ -11,8 +11,19 @@ class Textb extends Component {
             <p className="tinfo">sobre nuestro servicio</p>
             <p>Ante cualquier duda, podemos ayudarte.</p>
       
-
-            </div>
+            <p className="red-trans"> Bienvenido a Nuestro Blog</p>
+            <p className="tinfo">Aquí encontrará información útil</p>
+            <p>Ante cualquier duda, podemos ayudarte.</p>
+{/* en esta seccion debe ir un bread crum que traiga el nombre 
+del producto el contenido es dinamico */}
+            <p className="tinfo">Detalle del producto</p>
+            <p>Pet shop/bolsa blanca.</p>
+           
+{/* // requerimos decidir que caracteristicas del cachorro se van a mostrar en esta seccion 
+// tambien es dinamico y va casado al filtro */}
+<p className="tinfo">caracteristicas de nuestro cachorro</p>
+<p>Ante cualquier duda, podemos ayudarte.</p>
+</div>
         )
     }
 }

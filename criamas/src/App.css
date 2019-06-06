@@ -20,34 +20,41 @@
 }
 
 .translates{
-  font-family: 'Poppins', sans-serif;
+  display: flex;
   background: #EFD0D1;
   width: 100%;
   height: 100%;
+}
+.cont-trans{
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 .red-trans{
   display: flex;
   flex-direction: row;
   justify-content:flex-start;
-
   font-family: 'Poppins', sans-serif;
   color:#EA1E52;
 }
 .dogt{
   font-family: 'Poppins', sans-serif;
-  display: flex;
-  justify-content:flex-end;
+ 
 }
-/* .box-p{
-  text-align: justify;
+.box-p{
+  
+}
 
-} */
 .tinfo{
 font-family: 'Poppins', sans-serif;
 font-weight: bold;
 font-size: larger;
 } 
+img{
+  border: solid 1px #EA1E52
+}
 p{
+  font-family: 'Poppins', sans-serif;
   margin-left: 10%;
   text-align: justify;
 }
