@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 
@@ -17,3 +18,22 @@
 .App-link {
   color: #61dafb;
 }
+
+.translates{
+  font-family: 'Poppins', sans-serif;
+  background: #EFD0D1;
+  width: 100%;
+  height: 100%;
+}
+.red-trans{
+  font-family: 'Poppins', sans-serif;
+  color:#EA1E52;
+}
+.dogt{
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content:flex-end;
+}
+/* h2{
+
+} */
