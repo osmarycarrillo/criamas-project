@@ -1,5 +1,5 @@
 import React from 'react';
-import img_logo from './stylesheet/img_svg/logo_criamas.svg';
+import img_logo from '../stylesheet/img_svg/logo_criamas.svg';
 import { Link } from "react-router-dom";
 
 
@@ -9,9 +9,9 @@ class Navheader extends React.Component {
     return (
       <nav className='nav_menu'>
         <div className='logo_container'>
-          <img src={img_logo} alt="logo criamas"/>
+          <img classname='logo' src={img_logo} alt="logo criamas"/>
         </div>
-        <div>
+        <div className='container_buttons'>
           <ul>
             <li>
               <Link to="/">Home</Link>
