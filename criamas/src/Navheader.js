@@ -1,5 +1,5 @@
 import React from 'react';
-import img_logo from './img_svg/logo_criamas.svg';
+import img_logo from './stylesheet/img_svg/logo_criamas.svg';
 import { Link } from "react-router-dom";
 
 
@@ -7,12 +7,14 @@ class Navheader extends React.Component {
   
   render () {
     return (
-      <nav>
-        <div><img src={img_logo} alt="logo criamas"/></div>
+      <nav className='nav_menu'>
+        <div className='logo_container'>
+          <img src={img_logo} alt="logo criamas"/>
+        </div>
         <div>
           <ul>
             <li>
-              <Link>Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>Nosotros</li>
             <li>Cachorros</li>
