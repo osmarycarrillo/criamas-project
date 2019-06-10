@@ -4,7 +4,7 @@ class Bstatic extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className="test">
                 <p>SOY EL COMPONENTE DE ADRI </p>
             </div>
         )
