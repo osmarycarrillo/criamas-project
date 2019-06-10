@@ -31,7 +31,8 @@
   width: 80%;
   height: 4.6875rem;
   margin: auto;
-  display: flex; }
+  display: flex;
+  border-color: #EA1E52; }
   .App .nav_menu .logo_container {
     width: 18%; }
     .App .nav_menu .logo_container .logo {
