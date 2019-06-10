@@ -2,23 +2,25 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route} from 'react-router-dom';
 import '../stylesheet/App.css';
 import Home from './Home';
-import Navheader from './Navheader';
+import Navheader from '../Navheader';
 import Footer from './Footer';
+import Transfers from './Transfers';
 
 class App extends Component {
 
   render() {
-      return(
-        <div className="App">
-          <BrowserRouter>
-                <div>
-                  <Navheader></Navheader>
-                  <Route exact path="/" component={Home}/>
-                  <Footer></Footer>
-                </div>
-          </BrowserRouter>
-        </div>
-      );
+    return (
+      <div className="App">
+        <BrowserRouter>
+          <div>
+            <Navheader></Navheader>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/" component={Transfers} />
+            <Footer></Footer>
+          </div>
+        </BrowserRouter>
+      </div>
+    );
   }
 }
 
