@@ -1,6 +1,7 @@
 import React from 'react';
 import img_logo from '../stylesheet/img_svg/logo_criamas.svg';
 import { Link } from "react-router-dom";
+import '../stylesheet/App.css';
 
 
 class Navheader extends React.Component {

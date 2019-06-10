@@ -1,7 +1,6 @@
 import React from 'react';
 // import{Textb,Textblog} from'../src/components'
 import Textb from './Textb';
-import Textblog from './Textblog';
 
 
 
