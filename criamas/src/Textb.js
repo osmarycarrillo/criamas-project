@@ -9,8 +9,7 @@ class Textb extends Component {
             <p className="red-trans"> Bienvenido a Traslados</p>
             <p className="tinfo">Aquí encontrará información</p>
             <p className="tinfo">sobre nuestro servicio</p>
-            <p>Ante cualquier duda, podemos ayudarte.</p>
-      
+            <p>Ante cualquier duda, podemos ayudarte.</p>      
             <p className="red-trans"> Bienvenido a Nuestro Blog</p>
             <p className="tinfo">Aquí encontrará información útil</p>
             <p>Ante cualquier duda, podemos ayudarte.</p>
