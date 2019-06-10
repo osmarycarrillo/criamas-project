@@ -1,26 +1,25 @@
-import React from 'react';
-import Bslider from './Bslider';
-import Bstatic from './Bstatic';
+import React, { Component } from 'react';
+import { BrowserRouter, Route} from "react-router-dom";
 import './App.css';
+import Home from './Home';
+import Navheader from './Navheader';
+import Footer from './Footer';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Bslider></Bslider>
-        <Bstatic></Bstatic>
-        <p>
-          SKY CODE WORKING
-        </p>
-        
-        <h1> Enjoy Learning </h1>
+class App extends Component {
 
-        <p>Team:<b>Osmary Carrillo, Adriana Montilla, Lourdes Rosales y Mercedes Ventocilla</b></p>
-        
-      </header>
-
-    </div>
-  );
+  render() {
+      return (
+        <div className="App">
+          <BrowserRouter>
+                <div>
+                  <Navheader></Navheader>
+                  <Route exact path="/" component={Home}/>
+                  <Footer></Footer>
+                </div>
+            </BrowserRouter>
+        </div>
+      );
+  }
 }
 
 export default App;
