@@ -5,11 +5,11 @@ import Bstatic from './Bstatic';
 class Home extends Component {
 
   render() {
-    return ( 
+    return (
       <div>
-          <Bslider></Bslider>
-          <Bstatic></Bstatic>
-      </div>   
+        <Bslider></Bslider>
+        
+      </div>
     );
   }
 }
