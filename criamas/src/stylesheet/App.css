@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap");
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap"); }
 .App {
   text-align: center;
   font-family: 'Poppins', sans-serif; }
@@ -24,8 +28,21 @@
         font-family: 'Poppins', sans-serif; }
 
 .App .nav_menu {
-  width: 80%; }
+  width: 80%;
+  height: 4.6875rem;
+  margin: auto;
+  display: flex; }
   .App .nav_menu .logo_container {
-    width: 20%; }
+    width: 18%; }
+    .App .nav_menu .logo_container .logo {
+      width: 100%;
+      height: auto; }
+  .App .nav_menu .container_buttons {
+    width: 80%; }
+    .App .nav_menu .container_buttons ul {
+      display: flex;
+      justify-content: space-around; }
+      .App .nav_menu .container_buttons ul li {
+        list-style: none; }
 
 /*# sourceMappingURL=App.css.map */
