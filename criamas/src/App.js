@@ -9,7 +9,7 @@ function App() {
       <header className="App-header">
         <Bslider></Bslider>
         <Bstatic></Bstatic>
-        <p>
+        <p className="test">
           SKY CODE WORKING
         </p>
         
