@@ -31,3 +31,24 @@ export default Textb;
 // Este componente realiza la descripcion del texto del banner
 // que pertenene a  las vistas  de traslados,blog,detalle del producto y detalle de cachorros AM
 
+// import React, { Component } from 'react';
+
+
+
+// class Bread extends Component {
+  
+  
+//   render() {
+    
+//     return (
+//       <div className="div-bread">
+
+//        <div><p className="breadCrumb">{this.props.categorias.map((c,i)=> 
+//        <span className="category">{c}{this.props.categorias.length-1!=i && <span> > </span> }</span>)} </p></div>
+//       </div>
+      
+//     );
+//   } 
+// }
+
+// export default Bread;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Textb from './Textb';
+import Textb from '../Textb';
 
 
 class Bstatic extends React.Component {
