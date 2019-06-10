@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route} from "react-router-dom";
-import './App.css';
+import { BrowserRouter, Route} from 'react-router-dom';
+import './stylesheet/App.css';
 import Home from './Home';
 import Navheader from './Navheader';
 import Footer from './Footer';
@@ -8,7 +8,7 @@ import Footer from './Footer';
 class App extends Component {
 
   render() {
-      return (
+      return(
         <div className="App">
           <BrowserRouter>
                 <div>
@@ -16,7 +16,7 @@ class App extends Component {
                   <Route exact path="/" component={Home}/>
                   <Footer></Footer>
                 </div>
-            </BrowserRouter>
+          </BrowserRouter>
         </div>
       );
   }
