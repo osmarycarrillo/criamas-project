@@ -12,7 +12,7 @@ class Transfers extends React.Component {
           
             <div>
             <Bstatic></Bstatic>
-            
+            <p className= "heart">  <i class="fab fa-gratipay"></i></p>
           </div>
         )
     }
