@@ -1,18 +1,18 @@
 import React from 'react';
-import Textb from './Textb';
+import React, { Component } from 'react';
 
 
-class Bstatic extends React.Component {
+
+class Bstatic extends Component {
 
     render() {
         return (
             <div className="translates" >
+                COMIENZO BSTATIC
                 <div className="cont-trans">
-              {/* dentro de las llaves iria el nombre de la ruta en la que este parado el usuario */}
-                <Textb>{}</Textb>
-                <div className="dogt"> <img src="" alt="perro imagen para traslados"></img></div>
-                <div className="square"></div>
+   
                 </div>
+                FIN BSTATIC
             </div>
         )
     }
