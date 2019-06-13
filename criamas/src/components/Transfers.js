@@ -6,7 +6,7 @@ class Transfers extends Component {
 
     render() {
         return (
-            <div>
+        
 
                 Aqui comienza transfer
                 <Bstatic>
@@ -36,11 +36,12 @@ class Transfers extends Component {
                 </div>
                 <ServiceRequest></ServiceRequest>
                 aqui termina transfer
+                <ServiceRequest></ServiceRequest>
+                <Contact></Contact>
             </div>
         )
     }
 }
-
 
 export default Transfers;
 
