@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import Bstatic from './Bstatic'
-import ServiceRequest from './ServiceRequest'
+import Bstatic from './Bstatic';
+import ServiceRequest from './ServiceRequest';
+import Contact from './Contact';
 
 class Transfers extends Component {
 
     render() {
         return (
         <div>
-
-
                 Aqui comienza transfer
                 <Bstatic>
                     
