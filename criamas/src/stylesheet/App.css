@@ -12,31 +12,33 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
-.App .boxbanner {
+.App .translates {
   display: flex;
-  background: #efd0d1;
+  border-top: 50px;
+  padding: 10%;
+  background: yellow;
   position: relative;
   width: 100%;
   height: 100%;
 }
-.App .boxbanner .cont-trans {
+.App .translates .cont-trans {
   display: flex;
   justify-content: center;
   margin: auto;
 }
-.App .boxbanner .cont-trans .box-p .red-trans {
+.App .translates .cont-trans .box-p .red-trans {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   font-family: "Poppins", sans-serif;
   color: #ea1e52;
 }
-.App .boxbanner .cont-trans .box-p .tinfo {
+.App .translates .cont-trans .box-p .tinfo {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: larger;
 }
-.App .boxbanner .cont-trans .dogt {
+.App .translates .cont-trans .dogt {
   font-family: "Poppins", sans-serif;
 }
 

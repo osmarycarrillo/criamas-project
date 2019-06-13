@@ -17,9 +17,11 @@ $color_pink: #ea1e52;
 .App {
   text-align: center;
   font-family: "Poppins", sans-serif;
-  .boxbanner {
+  .translates {
     display: flex;
-    background: #efd0d1;
+    border-top: 50px;
+    padding:10%; 
+    background:yellow;
     position: relative;
     width: 100%;
     height: 100%;
