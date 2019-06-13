@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Bslider from './Bslider';
 
-
 class Home extends Component {
 
   render() {

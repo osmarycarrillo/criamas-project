@@ -1,149 +1,136 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
 
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap");
+}
 
 @font-face {
-    font-family: 'Poppins', sans-serif;
-    src: url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap')
-};
-
-@font-face {
-    font-family: 'Maven Pro', sans-serif;
-    src: url('https://fonts.googleapis.com/css?family=Maven+Pro&display=swap')
-};
+  font-family: "Maven Pro", sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
+}
 
 $color_dark_type: #282828;
-$color_pink: #EA1E52;
+$color_pink: #ea1e52;
 
-
-.App{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    .boxbanner{
-        display: flex;
-        background: #EFD0D1;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        .cont-trans{
-            display: flex;
-            justify-content: center;
-            margin: auto;
-            .box-p{
-                display: flex;
-                .red-trans{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content:flex-start;
-                    font-family: 'Poppins', sans-serif;
-                    color:#EA1E52;
-                }
-                .tinfo{
-                    font-family: 'Poppins', sans-serif;
-                    font-weight: bold;
-                    font-size: larger;
-                }
-            }
-            .dogt{
-                font-family: 'Poppins', sans-serif;               
-            } 
-        } 
+.App {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  .translates {
+    display: flex;
+    background: #efd0d1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .cont-trans {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      .box-p {
+        .red-trans {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          font-family: "Poppins", sans-serif;
+          color: #ea1e52;
+        }
+        .tinfo {
+          font-family: "Poppins", sans-serif;
+          font-weight: bold;
+          font-size: larger;
+        }
+      }
+      .dogt {
+        font-family: "Poppins", sans-serif;
+      }
     }
+  }
 }
 
 //estilos componente nav, by MV
-.App{
-    .box_nav{
-        width: 100%;
-        position: fixed;
-        z-index: 2;
-        .nav_menu{
-            width: 80%;
-            height: 5.2rem;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
-           
-            .logo_container{
-                width: 16%;
-                height: auto;
-                .logo{
-                    width: 100%;
-                    height: auto;
-                }
-            }
-            .container_buttons{
-                width: 80%;
-                display: flex;
-                align-items: center;
-                .menu_row{
-                    display: flex;
-                    justify-content: space-around;
-                    font-size: 0.75rem;
-                    width: 75%;
-                    margin: 0px;
-                    padding: 0px;
-                    li{
-                        list-style: none;
-                        .link_url{
-                            text-decoration: none;
-                            color: $color_dark_type;
-    
-                        }
-    
-                    }
-                }
-                
-            }
+.App {
+  .box_nav {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    .nav_menu {
+      width: 80%;
+      height: 5.2rem;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+
+      .logo_container {
+        width: 16%;
+        height: auto;
+        .logo {
+          width: 100%;
+          height: auto;
         }
-
-    }
-    
-}
-
-
-.container_buttons{    
-           
-    .box_buttons{
-        width: 25%;
+      }
+      .container_buttons {
+        width: 80%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        margin-left: 10px;
-        .signin{
-        background-color: $color_pink;
-        font-family: 'Poppins', sans-serif;
-        border: none;
-        border-radius: 1.25rem;
-        font-size: 12px;
-        height: 37px;
-        padding: 0px 18px;
-
+        .menu_row {
+          display: flex;
+          justify-content: space-around;
+          font-size: 0.75rem;
+          width: 75%;
+          margin: 0px;
+          padding: 0px;
+          li {
+            list-style: none;
+            .link_url {
+              text-decoration: none;
+              color: $color_dark_type;
+            }
+          }
         }
-        .login{
-            font-family: 'Poppins', sans-serif;
-            border-radius: 1.25rem;
-            background-color: transparent;
-            padding: 8px 15px;
-            color: $color_pink;
-            font-size: 12px;
-            border: 2px solid $color_pink;
-            padding: 0px 18px;
-            height: 37px;
-        }
-
+      }
     }
-          
+  }
 }
 
-.App{
-    .box_slide{
-        position: relative;
-        width: 100%;
-        height: 500px;
-        z-index: 1;
+.container_buttons {
+  .box_buttons {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    .signin {
+      background-color: $color_pink;
+      font-family: "Poppins", sans-serif;
+      border: none;
+      border-radius: 1.25rem;
+      font-size: 12px;
+      height: 37px;
+      padding: 0px 18px;
     }
+    .login {
+      font-family: "Poppins", sans-serif;
+      border-radius: 1.25rem;
+      background-color: transparent;
+      padding: 8px 15px;
+      color: $color_pink;
+      font-size: 12px;
+      border: 2px solid $color_pink;
+      padding: 0px 18px;
+      height: 37px;
+    }
+  }
 }
-.heart{
-   color:#EA1E52;
+
+.App {
+  .box_slide {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    z-index: 1;
+  }
+}
+.heart {
+  color: #ea1e52;
 }
