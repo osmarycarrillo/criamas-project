@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Bstatic from './Bstatic';
-import Textras from './Textras';
+
 
 
 
