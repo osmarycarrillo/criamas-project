@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import Bslider from './Bslider';
-import Bstatic from './Bstatic';
 
 class Home extends Component {
 
   render() {
     return (
       <div>
+        COMIENZO DE LA HOME
         <Bslider></Bslider>
-        
+       
+        FIN DE HOME
       </div>
     );
   }

@@ -1,27 +1,23 @@
-import React from 'react';
-// import{Textb,Textblog} from'../src/components'
-import Textb from './Textb';
-import Textblog from './Textblog';
+import React, { Component } from 'react';
+import Textras from './Textras';
 
+class Bstatic extends Component {
 
+    // constructor(props){
+    //     super(props)
+    //     this.state={
+    //         contenido:1
+    //     }
+    // }
 
-class Bstatic extends React.Component {
-
-    constructor(props){
-        super(props)
-        this.state={
-            contenido:1
-        }
-    }
-
-
+    /// debo pasarle por propiedades  propiedades 
     render() {
         return (
             <div className="translates" >
                 <div className="cont-trans">
-                <LayoutContendio contenido={this.state.contenido} />
-                    <div className="dogt"> <img src="" alt="perro imagen para traslados"></img> </div>
-                    <div className="square"></div>
+                    START BSTATIC
+                    <Textras />
+                    END BSTATIC
                 </div>
             </div>
         )
@@ -36,21 +32,20 @@ export default Bstatic;
 
 
 
-function LayoutContendio(props) {
+// function LayoutContendio(props) {
 
- switch(props.contenido) {
+//  switch(props.contenido) {
 
-  case 1: return <Textb/>; break;
-//   case 2: return <Textblog/>; break;
-//   case 3: return <componente3/>; break;
-//   default: return <Textb/>; break;
+//   case 1: return <Textras/>; break;
+//    case 2: return <Textblog/>; break;
+// //   case 3: return <componente3/>; break;
+// //   default: return <Textb/>; break;
 
-} 
+// } 
 
-}
+// }
 
-// Este componente es la base del banner que pertenene a  las vistas
-//  de traslados,blog,detalle del producto y detalle de cachorros AM
+
 
 // import React, { Component } from 'react';
 // import { componente1, componente2, componente3 } from '../src/components';
@@ -86,3 +81,6 @@ function LayoutContendio(props) {
 
 // }
 // export default Contenido
+
+// Este componente es la base del banner que pertenene a  las vistas
+//  de traslados,blog,detalle del producto y detalle de cachorros AM
