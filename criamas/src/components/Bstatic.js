@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Textblog from './Textblog'
+
 import Textras from './Textras';
 
 

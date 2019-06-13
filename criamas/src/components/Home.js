@@ -9,7 +9,7 @@ class Home extends Component {
       <div>
         COMIENZO DE LA HOME
         <Bslider></Bslider>
-        <Bstatic></Bstatic>
+        {/* <Bstatic></Bstatic> */}
         FIN DE HOME
       </div>
     );
