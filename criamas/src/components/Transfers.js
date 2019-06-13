@@ -1,5 +1,4 @@
 import React  from 'react';
-// import{Textb,Textblog} from'../src/components'
 import Bstatic from './Bstatic'
 import ServiceRequest from './ServiceRequest'
 import React, { Component } from 'react';
