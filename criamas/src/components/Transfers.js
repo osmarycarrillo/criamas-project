@@ -1,6 +1,7 @@
 import React  from 'react';
 // import{Textb,Textblog} from'../src/components'
 import Bstatic from './Bstatic'
+import ServiceRequest from './ServiceRequest'
 
 
 class Transfers extends React.Component {
@@ -9,11 +10,10 @@ class Transfers extends React.Component {
 
     render() {
         return (
-          
             <div>
             <Bstatic></Bstatic>
-            
-          </div>
+            <ServiceRequest></ServiceRequest>
+            </div>
         )
     }
 }
