@@ -13,7 +13,7 @@ class Bstatic extends Component {
     /// debo pasarle por propiedades  propiedades 
     render() {
         return (
-            <div className="translates" >
+            <div className="boxbanner" >
                 <div className="cont-trans">
                     START BSTATIC
                     <Textras />
