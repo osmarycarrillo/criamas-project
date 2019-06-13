@@ -6,7 +6,8 @@ class Transfers extends Component {
 
     render() {
         return (
-        
+        <div>
+
 
                 Aqui comienza transfer
                 <Bstatic>
