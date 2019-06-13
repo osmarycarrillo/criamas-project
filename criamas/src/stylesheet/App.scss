@@ -18,7 +18,7 @@
 .App{
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    .translates{
+    .boxbanner{
         display: flex;
         background: #EFD0D1;
         width: 100%;
@@ -28,6 +28,7 @@
             justify-content: center;
             margin: auto;
             .box-p{
+                display: flex;
                 .red-trans{
                     display: flex;
                     flex-direction: row;

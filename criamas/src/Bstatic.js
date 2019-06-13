@@ -7,10 +7,9 @@ class Bstatic extends Component {
 
     render() {
         return (
-            <div className="translates" >
+            <div className="boxbanner" >
                 COMIENZO BSTATIC
                 <div className="cont-trans">
-   
                 </div>
                 FIN BSTATIC
             </div>

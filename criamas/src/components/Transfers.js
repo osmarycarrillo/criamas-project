@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Bstatic from './Bstatic'
+import Bstatic from './Bstatic';
+import Textras from './Textras';
 
 
 
@@ -13,7 +14,18 @@ class Transfers extends Component {
         return (
             <div>
                 Aqui comienza transfer
-                <Bstatic></Bstatic>
+                <Bstatic>
+                    <div className="box-p">
+                        <p className="red-trans"> Bienvenido a Traslados</p>
+                        <p className="tinfo">Aquí encontrará información</p>
+                        <p className="tinfo">sobre nuestro servicio</p>
+                        <p>Ante cualquier duda, podemos ayudarte.</p>
+                        <div className="dogt"> <img src="" alt="perro imagen para traslados"></img> </div>
+                        <div className="square"></div>
+                        <p className="heart">  <i class="fab fa-gratipay"></i></p>
+                    </div>
+
+                </Bstatic>
                 <p>NUESTRO SERVICIO DE TRASLADO</p>
                 <p>La tranquilidad de viajar seguro y confiado de que tu mejor amigo esta en buenas manosLo que nos diferencia es el <p className="red-trans">TRATO PERSONALIZADO :</p> </p>
 
