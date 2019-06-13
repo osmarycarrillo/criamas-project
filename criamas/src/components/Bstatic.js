@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-
 import Textras from './Textras';
-
-
 
 class Bstatic extends Component {
 

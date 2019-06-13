@@ -7,8 +7,7 @@ class Textras extends Component {
         return (
             <div className="box-p">
                 <p className="red-trans"> Bienvenido a Traslados</p>
-                <p className="tinfo">Aquí encontrará información</p>
-                <p className="tinfo">sobre nuestro servicio</p>
+                <p className="tinfo">Aquí encontrará información <br/>sobre nuestro servicio</p>
                 <p>Ante cualquier duda, podemos ayudarte.</p>
                 <div className="dogt"> <img src="" alt="perro imagen para traslados"></img> </div>
                 <div className="square"></div>
