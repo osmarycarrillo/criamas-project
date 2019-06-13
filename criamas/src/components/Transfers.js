@@ -17,10 +17,8 @@ class Transfers extends Component {
     render() {
         return (
             <div>
-<<<<<<< HEAD
             <Bstatic></Bstatic>
             <ServiceRequest></ServiceRequest>
-=======
                 Aqui comienza transfer
                 <Bstatic>
                     <div className="box-p">
@@ -58,7 +56,6 @@ class Transfers extends Component {
                 </div>
 
                 aqui termina transfer
->>>>>>> 83ad5adbf7b10afbb958d9ff13d00f530d2608c4
             </div>
         )
     }
