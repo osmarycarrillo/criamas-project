@@ -1,24 +1,12 @@
-import React  from 'react';
-// import{Textb,Textblog} from'../src/components'
-import Bstatic from './Bstatic'
-import ServiceRequest from './ServiceRequest'
 import React, { Component } from 'react';
 import Bstatic from './Bstatic';
-import Textras from './Textras';
-
-
-
-
+import ServiceRequest from './ServiceRequest';
+import Contact from './Contact';
 
 class Transfers extends Component {
-
-
-
     render() {
         return (
             <div>
-            <Bstatic></Bstatic>
-            <ServiceRequest></ServiceRequest>
                 Aqui comienza transfer
                 <Bstatic>
                     <div className="box-p">
@@ -56,11 +44,12 @@ class Transfers extends Component {
                 </div>
 
                 aqui termina transfer
+                <ServiceRequest></ServiceRequest>
+                <Contact></Contact>
             </div>
         )
     }
 }
-
 
 export default Transfers;
 
