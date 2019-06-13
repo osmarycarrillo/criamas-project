@@ -9,11 +9,10 @@ class Bstatic extends Component {
     //         contenido:1
     //     }
     // }
-
     /// debo pasarle por propiedades  propiedades 
     render() {
         return (
-            <div className="boxbanner" >
+            <div className="translates" >
                 <div className="cont-trans">
                     START BSTATIC
                     <Textras />
