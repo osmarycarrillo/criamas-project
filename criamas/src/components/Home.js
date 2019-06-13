@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Bslider from './Bslider';
-import Bstatic from './Bstatic';
+
 
 class Home extends Component {
 
@@ -9,7 +9,7 @@ class Home extends Component {
       <div>
         COMIENZO DE LA HOME
         <Bslider></Bslider>
-        {/* <Bstatic></Bstatic> */}
+       
         FIN DE HOME
       </div>
     );
