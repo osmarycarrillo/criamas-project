@@ -18,12 +18,12 @@ class Transfers extends Component {
                 <p>criamas realiza TODA la gestión: desde el primer contacto hasta la entrega de tu cachorro a la compañía aérea, incluyendo las inspecciones sanitarias, el despacho de aduanas y todos los servicios requeridos por nuestros clientes.</p>
                 <div className="viñetas">
                     <div className="left">
-                        <p className="v">*Transporte de animales vivos</p>
-                        <p className="v">*Importación/Exportación</p>
-                        <p className="v">*Controles en Fronteras (Veterinario y CITES)</p>
-                        <p className="v">*Recogida/Entrega a domicilio</p>
-                        <p className="v">*Tramitación de la documentación</p>
-                        <p className="v">*Visados</p>
+                    <p className="heart">  <i class="fab fa-gratipay">Transporte de animales vivos</i></p>
+                    <p className="heart">  <i class="fab fa-gratipay">Importación/Exportación</i></p>
+                    <p className="heart">  <i class="fab fa-gratipay">Controles en Fronteras (Veterinario y CITES)</i></p>
+                    <p className="heart">  <i class="fab fa-gratipay">Recogida/Entrega a domicilio</i></p>
+                    <p className="heart">  <i class="fab fa-gratipay">Tramitación de la documentación</i></p>
+                    <p className="heart">  <i class="fab fa-gratipay">Visados</i></p>
                     </div>
                     <div className="rigth">
                         <p className="v">*Disposición de Transportines</p>
