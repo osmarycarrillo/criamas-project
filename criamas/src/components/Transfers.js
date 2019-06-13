@@ -1,24 +1,14 @@
-import React  from 'react';
-// import{Textb,Textblog} from'../src/components'
-import Bstatic from './Bstatic'
-import ServiceRequest from './ServiceRequest'
 import React, { Component } from 'react';
+// import{Textb,Textblog} from'../src/components'
 import Bstatic from './Bstatic';
-import Textras from './Textras';
-
-
-
-
+import ServiceRequest from './ServiceRequest';
 
 class Transfers extends Component {
-
-
-
     render() {
         return (
             <div>
-            <Bstatic></Bstatic>
-            <ServiceRequest></ServiceRequest>
+                <Bstatic></Bstatic>
+                <ServiceRequest></ServiceRequest>
                 Aqui comienza transfer
                 <Bstatic>
                     <div className="box-p">
@@ -54,8 +44,6 @@ class Transfers extends Component {
                     </div>
                     <p>Todos nuestros servicios están orientados a conseguir el máximo bienestar y trato respetuoso y amoroso  durante su transporte, desde la recogida en origen hasta la entrega en destino (según servicio).  También podemos ofrecer de un servicio de hoteles para animales, con alojamientos específicos, con control de temperatura según sus necesidades, utilizables en aquellos casos en los que sea necesario efectuar un tránsito o pasar una noche.</p>
                 </div>
-
-                aqui termina transfer
             </div>
         )
     }
