@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Bstatic from './Bstatic'
 import ServiceRequest from './ServiceRequest'
-import Bstatic from './Bstatic';
+
 
 
 
