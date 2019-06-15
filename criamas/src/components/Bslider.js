@@ -5,7 +5,7 @@ class Bslider extends React.Component {
 
   render () {
     return (
-      <div className="box-slide">
+      <div className="box_slide">
         <span>Hola!, soy un componente</span>
       </div>
     )
