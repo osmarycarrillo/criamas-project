@@ -212,4 +212,157 @@
   width: 80%;
 }
 
+.services {
+  margin: 0%;
+  padding: 0%;
+  display: inline;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #EFD0D1;
+}
+.services .title-serv {
+  text-transform: uppercase;
+}
+.services .line-form {
+  margin: 0%;
+  padding: 0%;
+  margin-left: 35%;
+  width: 500px;
+  border-bottom: 2px solid gray;
+}
+.services .container-serv {
+  display: flex;
+}
+.services .container-serv .form {
+  width: 50%;
+}
+.services .container-serv .form .form-style {
+  width: 400px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  margin: auto;
+  border-bottom: black solid 2px;
+}
+.services .container-serv .form .form-style .button-form {
+  width: 30px;
+  height: 30px;
+  background-color: #EFD0D1;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.services .container-serv .form .form-style .message {
+  height: 400px;
+}
+.services .container-serv .travels {
+  width: 50%;
+  text-align: left;
+}
+.services .container-serv .travels h3 {
+  text-transform: uppercase;
+}
+.services .container-serv .travels .title-trav {
+  width: 400px;
+  border-bottom: 2px solid black;
+}
+.services .container-serv .travels .div-trav {
+  width: 400px;
+  border-bottom: 2px solid gray;
+}
+
+.comments {
+  height: 350px;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+.comments i {
+  margin-left: 20%;
+  margin-right: 15%;
+  margin-top: 150px;
+}
+.comments p {
+  padding: 20px;
+}
+.comments .div-com {
+  margin-top: 70px;
+}
+.comments .div-com .join-club {
+  width: 130px;
+  height: 30px;
+  border-radius: 100px;
+  border: 2px solid gray;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-home {
+  font-family: "Poppins", sans-serif;
+}
+.contact-home .div-con {
+  display: flex;
+}
+.contact-home .div-con .form-contact {
+  margin-left: 10%;
+  width: 50%;
+}
+.contact-home .div-con .form-contact input {
+  width: 350px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  margin: auto;
+  border-bottom: black solid 2px;
+  padding-bottom: 20px;
+}
+.contact-home .div-con .form-contact .input-msj {
+  height: 100px;
+}
+.contact-home .div-con .form-contact .button-con {
+  margin-top: 40px;
+  width: 100px;
+  height: 30px;
+  border-radius: 100px;
+  border: 2px solid gray;
+  font-family: "Poppins", sans-serif;
+}
+.contact-home .div-con .data-contact {
+  width: 50%;
+  padding-right: 5%;
+  display: inline-block;
+}
+.contact-home .div-con .data-contact div {
+  margin: 0%;
+  padding: 0%;
+  width: 200px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.contact-home .div-con .data-contact div .div-ic {
+  margin: 0%;
+  padding: 0%;
+  width: 50px;
+}
+.contact-home .div-con .data-contact div .div-ic i {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+.contact-home .div-con .data-contact div .div-dir {
+  margin: 0%;
+  padding: 0%;
+  display: block;
+  width: 150px;
+  text-align: left;
+}
+.contact-home .div-con .data-contact div .div-dir p {
+  margin: 0%;
+  padding: 0%;
+}
+.contact-home .div-con .data-contact div .div-dir .line-con {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  border-bottom: 1px solid gray;
+}
+
 /*# sourceMappingURL=App.css.map */

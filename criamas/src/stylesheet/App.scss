@@ -199,7 +199,6 @@ $color_light_pink: #EFD0D1;
    width: 200px;
    border-bottom: 2px solid gray;
 }
-
 }
 .img-somos{
   width: 80%;
@@ -207,11 +206,9 @@ $color_light_pink: #EFD0D1;
   display:flex;
   margin: auto;
   border: #282828 solid 1px;
-
 }
 .bold{
   font-weight:bold;
-
 }
 /// Estilado componente JoinUs
 
@@ -228,3 +225,162 @@ $color_light_pink: #EFD0D1;
   }
 }
 
+
+//componente traslado
+.services {
+    margin: 0%;
+    padding: 0%;
+    display: inline;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background-color: $color_light_pink;
+    .title-serv {
+      text-transform: uppercase;
+    }
+    .line-form {
+      margin: 0%;
+      padding: 0%;
+      margin-left: 35%;
+      width: 500px;
+      border-bottom: 2px solid gray;
+    }
+    .container-serv {
+      display: flex;
+      .form {
+        width: 50%;
+        .form-style {
+          width: 400px;
+          height: 50px;
+          font-family: "Poppins", sans-serif;
+          border: none;
+          margin: auto;
+          border-bottom: black solid 2px;
+          .button-form {
+            width: 30px;
+            height: 30px;
+            background-color: $color_light_pink;
+            border-radius: 50%;
+            border: 2px solid black;
+          }
+          .message {
+            height: 400px;
+          }
+        }
+   
+      }
+      //viajes
+      .travels {
+        width: 50%;
+        text-align: left;
+        h3 {
+          text-transform: uppercase;
+        }
+        .title-trav {
+          width: 400px;
+          border-bottom: 2px solid black;
+        }
+        .div-trav {
+          width: 400px;
+          border-bottom: 2px solid gray;
+        }
+      }
+    }
+   }
+   
+   //home, comentario
+   .comments {
+    height: 350px;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    i {
+      margin-left: 20%;
+      margin-right: 15%;
+      margin-top: 150px;
+    }
+    p {
+      padding: 20px;
+    }
+    .div-com {
+      margin-top: 70px;
+      .join-club {
+        width: 130px;
+        height: 30px;
+        border-radius: 100px;
+        border: 2px solid gray;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+   }
+   
+   //home, contacto
+   .contact-home {
+    font-family: "Poppins", sans-serif;
+    .div-con{
+      display: flex;
+      .form-contact {
+        margin-left: 10%;
+        width: 50%;
+        input {
+          width: 350px;
+          height: 50px;
+          font-family: "Poppins", sans-serif;
+          border: none;
+          margin: auto;
+          border-bottom: black solid 2px;
+          padding-bottom: 20px;
+        }
+        .input-msj {
+          height: 100px;
+        }
+        .button-con {
+          margin-top: 40px;
+          width: 100px;
+          height: 30px;
+          border-radius: 100px;
+          border: 2px solid gray;
+          font-family: "Poppins", sans-serif;
+        }
+      }
+      .data-contact {
+        width: 50%;
+        padding-right: 5%;
+        display: inline-block;
+        div {
+          margin: 0%;
+          padding: 0%;
+          width: 200px;
+          margin-right: 50px;
+          margin-bottom: 30px;
+          display: flex;
+          .div-ic {
+            margin: 0%;
+            padding: 0%;
+            width: 50px;
+            i {
+              width: 50px;
+              height: 50px;
+              padding: 5px;
+            }
+          }
+          .div-dir {
+            margin: 0%;
+            padding: 0%;
+            display: block;
+            width: 150px;
+            text-align: left;
+            p {
+              margin: 0%;
+              padding: 0%;
+            }
+            .line-con {
+              margin: 0%;
+              padding: 0%;
+              width: 100%;
+              border-bottom: 1px solid gray;
+            }
+          }
+        }
+      }
+    }
+   
+   }
