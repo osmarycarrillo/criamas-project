@@ -12,14 +12,14 @@
 $color_dark_type: #282828;
 $color_pink: #ea1e52;
 $color_light_pink: #EFD0D1;
-//Estilo componente transfer
+//Estilo componente 
 .App {
-  // 
+  text-align: center;
   font-family: "Poppins", sans-serif;
   .translates {
     display: flex;
-    border-top: 3.125rem;
-    padding: 10%;
+    border-top: 50px;
+    padding:10%; 
     background: #EFD0D1;
     position: relative;
     width: 100%;
@@ -30,6 +30,7 @@ $color_light_pink: #EFD0D1;
       margin: auto;
       .box-p {
         .red-trans {
+          display: flex;
           flex-direction: row;
           justify-content: flex-start;
           font-family: "Poppins", sans-serif;
@@ -164,53 +165,89 @@ $color_light_pink: #EFD0D1;
 .heart {
   color: #ea1e52;
 }
-//estilo componente somos
-.somos{
-  .textsomos{
-    text-align: center;
-    .why{
-      font-weight:bold;
-      // no me esta tomando el font size
-      font-size: 100 px; 
-    }
-  }
-  .somos-box{
-    width: 80%;
-    text-align: center;
-    display:flex;
-    margin: auto;
-    .somos-left{
-      width: 50%;
-      background:#fcb4b5;
-    }
-    .somos-rigth{
-      width: 50%;
-      background:#fed9be;
-    }
-    .icon{
-      margin-top: 12%;
-      font-size: 25px;
-    }
-  }
-.gray{
-  color: #403843;
-  
-}
-.line{
-  margin-left: 33%;
+
+.services {
+  margin: 0%;
   padding: 0%;
-   width: 200px;
-   border-bottom: 2px solid gray;
-}
-
-}
-.img-somos{
-  width: 80%;
+  display: inline;
   text-align: center;
-  display:flex;
-  margin: auto;
-  border: #282828 solid 1px;
+  font-family: "Poppins", sans-serif;
+  background-color: $color_light_pink;
+  .title-serv {
+    text-transform: uppercase;
+  }
+  .line-form {
+    margin: 0%;
+    padding: 0%;
+    margin-left: 35%;
+    width: 500px;
+    border-bottom: 2px solid gray;
+  }
+  .container-serv {
+    display: flex;
+    .form {
+      width: 50%;
+      .form-style {
+        width: 400px;
+        height: 50px;
+        font-family: "Poppins", sans-serif;
+        border: none;
+        margin: auto;
+        border-bottom: black solid 2px;
+        .button-form {
+          width: 30px;
+          height: 30px;
+          background-color: $color_light_pink;
+          border-radius: 50%;
+          border: 2px solid black;
+        }
+        .message {
+          height: 400px;
+        }
+      } 
 
+    }
+    .travels {
+      width: 50%;
+      text-align: left;
+      h3 {
+        text-transform: uppercase;
+      }
+      .title-trav {
+        width: 400px;
+        border-bottom: 2px solid black;
+      }
+      .div-trav {
+        width: 400px;
+        border-bottom: 2px solid gray;
+      }
+    }
+  }
+}
+
+.comments {
+  height: 350px;
+  background-color: aquamarine;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  i {
+    margin-left: 20%;
+    margin-right: 15%;
+    margin-top: 150px;
+  }
+  p {
+    padding: 20px;
+  }
+  .div-com {
+    margin-top: 70px;
+    .join-club {
+      width: 130px;
+      height: 30px;
+      border-radius: 100px;
+      border: 2px solid gray;
+      font-family: "Poppins", sans-serif;
+    }
+  }
 }
 
 .contact-home {
@@ -227,9 +264,10 @@ $color_light_pink: #EFD0D1;
         border: none;
         margin: auto;
         border-bottom: black solid 2px;
+        padding-bottom: 20px;
       }
       .input-msj {
-        height: 200px;
+        height: 100px;
       }
       .button-con {
         margin-top: 40px;
@@ -249,7 +287,7 @@ $color_light_pink: #EFD0D1;
         width: 200px;
         margin-bottom: 30px;
         i {
-          padding-left: 20px;
+          margin-left: 30px;
         }
         p {
           margin: 0%;
@@ -259,7 +297,7 @@ $color_light_pink: #EFD0D1;
           margin: 0%;
           padding: 0%;
           margin-left: 35%;
-          width: 100%;
+          width: 100px;
           border-bottom: 1px solid gray;
         }
       }

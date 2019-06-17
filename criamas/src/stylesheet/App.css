@@ -10,11 +10,12 @@
   src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
 }
 .App {
+  text-align: center;
   font-family: "Poppins", sans-serif;
 }
 .App .translates {
   display: flex;
-  border-top: 3.125rem;
+  border-top: 50px;
   padding: 10%;
   background: #EFD0D1;
   position: relative;
@@ -27,6 +28,7 @@
   margin: auto;
 }
 .App .translates .cont-trans .box-p .red-trans {
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   font-family: "Poppins", sans-serif;
@@ -155,47 +157,87 @@
   color: #ea1e52;
 }
 
-.somos .textsomos {
-  text-align: center;
-}
-.somos .textsomos .why {
-  font-weight: bold;
-  font-size: 100 px;
-}
-.somos .somos-box {
-  width: 80%;
-  text-align: center;
-  display: flex;
-  margin: auto;
-}
-.somos .somos-box .somos-left {
-  width: 50%;
-  background: #fcb4b5;
-}
-.somos .somos-box .somos-rigth {
-  width: 50%;
-  background: #fed9be;
-}
-.somos .somos-box .icon {
-  margin-top: 12%;
-  font-size: 25px;
-}
-.somos .gray {
-  color: #403843;
-}
-.somos .line {
-  margin-left: 33%;
+.services {
+  margin: 0%;
   padding: 0%;
-  width: 200px;
+  display: inline;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #EFD0D1;
+}
+.services .title-serv {
+  text-transform: uppercase;
+}
+.services .line-form {
+  margin: 0%;
+  padding: 0%;
+  margin-left: 35%;
+  width: 500px;
+  border-bottom: 2px solid gray;
+}
+.services .container-serv {
+  display: flex;
+}
+.services .container-serv .form {
+  width: 50%;
+}
+.services .container-serv .form .form-style {
+  width: 400px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  margin: auto;
+  border-bottom: black solid 2px;
+}
+.services .container-serv .form .form-style .button-form {
+  width: 30px;
+  height: 30px;
+  background-color: #EFD0D1;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+.services .container-serv .form .form-style .message {
+  height: 400px;
+}
+.services .container-serv .travels {
+  width: 50%;
+  text-align: left;
+}
+.services .container-serv .travels h3 {
+  text-transform: uppercase;
+}
+.services .container-serv .travels .title-trav {
+  width: 400px;
+  border-bottom: 2px solid black;
+}
+.services .container-serv .travels .div-trav {
+  width: 400px;
   border-bottom: 2px solid gray;
 }
 
-.img-somos {
-  width: 80%;
-  text-align: center;
+.comments {
+  height: 350px;
+  background-color: aquamarine;
   display: flex;
-  margin: auto;
-  border: #282828 solid 1px;
+  font-family: "Poppins", sans-serif;
+}
+.comments i {
+  margin-left: 20%;
+  margin-right: 15%;
+  margin-top: 150px;
+}
+.comments p {
+  padding: 20px;
+}
+.comments .div-com {
+  margin-top: 70px;
+}
+.comments .div-com .join-club {
+  width: 130px;
+  height: 30px;
+  border-radius: 100px;
+  border: 2px solid gray;
+  font-family: "Poppins", sans-serif;
 }
 
 .contact-home {
@@ -215,9 +257,10 @@
   border: none;
   margin: auto;
   border-bottom: black solid 2px;
+  padding-bottom: 20px;
 }
 .contact-home .div-con .form-contact .input-msj {
-  height: 200px;
+  height: 100px;
 }
 .contact-home .div-con .form-contact .button-con {
   margin-top: 40px;
@@ -238,7 +281,7 @@
   margin-bottom: 30px;
 }
 .contact-home .div-con .data-contact div i {
-  padding-left: 20px;
+  margin-left: 30px;
 }
 .contact-home .div-con .data-contact div p {
   margin: 0%;
@@ -248,7 +291,7 @@
   margin: 0%;
   padding: 0%;
   margin-left: 35%;
-  width: 100%;
+  width: 100px;
   border-bottom: 1px solid gray;
 }
 
