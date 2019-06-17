@@ -3,10 +3,10 @@
 @import url("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
 @font-face {
   font-family: "Poppins", sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap");
-}
+  src: url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap"); }
 @font-face {
   font-family: "Maven Pro", sans-serif;
+<<<<<<< HEAD
   src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
 }
 Estilo componente .App {
@@ -42,85 +42,131 @@ Estilo componente .App .translates .cont-trans .box-p .tinfo {
 Estilo componente .App .translates .cont-trans .dogt {
   font-family: "Poppins", sans-serif;
 }
+=======
+  src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"); }
+.App {
+  text-align: center;
+  font-family: "Poppins", sans-serif; }
+  .App .translates {
+    display: flex;
+    border-top: 3.125rem;
+    padding: 10%;
+    background: #EFD0D1;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+    .App .translates .cont-trans {
+      display: flex;
+      justify-content: center;
+      margin: auto; }
+      .App .translates .cont-trans .box-p .red-trans {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        font-family: "Poppins", sans-serif;
+        color: #ea1e52; }
+      .App .translates .cont-trans .box-p .tinfo {
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        font-size: larger; }
+      .App .translates .cont-trans .dogt {
+        font-family: "Poppins", sans-serif; }
+>>>>>>> 8843728a239ce9c138ea970cb3e1aa8167a9a99a
 
 .App .box_nav {
   width: 100%;
   position: fixed;
-  z-index: 2;
-}
-.App .box_nav .nav_menu {
-  width: 80%;
-  height: 5.2rem;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-.App .box_nav .nav_menu .logo_container {
-  width: 16%;
-  height: auto;
-}
-.App .box_nav .nav_menu .logo_container .logo {
-  width: 100%;
-  height: auto;
-}
-.App .box_nav .nav_menu .container_buttons {
+  z-index: 2; }
+  .App .box_nav .nav_menu {
+    width: 80%;
+    height: 5.2rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; }
+    .App .box_nav .nav_menu .logo_container {
+      width: 16%;
+      height: auto; }
+      .App .box_nav .nav_menu .logo_container .logo {
+        width: 100%;
+        height: auto; }
+
+.container_buttons {
   width: 80%;
   display: flex;
-  align-items: center;
-}
-.App .box_nav .nav_menu .container_buttons .menu_row {
-  display: flex;
-  justify-content: space-around;
-  font-size: 0.75rem;
-  width: 75%;
-  margin: 0px;
-  padding: 0px;
-}
-.App .box_nav .nav_menu .container_buttons .menu_row li {
-  list-style: none;
-}
-.App .box_nav .nav_menu .container_buttons .menu_row li .link_url {
-  text-decoration: none;
-  color: #282828;
-}
+  align-items: center; }
+  .container_buttons .menu_row {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8125rem;
+    width: 75%;
+    margin: 0rem;
+    padding: 0rem; }
+    .container_buttons .menu_row li {
+      list-style: none;
+      position: relative; }
+      .container_buttons .menu_row li .link_url {
+        text-decoration: none;
+        color: #282828; }
+        .container_buttons .menu_row li .link_url::after {
+          content: '';
+          transition: transform 0.25s ease-out;
+          background-color: #282828;
+          width: 95%;
+          transform: scaleX(0);
+          height: 0.0875rem;
+          bottom: -0.775rem;
+          left: 0;
+          position: absolute;
+          transform-origin: bottom left; }
+        .container_buttons .menu_row li .link_url:hover::after {
+          transform: scaleX(1);
+          transform-origin: botom left; }
+        .container_buttons .menu_row li .link_url:focus::after {
+          transform: scaleX(1);
+          transform-origin: botom left; }
 
 .container_buttons .box_buttons {
   width: 25%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 10px;
-}
-.container_buttons .box_buttons .signin {
-  background-color: #ea1e52;
-  font-family: "Poppins", sans-serif;
-  border: none;
-  border-radius: 1.25rem;
-  font-size: 12px;
-  height: 37px;
-  padding: 0px 18px;
-}
-.container_buttons .box_buttons .login {
-  font-family: "Poppins", sans-serif;
-  border-radius: 1.25rem;
-  background-color: transparent;
-  padding: 8px 15px;
-  color: #ea1e52;
-  font-size: 12px;
-  border: 2px solid #ea1e52;
-  padding: 0px 18px;
-  height: 37px;
-}
+  margin-left: 0.625rem; }
+  .container_buttons .box_buttons .signin {
+    background-color: #ffffff;
+    color: #ea1e52;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 1.25rem;
+    font-size: 0.75rem;
+    height: 2.3125rem;
+    padding: 0rem 1.125rem; }
+    .container_buttons .box_buttons .signin:hover {
+      background-color: #ea1e52;
+      color: #ffffff;
+      transition: all 0.7s ease-in-out 0s; }
+  .container_buttons .box_buttons .login {
+    font-family: "Poppins", sans-serif;
+    border-radius: 1.25rem;
+    background-color: transparent;
+    padding: 0.5rem 0.9375rem;
+    color: #ea1e52;
+    font-size: 0.75rem;
+    border: 0.0625rem solid #ea1e52;
+    padding: 0rem 1.125rem;
+    height: 2.3125rem; }
+    .container_buttons .box_buttons .login:hover {
+      background-color: #ea1e52;
+      color: #ffffff;
+      transition: all 0.7s ease-in-out 0s; }
 
 .App .box_slide {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 31.25rem;
   z-index: 1;
-}
+  background-color: #EFD0D1; }
 
 .heart {
-  color: #ea1e52;
-}
+  color: #ea1e52; }
 
 /*# sourceMappingURL=App.css.map */
