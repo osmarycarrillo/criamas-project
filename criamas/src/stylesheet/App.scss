@@ -172,8 +172,6 @@ $color_light_pink: #EFD0D1;
   display: inline;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  //no me toma el tamaño de la letra
-  font-size: 20px;
   background-color: $color_light_pink;
   .title-serv {
     text-transform: uppercase;
@@ -193,8 +191,8 @@ $color_light_pink: #EFD0D1;
         width: 400px;
         height: 50px;
         font-family: "Poppins", sans-serif;
-        font-size: 20px;
         border: none;
+        margin: auto;
         border-bottom: black solid 2px;
         .button-form {
           width: 30px;
@@ -204,7 +202,6 @@ $color_light_pink: #EFD0D1;
           border: 2px solid black;
         }
         .message {
-          //no me toma el tamaño
           height: 400px;
         }
       } 
@@ -212,12 +209,16 @@ $color_light_pink: #EFD0D1;
     }
     .travels {
       width: 50%;
-      font-size: 20px;
       text-align: left;
+      h3 {
+        text-transform: uppercase;
+      }
       .title-trav {
+        width: 400px;
         border-bottom: 2px solid black;
       }
       .div-trav {
+        width: 400px;
         border-bottom: 2px solid gray;
       }
     }

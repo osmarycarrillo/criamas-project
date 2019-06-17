@@ -163,7 +163,6 @@
   display: inline;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
   background-color: #EFD0D1;
 }
 .services .title-serv {
@@ -186,8 +185,8 @@
   width: 400px;
   height: 50px;
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
   border: none;
+  margin: auto;
   border-bottom: black solid 2px;
 }
 .services .container-serv .form .form-style .button-form {
@@ -202,13 +201,17 @@
 }
 .services .container-serv .travels {
   width: 50%;
-  font-size: 20px;
   text-align: left;
 }
+.services .container-serv .travels h3 {
+  text-transform: uppercase;
+}
 .services .container-serv .travels .title-trav {
+  width: 400px;
   border-bottom: 2px solid black;
 }
 .services .container-serv .travels .div-trav {
+  width: 400px;
   border-bottom: 2px solid gray;
 }
 
