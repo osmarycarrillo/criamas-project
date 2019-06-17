@@ -6,43 +6,6 @@
   src: url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap"); }
 @font-face {
   font-family: "Maven Pro", sans-serif;
-<<<<<<< HEAD
-  src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
-}
-Estilo componente .App {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-}
-Estilo componente .App .translates {
-  display: flex;
-  border-top: 50px;
-  padding: 10%;
-  background: #EFD0D1;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-Estilo componente .App .translates .cont-trans {
-  display: flex;
-  justify-content: center;
-  margin: auto;
-}
-Estilo componente .App .translates .cont-trans .box-p .red-trans {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-family: "Poppins", sans-serif;
-  color: #ea1e52;
-}
-Estilo componente .App .translates .cont-trans .box-p .tinfo {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: larger;
-}
-Estilo componente .App .translates .cont-trans .dogt {
-  font-family: "Poppins", sans-serif;
-}
-=======
   src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"); }
 .App {
   text-align: center;
@@ -71,7 +34,6 @@ Estilo componente .App .translates .cont-trans .dogt {
         font-size: larger; }
       .App .translates .cont-trans .dogt {
         font-family: "Poppins", sans-serif; }
->>>>>>> 8843728a239ce9c138ea970cb3e1aa8167a9a99a
 
 .App .box_nav {
   width: 100%;

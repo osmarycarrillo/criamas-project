@@ -40,7 +40,8 @@ class Navheader extends React.Component {
                       
           </ul>
           <div className="box_buttons">
-            <Button name="Registrarse"></Button>
+            <Button name="Registrarse" style="signin" identificator="register_button"></Button>
+            <Button name="Mi Cuenta" style="login" identificator="account"></Button>
           </div>
         </div>       
       </nav>
