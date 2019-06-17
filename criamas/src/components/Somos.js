@@ -15,8 +15,10 @@ class Somos extends Component {
                 </div>
                 <div className="somos-box">
                     <div className="somos-left">
-                        <i class="fab fa-gratipay icon heart"></i>
-                        <p className="">NUESTROS VALORES</p>
+                        <i className="fab fa-gratipay icon heart"></i>
+                        <p className="bold">NUESTROS VALORES</p>
+                        {/* esta linea se debe pintar de rosa 
+                        pero no me esta tomando la clase heart */}
                         <p className="line heart"></p>
                         <p>Educacion sobre el respeto por la vida animal <br />
                             Respeto por los seres vivientes <br />
@@ -25,8 +27,8 @@ class Somos extends Component {
                             El cuidado de nuestras mascotas.</p>
                     </div>
                     <div className="somos-rigth">
-                        <i class="fas fa-file-alt icon gray"></i>
-                        <p className="title-sub">NUESTRO CATÁLOGO</p>
+                        <i className="fas fa-file-alt icon gray"></i>
+                        <p className="bold">NUESTRO CATÁLOGO</p>
                         <p className="line"></p>
                         <p>educacion sobre el respeto por la vida animal <br />
                             Respeto por los seres vivientes <br />
