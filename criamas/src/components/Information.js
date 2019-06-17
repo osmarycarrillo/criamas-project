@@ -18,7 +18,7 @@ class Information extends Component {
           </div>
           <div>
               <h3>Información</h3>
-              <ul>
+              {/* <ul>
                 <li>
                     <Link to="/us" className="link_url">Nosotros</Link>
                 </li>
@@ -37,11 +37,11 @@ class Information extends Component {
                 <li>
                     <Link to="/contact" className="link_url">Contacto</Link>
                 </li>
-              </ul>
+              </ul> */}
           </div>
           <div>
               <h3>Mi Cuenta</h3>
-              <ul>
+              {/* <ul>
                 <li>
                     <Link to="/favorites" className="link_url">Favoritos</Link>
                 </li>
@@ -54,15 +54,15 @@ class Information extends Component {
                 <li>
                     <Link to="/petshop" className="link_url">Pet shop</Link>
                 </li>
-              </ul>
+              </ul> */}
           </div>
           <div>
               <h3>Seguinos en Instagram</h3>
+              {/* <img>dsafds</img>
               <img>dsafds</img>
               <img>dsafds</img>
               <img>dsafds</img>
-              <img>dsafds</img>
-              <img>dsafds</img>
+              <img>dsafds</img> */}
           </div>
       </div>
     );
