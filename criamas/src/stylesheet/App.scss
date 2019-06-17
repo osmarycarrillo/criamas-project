@@ -213,3 +213,18 @@ $color_light_pink: #EFD0D1;
   font-weight:bold;
 
 }
+/// Estilado componente JoinUs
+
+.join{
+  
+  background:aquamarine;
+
+  .join-box{
+    display: flex;
+    flex-direction: row;
+   justify-content:space-between;
+   margin: auto;
+    width: 80%;
+  }
+}
+

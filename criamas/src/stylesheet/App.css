@@ -201,4 +201,15 @@
   font-weight: bold;
 }
 
+.join {
+  background: aquamarine;
+}
+.join .join-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  width: 80%;
+}
+
 /*# sourceMappingURL=App.css.map */

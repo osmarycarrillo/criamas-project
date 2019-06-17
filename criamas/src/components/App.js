@@ -6,6 +6,7 @@ import Navheader from './Navheader';
 import Footer from './Footer';
 import Transfers from './Transfers';
 import Somos from './Somos';
+import JoinUs from './JoinUs';
 
 class App extends Component {
 
@@ -16,6 +17,7 @@ class App extends Component {
           <div>
             <Navheader></Navheader>
             <Somos></Somos>
+            <JoinUs></JoinUs>
             <Route exact path="/" component={Home} />
             <Route exact path="/transfers" component={Transfers} />
             <Footer></Footer>
