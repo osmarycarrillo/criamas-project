@@ -1,5 +1,5 @@
 import React from 'react';
-import img_logo from '../stylesheet/img_svg/logo_criamas.svg';
+import img_logo from '../img_svg/logo_criamas-01.svg';
 import { Link } from "react-router-dom";
 import '../stylesheet/App.css';
 import Button from './Button';
@@ -36,12 +36,13 @@ class Navheader extends React.Component {
             </li>
             <li>
               <Link to="" className="link_url">Contacto</Link>
-            </li>
-                      
+            </li>                      
           </ul>
           <div className="box_buttons">
-            <Button name="Registrarse" style="signin" identificator="register_button"></Button>
-            <Button name="Mi Cuenta" style="login" identificator="account"></Button>
+            <Button name="Registrarse" styleCss="signin" identificator="register_button" url="/registrarse">
+            </Button>
+            <Button name="Mi Cuenta" styleCss="login" identificator="account" url="/">
+            </Button>
           </div>
         </div>       
       </nav>

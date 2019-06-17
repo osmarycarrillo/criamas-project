@@ -1,12 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Myslide from './slider/Myslide'
+import '../stylesheet/App.css';
 
 class Bslider extends React.Component {
-  
 
-  render () {
+
+  render() {
     return (
       <div className="box_slide">
-        <span>Hola!, soy un componente</span>
+         <Myslide></Myslide>
       </div>
     )
   }
