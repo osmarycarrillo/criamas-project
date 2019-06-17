@@ -12,9 +12,8 @@
 $color_dark_type: #282828;
 $color_pink: #ea1e52;
 $color_light_pink: #EFD0D1;
-//Estilo componente transfer
+//Estilo componente transfers
 .App {
-  // 
   font-family: "Poppins", sans-serif;
   .translates {
     display: flex;
@@ -169,9 +168,7 @@ $color_light_pink: #EFD0D1;
   .textsomos{
     text-align: center;
     .why{
-      font-weight:bold;
-      // no me esta tomando el font size
-      font-size: 100 px; 
+      font-size: 25px; 
     }
   }
   .somos-box{
@@ -210,5 +207,9 @@ $color_light_pink: #EFD0D1;
   display:flex;
   margin: auto;
   border: #282828 solid 1px;
+
+}
+.bold{
+  font-weight:bold;
 
 }

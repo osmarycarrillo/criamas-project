@@ -159,8 +159,7 @@
   text-align: center;
 }
 .somos .textsomos .why {
-  font-weight: bold;
-  font-size: 100 px;
+  font-size: 25px;
 }
 .somos .somos-box {
   width: 80%;
@@ -196,6 +195,10 @@
   display: flex;
   margin: auto;
   border: #282828 solid 1px;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=App.css.map */
