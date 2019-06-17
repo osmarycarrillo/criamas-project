@@ -9,8 +9,7 @@ class Transfers extends Component {
         return (
         <div>
                 Aqui comienza transfer
-                <Bstatic>
-                    
+                <Bstatic>    
                 </Bstatic>
                 <p>NUESTRO SERVICIO DE TRASLADO</p>
                 <p>La tranquilidad de viajar seguro y confiado de que tu mejor amigo esta en buenas manosLo que nos diferencia es el <p className="red-trans">TRATO PERSONALIZADO :</p> </p>
@@ -34,8 +33,7 @@ class Transfers extends Component {
                     </div>
                     <p>Todos nuestros servicios están orientados a conseguir el máximo bienestar y trato respetuoso y amoroso  durante su transporte, desde la recogida en origen hasta la entrega en destino (según servicio).  También podemos ofrecer de un servicio de hoteles para animales, con alojamientos específicos, con control de temperatura según sus necesidades, utilizables en aquellos casos en los que sea necesario efectuar un tránsito o pasar una noche.</p>
                 </div>
-                <ServiceRequest></ServiceRequest>
-                aqui termina transfer
+                            aqui termina transfer
                 <ServiceRequest></ServiceRequest>
                 <Contact></Contact>
             </div>

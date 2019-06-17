@@ -26,7 +26,7 @@ class Navheader extends React.Component {
               <Link to="/cachorros" className="link_url">Cachorros</Link>
             </li>
             <li>
-              <Link to="/traslados" className="link_url">Traslados</Link>
+              <Link to="/transfers" className="link_url">Traslados</Link>
             </li>
             <li>
               <Link to="/petshop" className="link_url">Pet shop</Link>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Form from './Form';
-import Calendar from './Calendar';
+import Travels from './Travels';
 
 class ServiceRequest extends React.Component {
     render() {
@@ -9,7 +9,7 @@ class ServiceRequest extends React.Component {
                 <h1>Solicitud de servicio</h1>
                 <p>Rellena este formulario, obtendras el mejor servicio.</p>
                 <Form></Form>
-                <Calendar></Calendar>
+                <Travels></Travels>
             </div>
         )
     }
