@@ -249,3 +249,58 @@ $color_light_pink: #EFD0D1;
     }
   }
 }
+
+.contact-home {
+  font-family: "Poppins", sans-serif;
+  .div-con{
+    display: flex;
+    .form-contact {
+      margin-left: 10%;
+      width: 50%;
+      input {
+        width: 350px;
+        height: 50px;
+        font-family: "Poppins", sans-serif;
+        border: none;
+        margin: auto;
+        border-bottom: black solid 2px;
+      }
+      .input-msj {
+        height: 200px;
+      }
+      .button-con {
+        margin-top: 40px;
+        width: 100px;
+        height: 30px;
+        border-radius: 100px;
+        border: 2px solid gray;
+        font-family: "Poppins", sans-serif;
+      }
+    }
+    .data-contact {
+      width: 50%;
+      margin-right: 10%;
+      div {
+        margin: 0%;
+        padding: 0%;
+        width: 200px;
+        margin-bottom: 30px;
+        i {
+          padding-left: 20px;
+        }
+        p {
+          margin: 0%;
+          padding: 0%;
+        }
+        .line-con {
+          margin: 0%;
+          padding: 0%;
+          margin-left: 35%;
+          width: 100%;
+          border-bottom: 1px solid gray;
+        }
+      }
+    }
+  }
+
+}
