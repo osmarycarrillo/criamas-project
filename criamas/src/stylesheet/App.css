@@ -272,26 +272,40 @@
 }
 .contact-home .div-con .data-contact {
   width: 50%;
-  margin-right: 10%;
 }
 .contact-home .div-con .data-contact div {
   margin: 0%;
   padding: 0%;
   width: 200px;
+  margin-right: 50px;
   margin-bottom: 30px;
+  display: flex;
 }
-.contact-home .div-con .data-contact div i {
-  margin-left: 30px;
+.contact-home .div-con .data-contact div .div-ic {
+  margin: 0%;
+  padding: 0%;
+  width: 50px;
 }
-.contact-home .div-con .data-contact div p {
+.contact-home .div-con .data-contact div .div-ic i {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+.contact-home .div-con .data-contact div .div-dir {
+  margin: 0%;
+  padding: 0%;
+  display: block;
+  width: 150px;
+  text-align: left;
+}
+.contact-home .div-con .data-contact div .div-dir p {
   margin: 0%;
   padding: 0%;
 }
-.contact-home .div-con .data-contact div .line-con {
+.contact-home .div-con .data-contact div .div-dir .line-con {
   margin: 0%;
   padding: 0%;
-  margin-left: 35%;
-  width: 100px;
+  width: 100%;
   border-bottom: 1px solid gray;
 }
 

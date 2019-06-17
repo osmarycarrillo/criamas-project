@@ -280,25 +280,39 @@ $color_light_pink: #EFD0D1;
     }
     .data-contact {
       width: 50%;
-      margin-right: 10%;
       div {
         margin: 0%;
         padding: 0%;
         width: 200px;
+        margin-right: 50px;
         margin-bottom: 30px;
-        i {
-          margin-left: 30px;
-        }
-        p {
+        display: flex;
+        .div-ic {
           margin: 0%;
           padding: 0%;
+          width: 50px;
+          i {
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+          }
         }
-        .line-con {
+        .div-dir {
           margin: 0%;
           padding: 0%;
-          margin-left: 35%;
-          width: 100px;
-          border-bottom: 1px solid gray;
+          display: block;
+          width: 150px;
+          text-align: left;
+          p {
+            margin: 0%;
+            padding: 0%;
+          }
+          .line-con {
+            margin: 0%;
+            padding: 0%;
+            width: 100%;
+            border-bottom: 1px solid gray;
+          }
         }
       }
     }
