@@ -274,6 +274,7 @@
 }
 .comments .div-com {
   margin-top: 70px;
+  text-align: center;
 }
 .comments .div-com .join-club {
   width: 130px;
@@ -285,6 +286,7 @@
 
 .contact-home {
   font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 .contact-home .div-con {
   display: flex;

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Bslider from './Bslider';
 import Comments from './Comments';
 import ContactHome from './ContactHome';
+import Information from './Information';
 
 class Home extends Component {
 
@@ -11,6 +12,7 @@ class Home extends Component {
         <Bslider></Bslider>
         <Comments></Comments>
         <ContactHome></ContactHome>
+        <Information></Information>
       </div>
     );
   }
