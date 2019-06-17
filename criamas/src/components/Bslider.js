@@ -7,6 +7,7 @@ class Bslider extends React.Component {
     return (
       <div className="box_slide">
         <span>Hola!, soy un componente</span>
+        aqui termina slider
       </div>
     )
   }
