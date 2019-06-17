@@ -9,37 +9,37 @@
   font-family: "Maven Pro", sans-serif;
   src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
 }
-.App {
+Estilo componente .App {
   text-align: center;
   font-family: "Poppins", sans-serif;
 }
-.App .translates {
+Estilo componente .App .translates {
   display: flex;
   border-top: 50px;
   padding: 10%;
-  background: yellow;
+  background: #EFD0D1;
   position: relative;
   width: 100%;
   height: 100%;
 }
-.App .translates .cont-trans {
+Estilo componente .App .translates .cont-trans {
   display: flex;
   justify-content: center;
   margin: auto;
 }
-.App .translates .cont-trans .box-p .red-trans {
+Estilo componente .App .translates .cont-trans .box-p .red-trans {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   font-family: "Poppins", sans-serif;
   color: #ea1e52;
 }
-.App .translates .cont-trans .box-p .tinfo {
+Estilo componente .App .translates .cont-trans .box-p .tinfo {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: larger;
 }
-.App .translates .cont-trans .dogt {
+Estilo componente .App .translates .cont-trans .dogt {
   font-family: "Poppins", sans-serif;
 }
 
