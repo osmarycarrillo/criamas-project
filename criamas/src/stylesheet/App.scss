@@ -48,6 +48,7 @@ $color_light_pink: #EFD0D1;
 }
 //estilos componente nav, by MV
 .App {
+  
   .box_nav {
     width: 100%;
     position: fixed;
@@ -62,7 +63,7 @@ $color_light_pink: #EFD0D1;
         width: 16%;
         height: auto;
         .logo {
-          width: 100%;
+          width: 90%;
           height: auto;
         }
       }
@@ -126,11 +127,14 @@ $color_light_pink: #EFD0D1;
       font-size: 0.75rem;
       height: 2.3125rem;
       padding: 0rem 1.125rem;
+      text-decoration: none;
+      
       &:hover{
         background-color: $color_pink;
         color: #ffffff;
         transition: all 0.7s ease-in-out 0s;
       }
+      
     }
     .login {
       font-family: "Poppins", sans-serif;
@@ -142,6 +146,7 @@ $color_light_pink: #EFD0D1;
       border: 0.0625rem solid $color_pink;
       padding: 0rem 1.125rem;
       height: 2.3125rem;
+      text-decoration: none;
       &:hover{
         background-color: $color_pink;
         color: #ffffff;
@@ -155,9 +160,51 @@ $color_light_pink: #EFD0D1;
   .box_slide {
     position: relative;
     width: 100%;
-    height: 31.25rem;
+    height: 100vh;
     z-index: 1;
     background-color: $color_light_pink;
+    .box-center{
+       width: 80%;
+       margin: auto;
+      
+    }
+  }
+}
+
+.box-center{
+  .slider-content{
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    .inner{
+      width: 30%;
+      font-family: 'Poppins', sans-serif;
+      .subtitle{
+        color: $color_pink;
+      }
+    }
+    .image-slide{
+      width: 70%;
+      .image_dog{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+
+.box-center{
+  .counter{
+    position: absolute;
+    width: 10%;
+    text-align: center;
+    .fa-circle{
+      font-size: 12px;
+      color: #282828;
+      margin: 2px;
+    }
   }
 }
 .heart {
@@ -210,6 +257,21 @@ $color_light_pink: #EFD0D1;
 .bold{
   font-weight:bold;
 }
+/// Estilado componente JoinUs
+
+.join{
+  
+  background:aquamarine;
+
+  .join-box{
+    display: flex;
+    flex-direction: row;
+   justify-content:space-between;
+   margin: auto;
+    width: 80%;
+  }
+}
+
 
 //componente traslado
 .services {
