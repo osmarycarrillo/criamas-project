@@ -2,6 +2,7 @@ import React from 'react';
 import img_logo from '../stylesheet/img_svg/logo_criamas.svg';
 import { Link } from "react-router-dom";
 import '../stylesheet/App.css';
+import Button from './Button';
 
 
 class Navheader extends React.Component {
@@ -39,8 +40,8 @@ class Navheader extends React.Component {
                       
           </ul>
           <div className="box_buttons">
-              <button id="register_button" className="signin">Registrarse</button>
-              <button id="account" className="login">Mi cuenta</button>
+            <Button name="Registrarse" style="signin" identificator="register_button"></Button>
+            <Button name="Mi Cuenta" style="login" identificator="account"></Button>
           </div>
         </div>       
       </nav>
