@@ -215,4 +215,29 @@
   border-bottom: 2px solid gray;
 }
 
+.comments {
+  height: 350px;
+  background-color: aquamarine;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+.comments i {
+  margin-left: 20%;
+  margin-right: 15%;
+  margin-top: 150px;
+}
+.comments p {
+  padding: 20px;
+}
+.comments .div-com {
+  margin-top: 70px;
+}
+.comments .div-com .join-club {
+  width: 130px;
+  height: 30px;
+  border-radius: 100px;
+  border: 2px solid gray;
+  font-family: "Poppins", sans-serif;
+}
+
 /*# sourceMappingURL=App.css.map */

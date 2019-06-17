@@ -224,3 +224,28 @@ $color_light_pink: #EFD0D1;
     }
   }
 }
+
+.comments {
+  height: 350px;
+  background-color: aquamarine;
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  i {
+    margin-left: 20%;
+    margin-right: 15%;
+    margin-top: 150px;
+  }
+  p {
+    padding: 20px;
+  }
+  .div-com {
+    margin-top: 70px;
+    .join-club {
+      width: 130px;
+      height: 30px;
+      border-radius: 100px;
+      border: 2px solid gray;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+}
