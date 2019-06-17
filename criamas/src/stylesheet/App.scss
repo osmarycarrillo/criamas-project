@@ -24,13 +24,8 @@ $color_light_pink: #EFD0D1;
 
   .translates {
     display: flex;
-<<<<<<< HEAD
     border-top: 50px;
     padding:10%; 
-=======
-    border-top: 3.125rem;
-    padding: 10%;
->>>>>>> 8843728a239ce9c138ea970cb3e1aa8167a9a99a
     background: #EFD0D1;
     position: relative;
     width: 100%;
@@ -197,12 +192,62 @@ $color_light_pink: #EFD0D1;
 
 .heart {
   color: #ea1e52;
-<<<<<<< HEAD
 }
 
 .services {
-  
+  margin: 0%;
+  padding: 0%;
+  display: inline;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  //no me toma el tamaño de la letra
+  font-size: 20px;
+  background-color: $color_light_pink;
+  .title-serv {
+    text-transform: uppercase;
+  }
+  .line-form {
+    margin: 0%;
+    padding: 0%;
+    margin-left: 35%;
+    width: 500px;
+    border-bottom: 2px solid gray;
+  }
+  .container-serv {
+    display: flex;
+    .form {
+      width: 50%;
+      .form-style {
+        width: 400px;
+        height: 50px;
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        border: none;
+        border-bottom: black solid 2px;
+        .button-form {
+          width: 30px;
+          height: 30px;
+          background-color: $color_light_pink;
+          border-radius: 50%;
+          border: 2px solid black;
+        }
+        .message {
+          //no me toma el tamaño
+          height: 400px;
+        }
+      } 
+
+    }
+    .travels {
+      width: 50%;
+      font-size: 20px;
+      text-align: left;
+      .title-trav {
+        border-bottom: 2px solid black;
+      }
+      .div-trav {
+        border-bottom: 2px solid gray;
+      }
+    }
+  }
 }
-=======
-}
->>>>>>> 8843728a239ce9c138ea970cb3e1aa8167a9a99a
