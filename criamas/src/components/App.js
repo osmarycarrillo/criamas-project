@@ -5,7 +5,6 @@ import Home from './Home';
 import Navheader from './Navheader';
 import Footer from './Footer';
 import Transfers from './Transfers';
-import Somos from './Somos';
 
 class App extends Component {
 
@@ -15,7 +14,6 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <Navheader></Navheader>
-            <Somos></Somos>
             <Route exact path="/" component={Home} />
             <Route exact path="/transfers" component={Transfers} />
             <Footer></Footer>
