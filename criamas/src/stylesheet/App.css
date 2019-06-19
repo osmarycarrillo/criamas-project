@@ -270,9 +270,15 @@
 }
 .services .container-serv {
   display: flex;
+  padding-bottom: 50px;
 }
 .services .container-serv .form {
   width: 50%;
+}
+.services .container-serv .form .buttonTrans {
+  width: 300px;
+  border-radius: 10%;
+  border: 2px solid gray;
 }
 .services .container-serv .form .form-style {
   width: 400px;
@@ -280,7 +286,16 @@
   font-family: "Poppins", sans-serif;
   border: none;
   margin: auto;
+  display: flex;
   border-bottom: black solid 2px;
+}
+.services .container-serv .form .form-style .div-p {
+  text-align: initial;
+  width: 85%;
+}
+.services .container-serv .form .form-style .div-button {
+  width: 10%;
+  padding-top: 10px;
 }
 .services .container-serv .form .form-style .button-form {
   width: 30px;
@@ -288,6 +303,9 @@
   background-color: #EFD0D1;
   border-radius: 50%;
   border: 2px solid black;
+}
+.services .container-serv .form .form-style .button-form .select-form {
+  display: none;
 }
 .services .container-serv .form .form-style .message {
   height: 400px;
@@ -306,6 +324,20 @@
 .services .container-serv .travels .div-trav {
   width: 400px;
   border-bottom: 2px solid gray;
+}
+
+.contact {
+  padding-top: 40px;
+  text-align: center;
+}
+.contact .data-div {
+  text-align: center;
+  display: inline-flex;
+}
+.contact .data-div .vertical-line {
+  color: gray;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .comments {

@@ -274,6 +274,9 @@ $color_light_pink: #EFD0D1;
 
 
 //componente traslado
+//tamaño de letra
+//por que toma distintos colores en la pagina
+//por que el cuadro de mensaje no es tan largo
 .services {
     margin: 0%;
     padding: 0%;
@@ -293,21 +296,40 @@ $color_light_pink: #EFD0D1;
     }
     .container-serv {
       display: flex;
+      padding-bottom: 50px;
       .form {
         width: 50%;
+              /////////////////////////no me toma los estilos del boton
+        .buttonTrans {
+          width: 300px;
+          border-radius: 10%;
+          border: 2px solid gray;
+        }
         .form-style {
           width: 400px;
           height: 50px;
           font-family: "Poppins", sans-serif;
           border: none;
           margin: auto;
+          display: flex;
           border-bottom: black solid 2px;
+          .div-p {
+            text-align: initial;
+            width: 85%;
+          }
+          .div-button {
+            width: 10%;
+            padding-top: 10px;
+          }
           .button-form {
             width: 30px;
             height: 30px;
             background-color: $color_light_pink;
             border-radius: 50%;
             border: 2px solid black;
+            .select-form {
+              display: none;
+            }
           }
           .message {
             height: 400px;
@@ -333,6 +355,21 @@ $color_light_pink: #EFD0D1;
       }
     }
    }
+
+//componente contact de transfer
+.contact {
+  padding-top: 40px;
+  text-align: center;
+  .data-div {
+    text-align: center;
+    display: inline-flex;
+    .vertical-line {
+      color: gray;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
+}
    
    //home, comentario
    .comments {
