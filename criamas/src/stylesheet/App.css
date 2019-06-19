@@ -92,18 +92,19 @@
   justify-content: space-between;
   margin-left: 0.625rem; }
   .container_buttons .box_buttons .signin {
-    background-color: #ffffff;
+    background-color: white;
     color: #ea1e52;
     font-family: "Poppins", sans-serif;
     border: none;
     border-radius: 1.25rem;
     font-size: 0.75rem;
+    text-decoration: none;
+    transition: all 0.7s ease-in-out 0s;
     height: 2.3125rem;
-    padding: 0rem 1.125rem;
-    text-decoration: none; }
+    padding: 0rem 1.125rem; }
     .container_buttons .box_buttons .signin:hover {
       background-color: #ea1e52;
-      color: #ffffff;
+      color: white;
       transition: all 0.7s ease-in-out 0s; }
   .container_buttons .box_buttons .login {
     font-family: "Poppins", sans-serif;
@@ -113,12 +114,13 @@
     color: #ea1e52;
     font-size: 0.75rem;
     border: 0.0625rem solid #ea1e52;
+    text-decoration: none;
+    transition: all 0.7s ease-in-out 0s;
     padding: 0rem 1.125rem;
-    height: 2.3125rem;
-    text-decoration: none; }
+    height: 2.3125rem; }
     .container_buttons .box_buttons .login:hover {
       background-color: #ea1e52;
-      color: #ffffff;
+      color: white;
       transition: all 0.7s ease-in-out 0s; }
 
 .App .box_slide {
@@ -129,32 +131,89 @@
   background-color: #EFD0D1; }
   .App .box_slide .box-center {
     width: 80%;
-    margin: auto; }
+    margin: auto;
+    height: 100vh;
+    position: relative; }
 
 .box-center .slider-content {
   width: 100%;
   display: flex;
-  position: relative;
+  height: 100vh;
   align-items: center; }
   .box-center .slider-content .inner {
-    width: 30%;
+    width: 32%;
     font-family: 'Poppins', sans-serif; }
-    .box-center .slider-content .inner .subtitle {
-      color: #ea1e52; }
-  .box-center .slider-content .image-slide {
-    width: 70%; }
-    .box-center .slider-content .image-slide .image_dog {
-      width: 100%;
-      height: auto; }
 
-.box-center .counter {
+.inner .subtitle {
+  color: #ea1e52;
+  font-weight: 400;
+  margin: 0px;
+  font-size: 19px; }
+.inner p {
+  margin: 0px;
+  font-size: 26px;
+  font-weight: 500; }
+.inner .span-raza {
+  font-weight: 500;
+  font-size: 17px; }
+.inner .raza-type {
+  font-weight: 400;
+  font-style: italic;
+  margin-left: 0.5rem;
+  font-size: 17px; }
+.inner .shop {
+  background-color: #ea1e52;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 1.25rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.7s ease-in-out 0s;
+  height: 2.3125rem;
+  padding: 0rem 1.325rem;
+  margin-top: 1rem; }
+  .inner .shop:hover {
+    background-color: white;
+    color: #ea1e52;
+    transition: all 0.7s ease-in-out 0s; }
+
+.box-center .slider-content .image-slide {
+  width: 68%;
+  height: 100vh; }
+  .box-center .slider-content .image-slide .image_dog {
+    width: 100%;
+    height: auto; }
+
+.counter {
   position: absolute;
   width: 10%;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -3.5rem;
   text-align: center; }
-  .box-center .counter .fa-circle {
-    font-size: 12px;
-    color: #282828;
-    margin: 2px; }
+  .counter .button_prev_slide {
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 25px;
+    outline-color: transparent; }
+    .counter .button_prev_slide .fa-angle-left {
+      font-size: 12px;
+      color: white;
+      margin: 2px; }
+  .counter .button_next_slide {
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 25px;
+    outline-color: none;
+    margin-left: 4px;
+    outline-color: transparent; }
+    .counter .button_next_slide .fa-angle-right {
+      font-size: 12px;
+      color: white;
+      margin: 2px; }
 
 .heart {
   color: #ea1e52; }

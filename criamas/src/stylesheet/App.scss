@@ -9,9 +9,49 @@
   font-family: "Maven Pro", sans-serif;
   src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
 }
+
+//variables de color
 $color_dark_type: #282828;
 $color_pink: #ea1e52;
 $color_light_pink: #EFD0D1;
+
+
+//mixin tipos de boton, tenemos 2 tipos: sólidos con color de fondo y bordeados y transparentes
+@mixin style_button_solid($background, $typeColor, $sizeType, $backgroundHover, $typeColorHover){
+  background-color: $background;
+  color: $typeColor;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 1.25rem;
+  font-size: $sizeType;
+  text-decoration: none;
+  transition: all 0.7s ease-in-out 0s;
+  &:hover{
+    background-color: $backgroundHover;
+    color: $typeColorHover;
+    transition: all 0.7s ease-in-out 0s;
+  }
+  
+}
+
+@mixin style_button_border($typeBorder, $typeColor, $sizeType, $backgroundHover, $typeColorHover ) {
+  font-family: "Poppins", sans-serif;
+  border-radius: 1.25rem;
+  background-color: transparent;
+  padding: 0.5rem 0.9375rem;
+  color: $typeColor;
+  font-size: $sizeType;
+  border: $typeBorder;
+  text-decoration: none;
+  transition: all 0.7s ease-in-out 0s;
+  &:hover{
+    background-color: $backgroundHover;
+    color: $typeColorHover;
+    transition: all 0.7s ease-in-out 0s;
+  }
+}
+
+
 //Estilo componente transfers
 .App {
   font-family: "Poppins", sans-serif;
@@ -119,39 +159,14 @@ $color_light_pink: #EFD0D1;
     justify-content: space-between;
     margin-left: 0.625rem;
     .signin {
-      background-color: #ffffff;
-      color: $color_pink;
-      font-family: "Poppins", sans-serif;
-      border: none;
-      border-radius: 1.25rem;
-      font-size: 0.75rem;
+      @include style_button_solid(white, $color_pink, 0.75rem, $color_pink, white);     
       height: 2.3125rem;
       padding: 0rem 1.125rem;
-      text-decoration: none;
-      
-      &:hover{
-        background-color: $color_pink;
-        color: #ffffff;
-        transition: all 0.7s ease-in-out 0s;
-      }
-      
     }
     .login {
-      font-family: "Poppins", sans-serif;
-      border-radius: 1.25rem;
-      background-color: transparent;
-      padding: 0.5rem 0.9375rem;
-      color: $color_pink;
-      font-size: 0.75rem;
-      border: 0.0625rem solid $color_pink;
+      @include style_button_border( 0.0625rem solid $color_pink, $color_pink, 0.75rem, $color_pink, white);
       padding: 0rem 1.125rem;
       height: 2.3125rem;
-      text-decoration: none;
-      &:hover{
-        background-color: $color_pink;
-        color: #ffffff;
-        transition: all 0.7s ease-in-out 0s;
-      }
     }
   }
 }
@@ -166,6 +181,8 @@ $color_light_pink: #EFD0D1;
     .box-center{
        width: 80%;
        margin: auto;
+       height: 100vh;
+       position: relative;
       
     }
   }
@@ -175,17 +192,50 @@ $color_light_pink: #EFD0D1;
   .slider-content{
     width: 100%;
     display: flex;
-    position: relative;
+    height: 100vh;
     align-items: center;
     .inner{
-      width: 30%;
-      font-family: 'Poppins', sans-serif;
-      .subtitle{
-        color: $color_pink;
-      }
+      width: 32%;
+      font-family: 'Poppins', sans-serif;      
     }
+  }
+}
+
+.inner{
+  .subtitle{
+    color: $color_pink;
+    font-weight: 400;
+    margin: 0px;
+    font-size: 19px;
+  }
+  p{
+    margin:0px;
+    font-size: 26px;
+    font-weight: 500;
+  }
+  .span-raza{
+    font-weight: 500;
+    font-size: 17px;
+  }
+  .raza-type{
+    font-weight: 400;
+    font-style:italic;
+    margin-left: 0.5rem;
+    font-size: 17px;
+  }
+  .shop{
+    @include style_button_solid($color_pink, white, 0.95rem, white, $color_pink);
+    height: 2.3125rem;
+    padding: 0rem 1.325rem;
+    margin-top: 1rem;
+  }  
+}
+
+.box-center{
+  .slider-content{
     .image-slide{
-      width: 70%;
+      width: 68%;
+      height: 100vh;
       .image_dog{
         width: 100%;
         height: auto;
@@ -195,21 +245,48 @@ $color_light_pink: #EFD0D1;
 }
 
 
-.box-center{
-  .counter{
-    position: absolute;
-    width: 10%;
-    text-align: center;
-    .fa-circle{
+.counter{
+  position: absolute;
+  width: 10%;
+  bottom:5%;
+  left: 50%;
+  margin-left: -3.5rem;
+  text-align: center;
+  .button_prev_slide {
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius:50%;
+    height: 25px;
+    outline-color: transparent;
+    .fa-angle-left{
       font-size: 12px;
-      color: #282828;
+      color: white;
       margin: 2px;
+
     }
   }
+  .button_next_slide{
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius:50%;
+    height: 25px;
+    outline-color: none;
+    margin-left: 4px;
+    outline-color: transparent;
+    .fa-angle-right{
+      font-size: 12px;
+      color: white;
+      margin: 2px;  
+    } 
+  }
+     
 }
+
+
 .heart {
   color: #ea1e52;
 }
+
 //estilo componente somos
 .somos{
   .textsomos{
