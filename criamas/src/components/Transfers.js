@@ -30,6 +30,7 @@ class Transfers extends Component {
                     <p className="">  <i className="fab fa-gratipay heart"></i>Hotel de animales</p>
                     <p className="">  <i className="fab fa-gratipay heart"></i>Teléfono 24 hrs. para emergencias</p>
                     <p className="">  <i className="fab fa-gratipay heart"></i>Servicio VIP</p>
+
                     </div>
                     <p>Todos nuestros servicios están orientados a conseguir el máximo bienestar y trato respetuoso y amoroso  durante su transporte, desde la recogida en origen hasta la entrega en destino (según servicio).  También podemos ofrecer de un servicio de hoteles para animales, con alojamientos específicos, con control de temperatura según sus necesidades, utilizables en aquellos casos en los que sea necesario efectuar un tránsito o pasar una noche.</p>
                 </div>

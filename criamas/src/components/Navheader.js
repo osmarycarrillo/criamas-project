@@ -20,7 +20,7 @@ class Navheader extends React.Component {
               <Link to="/" className="link_url">Home</Link>
             </li>
             <li>
-              <Link to="" className="link_url">Nosotros</Link>
+              <Link to="/" className="link_url">Nosotros</Link>
             </li>
             <li>
               <Link to="/cachorros" className="link_url">Cachorros</Link>
