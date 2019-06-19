@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './Button';
 
 class Form extends React.Component {
     render() {
@@ -29,8 +30,7 @@ class Form extends React.Component {
                     </p>
                     <input className="form-style message" type="text" value="Mensaje"></input>
                 </form>
-                {/* <Button></Button> */}
-                
+                <Button name="Enviar"/>      
             </div>
         )
     }
