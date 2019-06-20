@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
@@ -9,36 +10,52 @@
   font-family: "Maven Pro", sans-serif;
   src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
 }
-.App {
-  font-family: "Poppins", sans-serif;
-}
-.App .translates {
+.box-static {
   display: flex;
-  border-top: 3.125rem;
   padding: 10%;
   background: #EFD0D1;
   position: relative;
   width: 100%;
   height: 100%;
 }
-.App .translates .cont-trans {
+.box-static .cont-trans {
   display: flex;
   justify-content: center;
   margin: auto;
 }
-.App .translates .cont-trans .box-p .red-trans {
-  flex-direction: row;
-  justify-content: flex-start;
-  font-family: "Poppins", sans-serif;
-  color: #ea1e52;
-}
-.App .translates .cont-trans .box-p .tinfo {
+
+.tinfo {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: larger;
 }
-.App .translates .cont-trans .dogt {
+
+.dog {
+  border: #282828 solid 1px;
+}
+
+.red-trans {
   font-family: "Poppins", sans-serif;
+  color: #ea1e52;
+  font-size: 17px;
+}
+
+.box-tras {
+  text-align: center;
+  font-family: "Maven Pro", sans-serif;
+}
+
+.viñetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.viñetas .left {
+  text-align: start;
+}
+.viñetas .rigth {
+  text-align: start;
+  margin-left: 8%;
 }
 
 .App .box_nav {
@@ -190,6 +207,7 @@
 }
 
 .heart {
+  margin-right: 10px;
   color: #ea1e52;
 }
 

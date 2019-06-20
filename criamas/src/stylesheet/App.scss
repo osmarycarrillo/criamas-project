@@ -13,11 +13,11 @@ $color_dark_type: #282828;
 $color_pink: #ea1e52;
 $color_light_pink: #EFD0D1;
 //Estilo componente transfers
-.App {
-  font-family: "Poppins", sans-serif;
-  .translates {
+/// porque esta el estilo metido en app?
+
+  .box-static {
     display: flex;
-    border-top: 3.125rem;
+    // border-top: 3.125rem;
     padding: 10%;
     background: #EFD0D1;
     position: relative;
@@ -26,26 +26,41 @@ $color_light_pink: #EFD0D1;
     .cont-trans {
       display: flex;
       justify-content: center;
-      margin: auto;
-      .box-p {
-        .red-trans {
-          flex-direction: row;
-          justify-content: flex-start;
-          font-family: "Poppins", sans-serif;
-          color: #ea1e52;
-        }
-        .tinfo {
-          font-family: "Poppins", sans-serif;
-          font-weight: bold;
-          font-size: larger;
-        }
-      }
-      .dogt {
-        font-family: "Poppins", sans-serif;
-      }
+      margin: auto;    
     }
   }
+
+.tinfo {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: larger;
 }
+.dog {
+  border: #282828 solid 1px;
+       }
+.red-trans {
+  font-family: "Poppins", sans-serif;
+  color: #ea1e52;
+  font-size: 17px;
+}
+.box-tras{
+  text-align: center;
+  font-family: "Maven Pro", sans-serif;
+}
+.viñetas{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  
+  .left{
+text-align: start;
+  }
+  .rigth{
+    text-align: start;
+    margin-left: 8%; 
+  }
+}
+
 //estilos componente nav, by MV
 .App {
   
@@ -208,6 +223,7 @@ $color_light_pink: #EFD0D1;
   }
 }
 .heart {
+  margin-right: 10px;
   color: #ea1e52;
 }
 //estilo componente somos

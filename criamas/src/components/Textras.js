@@ -5,14 +5,18 @@ class Textras extends Component {
 
     render() {
         return (
-            <div className="box-p">
-                <p className="red-trans"> Bienvenido a Traslados</p>
-                <p className="tinfo">Aquí encontrará información <br/>sobre nuestro servicio</p>
-                <p>Ante cualquier duda, podemos ayudarte.</p>
-                <div className="dogt"> <img src="" alt="perro imagen para traslados"></img> </div>
-                <div className="square"></div>
-                <p className="heart">  <i class="fab fa-gratipay"></i></p>
-            </div>
+           <div className="box-static">
+               <div className="cont-trans">
+                    <div className="box-p">
+                        <p className="red-trans"> Bienvenido a Traslados</p>
+                        <p className="tinfo">Aquí encontrará información <br />sobre nuestro servicio</p>
+                        <p>Ante cualquier duda, podemos ayudarte.</p>
+                    </div>
+                    <div className="dog"> <img src="" alt="perro imagen para traslados"></img> </div>
+
+                </div>
+               
+           </div>
         )
     }
 }
