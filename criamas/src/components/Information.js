@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import img_logo from '../stylesheet/img_svg/logo_criamas.svg';
+import img_logo from '../img_svg/logo_criamas-01.svg';
 
 class Information extends Component {
   render() {

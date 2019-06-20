@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Bslider from './Bslider';
+import Oferta from './Oferta';
 import '../stylesheet/App.css';
 import Comments from './Comments';
 import Somos from './Somos';
@@ -13,6 +14,7 @@ class Home extends Component {
     return (
       <div>
         <Bslider></Bslider>
+        <Oferta></Oferta>
         <Somos></Somos>
         <Comments></Comments>
         <ContactHome></ContactHome>

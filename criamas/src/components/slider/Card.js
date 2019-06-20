@@ -6,7 +6,7 @@ const Card = ({property}) => {
 	const {id, description, button, image, raza} = property;
 	return (
 		<div className="box-center">
-			<div  id={`card-${id}`} className="slider-content">
+			<div id={`card-${id}`} className="slider-content">
 				<div className="inner">
 				    <h4 className="subtitle">Bienvenido a <b>Criamás</b></h4>
 					<p>{description}</p>

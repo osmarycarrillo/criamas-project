@@ -10,7 +10,6 @@ class Bslider extends Component {
     this.state = {
       property: Data.banners[0]
     }
-    console.log(this.state.property)
 
   }
 
@@ -35,11 +34,11 @@ class Bslider extends Component {
       <div className="box_slide">
         <Card property={property}/>
         <div className="counter">
-          <button className="button_prev_slide" onClick={() => this.nextProperty()} disabled={property.id === Data.banners.length-1}>
-            <i className="fas fa-angle-left"></i> 
+          <button className={property.id === 0 ? "button-disable" : "button_slide"} onClick={() => this.prevProperty()} disabled={property.id === 0}>
+            <i className="fas fa-angle-left"></i>
           </button>
-          <button className="button_next_slide" onClick={() => this.prevProperty()} disabled={property.id === 0}>
-            <i className="fas fa-angle-right"></i>
+          <button className={property.id === Data.banners.length-1 ? "button-disable" : "button_slide"} onClick={() => this.nextProperty()} disabled={property.id === Data.banners.length-1} >
+            <i className="fas fa-angle-right"></i> 
           </button>
         </div>
       </div>
