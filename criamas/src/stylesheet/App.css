@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
@@ -7,31 +8,44 @@
 @font-face {
   font-family: "Maven Pro", sans-serif;
   src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"); }
-.App {
-  font-family: "Poppins", sans-serif; }
-  .App .translates {
+.box-static {
+  display: flex;
+  padding: 10%;
+  background: #EFD0D1;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .box-static .cont-trans {
     display: flex;
-    border-top: 3.125rem;
-    padding: 10%;
-    background: #EFD0D1;
-    position: relative;
-    width: 100%;
-    height: 100%; }
-    .App .translates .cont-trans {
-      display: flex;
-      justify-content: center;
-      margin: auto; }
-      .App .translates .cont-trans .box-p .red-trans {
-        flex-direction: row;
-        justify-content: flex-start;
-        font-family: "Poppins", sans-serif;
-        color: #ea1e52; }
-      .App .translates .cont-trans .box-p .tinfo {
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        font-size: larger; }
-      .App .translates .cont-trans .dogt {
-        font-family: "Poppins", sans-serif; }
+    justify-content: center;
+    margin: auto; }
+
+.tinfo {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: larger; }
+
+.dog {
+  border: #282828 solid 1px; }
+
+.red-trans {
+  font-family: "Poppins", sans-serif;
+  color: #ea1e52;
+  font-size: 17px; }
+
+.box-tras {
+  text-align: center;
+  font-family: "Maven Pro", sans-serif; }
+
+.viñetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .viñetas .left {
+    text-align: start; }
+  .viñetas .rigth {
+    text-align: start;
+    margin-left: 8%; }
 
 .App .box_nav {
   width: 100%;
@@ -219,6 +233,7 @@
     margin-right: 5px; }
 
 .heart {
+  margin-right: 10px;
   color: #ea1e52; }
 
 .somos .textsomos {
@@ -288,35 +303,68 @@
     width: 500px;
     border-bottom: 2px solid gray; }
   .services .container-serv {
-    display: flex; }
+    display: flex;
+    padding-bottom: 50px; }
     .services .container-serv .form {
       width: 50%; }
+      .services .container-serv .form .buttonTrans {
+        width: 300px;
+        border-radius: 10%;
+        border: 2px solid gray; }
       .services .container-serv .form .form-style {
         width: 400px;
         height: 50px;
         font-family: "Poppins", sans-serif;
         border: none;
         margin: auto;
+        display: flex;
         border-bottom: black solid 2px; }
+        .services .container-serv .form .form-style .div-p {
+          text-align: initial;
+          width: 85%; }
+        .services .container-serv .form .form-style .div-button {
+          width: 10%;
+          padding-top: 10px; }
         .services .container-serv .form .form-style .button-form {
           width: 30px;
           height: 30px;
           background-color: #EFD0D1;
           border-radius: 50%;
           border: 2px solid black; }
+          .services .container-serv .form .form-style .button-form .select-form {
+            display: none; }
         .services .container-serv .form .form-style .message {
           height: 400px; }
-    .services .container-serv .travels {
+  .services .travels {
+    width: 50%;
+    text-align: left; }
+    .services .travels h3 {
+      text-transform: uppercase; }
+    .services .travels .title-trav {
+      width: 400px;
+      border-bottom: 2px solid black; }
+    .services .travels .travels {
       width: 50%;
       text-align: left; }
-      .services .container-serv .travels h3 {
+      .services .travels .travels h3 {
         text-transform: uppercase; }
-      .services .container-serv .travels .title-trav {
+      .services .travels .travels .title-trav {
         width: 400px;
         border-bottom: 2px solid black; }
-      .services .container-serv .travels .div-trav {
+      .services .travels .travels .div-trav {
         width: 400px;
         border-bottom: 2px solid gray; }
+
+.contact {
+  padding-top: 40px;
+  text-align: center; }
+  .contact .data-div {
+    text-align: center;
+    display: inline-flex; }
+    .contact .data-div .vertical-line {
+      color: gray;
+      padding-left: 30px;
+      padding-right: 30px; }
 
 .comments {
   height: 350px;

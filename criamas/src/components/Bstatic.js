@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Textras from './Textras';
+// import Textras from './Textras';
 
 class Bstatic extends Component {
 
@@ -13,11 +14,8 @@ class Bstatic extends Component {
     render() {
         return (
             <div className="translates" >
-                <div className="cont-trans">
-                    START BSTATIC
-                    <Textras />
-                    END BSTATIC
-                </div>
+            <Textras></Textras>
+                
             </div>
         )
     }
