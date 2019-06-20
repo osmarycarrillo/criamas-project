@@ -3,21 +3,21 @@ import React, { Component } from 'react';
 import ServiceRequest from './ServiceRequest';
 import Contact from './Contact';
 import Textras from './Textras';
+import Information from './Information';
+import Footer from './Footer';
 
 class Transfers extends Component {
-
     render() {
         return (
             <div>
                 <Textras></Textras>
                 <div className="box-tras">
                     <p className="bold">NUESTRO SERVICIO DE TRASLADO</p>
-                    <p className= "bold">- La tranquilidad de viajar seguro y confiado de que tu mejor amigo esta en buenas manos -</p>
+                    <p className="bold">- La tranquilidad de viajar seguro y confiado de que tu mejor amigo esta en buenas manos -</p>
                     <p>-</p>
                     <p> Lo que nos diferencia es el <span className="red-trans">Trato personalizado:</span> </p>
                     <p> <span className="bold">Criamas</span> realiza TODA la gestión: desde el primer contacto hasta la entrega de tu cachorro a la compañía aérea, <br />
                         incluyendo las inspecciones sanitarias, el despacho de aduanas y todos los servicios requeridos por nuestros clientes.</p>
-
                     <div className="viñetas">
                         <div className="left">
                             <p className="">  <i className="fab fa-gratipay heart"></i>Transporte de animales vivos</p>
@@ -35,7 +35,6 @@ class Transfers extends Component {
                             <p className="">  <i className="fab fa-gratipay heart"></i>Servicio VIP</p>
 
                         </div>
-
                     </div>
                     <p>Todos nuestros servicios están orientados a conseguir el máximo bienestar y trato respetuoso y amoroso <br />
                         durante su transporte, desde la recogida en origen hasta la entrega en destino (según servicio). <br />
@@ -43,9 +42,12 @@ class Transfers extends Component {
                             de temperatura según sus necesidades</span>, utilizables en aquellos casos en los que sea necesario efectuar <br />
                         un tránsito o pasar una noche.</p>
                 </div>
-
                 <ServiceRequest></ServiceRequest>
                 <Contact></Contact>
+                <ServiceRequest />
+                <Contact />
+                <Information />
+                <Footer />
             </div>
         )
     }

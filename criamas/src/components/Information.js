@@ -58,11 +58,11 @@ class Information extends Component {
           </div>
           <div>
               <h3>Seguinos en Instagram</h3>
+              {/* <img>dsafds</img>
               <img>dsafds</img>
               <img>dsafds</img>
               <img>dsafds</img>
-              <img>dsafds</img>
-              <img>dsafds</img>
+              <img>dsafds</img> */}
           </div>
       </div>
     );

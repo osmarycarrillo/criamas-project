@@ -13,6 +13,7 @@ class ServiceRequest extends React.Component {
                     <Form></Form>
                     <Travels></Travels>
                 </div>
+                <p className="line-form"></p>
             </div>
         )
     }
