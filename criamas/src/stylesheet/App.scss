@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
 @import url("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
+
 @font-face {
-  font-family: "Poppins", sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap");
+    font-family: "Poppins", sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap");
 }
+
 @font-face {
-  font-family: "Maven Pro", sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
+    font-family: "Maven Pro", sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
 }
 
 //variables de color
@@ -16,338 +18,403 @@ $color_pink: #ea1e52;
 $color_light_pink: #EFD0D1;
 
 
+
 //mixin tipos de boton, tenemos 2 tipos: sólidos con color de fondo y bordeados y transparentes
-@mixin style_button_solid($background, $typeColor, $sizeType, $backgroundHover, $typeColorHover){
-  background-color: $background;
-  color: $typeColor;
-  font-family: "Poppins", sans-serif;
-  border: none;
-  border-radius: 1.25rem;
-  font-size: $sizeType;
-  text-decoration: none;
-  transition: all 0.7s ease-in-out 0s;
-  &:hover{
-    background-color: $backgroundHover;
-    color: $typeColorHover;
+@mixin style_button_solid($background, $typeColor, $sizeType, $backgroundHover, $typeColorHover) {
+    background-color: $background;
+    color: $typeColor;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 1.25rem;
+    font-size: $sizeType;
+    text-decoration: none;
     transition: all 0.7s ease-in-out 0s;
-  }
-  
+
+    &:hover {
+        background-color: $backgroundHover;
+        color: $typeColorHover;
+        transition: all 0.7s ease-in-out 0s;
+    }
+
 }
 
-@mixin style_button_border($typeBorder, $typeColor, $sizeType, $backgroundHover, $typeColorHover ) {
-  font-family: "Poppins", sans-serif;
-  border-radius: 1.25rem;
-  background-color: transparent;
-  padding: 0.5rem 0.9375rem;
-  color: $typeColor;
-  font-size: $sizeType;
-  border: $typeBorder;
-  text-decoration: none;
-  transition: all 0.7s ease-in-out 0s;
-  &:hover{
-    background-color: $backgroundHover;
-    color: $typeColorHover;
+@mixin style_button_border($typeBorder, $typeColor, $sizeType, $backgroundHover, $typeColorHover) {
+    font-family: "Poppins", sans-serif;
+    border-radius: 1.25rem;
+    background-color: transparent;
+    padding: 0.5rem 0.9375rem;
+    color: $typeColor;
+    font-size: $sizeType;
+    border: $typeBorder;
+    text-decoration: none;
     transition: all 0.7s ease-in-out 0s;
-  }
+
+    &:hover {
+        background-color: $backgroundHover;
+        color: $typeColorHover;
+        transition: all 0.7s ease-in-out 0s;
+    }
 }
 
 
 //Estilo componente transfers
 .App {
-  font-family: "Poppins", sans-serif;
-  .translates {
-    display: flex;
-    border-top: 3.125rem;
-    padding: 10%;
-    background: #EFD0D1;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    .cont-trans {
-      display: flex;
-      justify-content: center;
-      margin: auto;
-      .box-p {
-        .red-trans {
-          flex-direction: row;
-          justify-content: flex-start;
-          font-family: "Poppins", sans-serif;
-          color: #ea1e52;
+    font-family: "Poppins", sans-serif;
+
+    .translates {
+        display: flex;
+        border-top: 3.125rem;
+        padding: 10%;
+        background: #EFD0D1;
+        position: relative;
+        width: 100%;
+        height: 100%;
+
+        .cont-trans {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+
+            .box-p {
+                .red-trans {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    font-family: "Poppins", sans-serif;
+                    color: #ea1e52;
+                }
+
+                .tinfo {
+                    font-family: "Poppins", sans-serif;
+                    font-weight: bold;
+                    font-size: larger;
+                }
+            }
+
+            .dogt {
+                font-family: "Poppins", sans-serif;
+            }
         }
-        .tinfo {
-          font-family: "Poppins", sans-serif;
-          font-weight: bold;
-          font-size: larger;
-        }
-      }
-      .dogt {
-        font-family: "Poppins", sans-serif;
-      }
     }
-  }
 }
+
+
 //estilos componente nav, by MV
 .App {
-  
-  .box_nav {
-    width: 100%;
-    position: fixed;
-    z-index: 2;
-    .nav_menu {
-      width: 80%;
-      height: 5.2rem;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      .logo_container {
-        width: 16%;
-        height: auto;
-        .logo {
-          width: 90%;
-          height: auto;
-        }
-      }
-    }
-  }
-}
-.container_buttons {
-  width: 80%;
-  display: flex;
-  align-items: center;
-  .menu_row {
-    display: flex;
-    justify-content: space-around;
-    font-size: 0.8125rem;
-    width: 75%;
-    margin: 0rem;
-    padding: 0rem;
-    li {
-      list-style: none;
-      position: relative;
-      .link_url {
-        text-decoration: none;
-        color: $color_dark_type;
-        &::after {
-          content: '';
-          transition: transform 0.25s ease-out;
-          background-color: $color_dark_type;
-          width: 95%;
-          transform: scaleX(0);
-          height: 0.0875rem;
-          bottom: -0.775rem;
-          left: 0;
-          position: absolute;
-          transform-origin: bottom left;
-        }
-        &:hover::after {
-          transform: scaleX(1);
-          transform-origin: botom left;
-        }
-        &:focus::after {
-          transform: scaleX(1);
-          transform-origin: botom left;
-        }
-      }
-    }
-  }
-}
-.container_buttons {
-  .box_buttons {
-    width: 25%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-left: 0.625rem;
-    .signin {
-      @include style_button_solid(white, $color_pink, 0.75rem, $color_pink, white);     
-      height: 2.3125rem;
-      padding: 0rem 1.125rem;
-    }
-    .login {
-      @include style_button_border( 0.0625rem solid $color_pink, $color_pink, 0.75rem, $color_pink, white);
-      padding: 0rem 1.125rem;
-      height: 2.3125rem;
-    }
-  }
-}
-//estilos del componente slide 
-.App {
-  .box_slide {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    z-index: 1;
-    background-color: $color_light_pink;
-    .box-center{
-       width: 80%;
-       margin: auto;
-       height: 100vh;
-       position: relative;
-      
-    }
-  }
-}
 
-.box-center{
-  .slider-content{
-    width: 100%;
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    .inner{
-      width: 32%;
-      font-family: 'Poppins', sans-serif;      
-    }
-  }
-}
-
-.inner{
-  .subtitle{
-    color: $color_pink;
-    font-weight: 400;
-    margin: 0px;
-    font-size: 19px;
-  }
-  p{
-    margin:0px;
-    font-size: 26px;
-    font-weight: 500;
-  }
-  .span-raza{
-    font-weight: 500;
-    font-size: 17px;
-  }
-  .raza-type{
-    font-weight: 400;
-    font-style:italic;
-    margin-left: 0.5rem;
-    font-size: 17px;
-  }
-  .shop{
-    @include style_button_solid($color_pink, white, 0.95rem, white, $color_pink);
-    height: 2.3125rem;
-    padding: 0rem 1.325rem;
-    margin-top: 1rem;
-  }  
-}
-
-.box-center{
-  .slider-content{
-    .image-slide{
-      width: 68%;
-      height: 100vh;
-      .image_dog{
+    .box_nav {
         width: 100%;
-        height: auto;
-      }
+        position: fixed;
+        z-index: 2;
+
+        .nav_menu {
+            width: 80%;
+            height: 5.2rem;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+
+            .logo_container {
+                width: 16%;
+                height: auto;
+
+                .logo {
+                    width: 90%;
+                    height: auto;
+                }
+            }
+        }
     }
-  }
+}
+
+.container_buttons {
+    width: 80%;
+    display: flex;
+    align-items: center;
+
+    .menu_row {
+        display: flex;
+        justify-content: space-around;
+        font-size: 0.8125rem;
+        width: 75%;
+        margin: 0rem;
+        padding: 0rem;
+
+        li {
+            list-style: none;
+            position: relative;
+
+            .link_url {
+                text-decoration: none;
+                color: $color_dark_type;
+
+                &::after {
+                    content: '';
+                    transition: transform 0.25s ease-out;
+                    background-color: $color_dark_type;
+                    width: 95%;
+                    transform: scaleX(0);
+                    height: 0.0875rem;
+                    bottom: -0.775rem;
+                    left: 0;
+                    position: absolute;
+                    transform-origin: bottom left;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: botom left;
+                }
+
+                &:focus::after {
+                    transform: scaleX(1);
+                    transform-origin: botom left;
+                }
+            }
+        }
+    }
+}
+
+.container_buttons {
+    .box_buttons {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 0.625rem;
+
+        .signin {
+            @include style_button_solid(white, $color_pink, 0.75rem, $color_pink, white);
+            height: 2.3125rem;
+            padding: 0rem 1.125rem;
+        }
+
+        .login {
+            @include style_button_border(0.0625rem solid $color_pink, $color_pink, 0.75rem, $color_pink, white);
+            padding: 0rem 1.125rem;
+            height: 2.3125rem;
+        }
+    }
+}
+
+//componente HOME by MV
+//estilos del componente slide, perteneciente a vista Home 
+.App {
+    .box_slide {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        background-color: $color_light_pink;
+
+        .box-center {
+            width: 80%;
+            margin: auto;
+            height: 100vh;
+            position: relative;
+
+        }
+    }
+}
+
+.box-center {
+    .slider-content {
+        width: 100%;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        .inner {
+            width: 32%;
+            font-family: 'Poppins', sans-serif;
+
+        }
+    }
+}
+
+.inner {
+    .subtitle {
+        color: $color_pink;
+        font-weight: 400;
+        margin: 0px;
+        font-size: 19px;
+    }
+
+    p {
+        margin: 0px;
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+    .span-raza {
+        font-weight: 500;
+        font-size: 17px;
+    }
+
+    .raza-type {
+        font-weight: 400;
+        font-style: italic;
+        margin-left: 0.5rem;
+        font-size: 17px;
+    }
+
+    .shop {
+        @include style_button_solid($color_pink, white, 0.95rem, white, $color_pink);
+        height: 2.3125rem;
+        padding: 0rem 1.325rem;
+        margin-top: 1rem;
+    }
+}
+
+.box-center {
+    .slider-content {
+        .image-slide {
+            width: 68%;
+            height: 100vh;
+
+            .image_dog {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
 }
 
 
-.counter{
-  position: absolute;
-  width: 10%;
-  bottom:5%;
-  left: 50%;
-  margin-left: -3.5rem;
-  text-align: center;
-  .button_prev_slide {
-    border: 2px solid white;
-    background-color: transparent;
-    border-radius:50%;
-    height: 25px;
-    outline-color: transparent;
-    .fa-angle-left{
-      font-size: 12px;
-      color: white;
-      margin: 2px;
+.counter {
+    position: absolute;
+    width: 10%;
+    bottom: 5%;
+    left: 50%;
+    margin-left: -3.5rem;
+    text-align: center;
+
+    .button_slide {
+        border: 2px solid white;
+        background-color: transparent;
+        border-radius: 50%;
+        height: 25px;
+        width: 19%;
+        outline-color: transparent;
+        margin-right: 5px;
+        .fa-angle-left {
+            font-size: 12px;
+            color: white;
+            margin: 2px;
+
+        }
+        .fa-angle-right {
+            font-size: 12px;
+            color: white;
+            margin: 2px;
+        }
+    }
+
+    .button-disable{
+        border: 2px solid white;
+        background-color:white;
+        border-radius: 50%;
+        height: 25px;
+        width: 19%;
+        outline-color: transparent;
+        color: grey;
+        margin-right: 5px;
 
     }
-  }
-  .button_next_slide{
-    border: 2px solid white;
-    background-color: transparent;
-    border-radius:50%;
-    height: 25px;
-    outline-color: none;
-    margin-left: 4px;
-    outline-color: transparent;
-    .fa-angle-right{
-      font-size: 12px;
-      color: white;
-      margin: 2px;  
-    } 
-  }
-     
+
 }
+
+
 
 
 .heart {
-  color: #ea1e52;
+    color: #ea1e52;
 }
 
-//estilo componente somos
-.somos{
-  .textsomos{
-    text-align: center;
-    .why{
-      font-size: 25px; 
+//estilo componente somos, perteneciente a vista Home
+.somos {
+    .textsomos {
+        text-align: center;
+
+        .why {
+            font-size: 25px;
+        }
     }
-  }
-  .somos-box{
+
+    .somos-box {
+        width: 80%;
+        text-align: center;
+        display: flex;
+        margin: auto;
+
+        .somos-left {
+            width: 50%;
+            background: #fcb4b5;
+        }
+
+        .somos-rigth {
+            width: 50%;
+            background: #fed9be;
+        }
+
+        .icon {
+            margin-top: 12%;
+            font-size: 25px;
+        }
+    }
+
+    .gray {
+        color: #403843;
+
+    }
+
+    .line {
+        margin-left: 33%;
+        padding: 0%;
+        width: 200px;
+        border-bottom: 2px solid gray;
+    }
+}
+
+.img-somos {
     width: 80%;
     text-align: center;
-    display:flex;
-    margin: auto;
-    .somos-left{
-      width: 50%;
-      background:#fcb4b5;
-    }
-    .somos-rigth{
-      width: 50%;
-      background:#fed9be;
-    }
-    .icon{
-      margin-top: 12%;
-      font-size: 25px;
-    }
-  }
-.gray{
-  color: #403843;
-  
-}
-.line{
-  margin-left: 33%;
-  padding: 0%;
-   width: 200px;
-   border-bottom: 2px solid gray;
-}
-}
-.img-somos{
-  width: 80%;
-  text-align: center;
-  display:flex;
-  margin: auto;
-  border: #282828 solid 1px;
-}
-.bold{
-  font-weight:bold;
-}
-/// Estilado componente JoinUs
-
-.join{
-  
-  background:aquamarine;
-
-  .join-box{
     display: flex;
-    flex-direction: row;
-   justify-content:space-between;
-   margin: auto;
-    width: 80%;
-  }
+    margin: auto;
+    border: #282828 solid 1px;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+/// Estilado componente JoinUs, perteneciente a vista Home
+
+.join {
+
+    background: aquamarine;
+
+    .join-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        width: 80%;
+    }
+}
+
+// componente Oferta, perteneciente a vista Home
+.box_oferta{
+    background-color: #EA3968;
+    margin: 0px;
+    p{
+        margin:0px;
+    }
+}
+
+
+
+
+
+
 
 
 //componente traslado
@@ -358,155 +425,182 @@ $color_light_pink: #EFD0D1;
     text-align: center;
     font-family: "Poppins", sans-serif;
     background-color: $color_light_pink;
+
     .title-serv {
-      text-transform: uppercase;
+        text-transform: uppercase;
     }
+
     .line-form {
-      margin: 0%;
-      padding: 0%;
-      margin-left: 35%;
-      width: 500px;
-      border-bottom: 2px solid gray;
+        margin: 0%;
+        padding: 0%;
+        margin-left: 35%;
+        width: 500px;
+        border-bottom: 2px solid gray;
     }
+
     .container-serv {
-      display: flex;
-      .form {
-        width: 50%;
-        .form-style {
-          width: 400px;
-          height: 50px;
-          font-family: "Poppins", sans-serif;
-          border: none;
-          margin: auto;
-          border-bottom: black solid 2px;
-          .button-form {
-            width: 30px;
-            height: 30px;
-            background-color: $color_light_pink;
-            border-radius: 50%;
-            border: 2px solid black;
-          }
-          .message {
-            height: 400px;
-          }
+        display: flex;
+
+        .form {
+            width: 50%;
+
+            .form-style {
+                width: 400px;
+                height: 50px;
+                font-family: "Poppins", sans-serif;
+                border: none;
+                margin: auto;
+                border-bottom: black solid 2px;
+
+                .button-form {
+                    width: 30px;
+                    height: 30px;
+                    background-color: $color_light_pink;
+                    border-radius: 50%;
+                    border: 2px solid black;
+                }
+
+                .message {
+                    height: 400px;
+                }
+            }
+
         }
-   
-      }
-      //viajes
-      .travels {
-        width: 50%;
-        text-align: left;
-        h3 {
-          text-transform: uppercase;
+
+        //viajes
+        .travels {
+            width: 50%;
+            text-align: left;
+
+            h3 {
+                text-transform: uppercase;
+            }
+
+            .title-trav {
+                width: 400px;
+                border-bottom: 2px solid black;
+            }
+
+            .div-trav {
+                width: 400px;
+                border-bottom: 2px solid gray;
+            }
         }
-        .title-trav {
-          width: 400px;
-          border-bottom: 2px solid black;
-        }
-        .div-trav {
-          width: 400px;
-          border-bottom: 2px solid gray;
-        }
-      }
     }
-   }
-   
-   //home, comentario
-   .comments {
+}
+
+//home, comentario
+.comments {
     height: 350px;
     display: flex;
     font-family: "Poppins", sans-serif;
+
     i {
-      margin-left: 20%;
-      margin-right: 15%;
-      margin-top: 150px;
+        margin-left: 20%;
+        margin-right: 15%;
+        margin-top: 150px;
     }
+
     p {
-      padding: 20px;
+        padding: 20px;
     }
+
     .div-com {
-      margin-top: 70px;
-      text-align: center;
-      .join-club {
-        width: 130px;
-        height: 30px;
-        border-radius: 100px;
-        border: 2px solid gray;
-        font-family: "Poppins", sans-serif;
-      }
+        margin-top: 70px;
+        text-align: center;
+
+        .join-club {
+            width: 130px;
+            height: 30px;
+            border-radius: 100px;
+            border: 2px solid gray;
+            font-family: "Poppins", sans-serif;
+        }
     }
-   }
-   
-   //home, contacto
-   .contact-home {
+}
+
+//home, contacto
+.contact-home {
     font-family: "Poppins", sans-serif;
     text-align: center;
-    .div-con{
-      display: flex;
-      .form-contact {
-        margin-left: 10%;
-        width: 50%;
-        input {
-          width: 350px;
-          height: 50px;
-          font-family: "Poppins", sans-serif;
-          border: none;
-          margin: auto;
-          border-bottom: black solid 2px;
-          padding-bottom: 20px;
-        }
-        .input-msj {
-          height: 100px;
-        }
-        .button-con {
-          margin-top: 40px;
-          width: 100px;
-          height: 30px;
-          border-radius: 100px;
-          border: 2px solid gray;
-          font-family: "Poppins", sans-serif;
-        }
-      }
-      .data-contact {
-        width: 50%;
-        padding-right: 5%;
-        display: inline-block;
-        div {
-          margin: 0%;
-          padding: 0%;
-          width: 200px;
-          margin-right: 50px;
-          margin-bottom: 30px;
-          display: flex;
-          .div-ic {
-            margin: 0%;
-            padding: 0%;
-            width: 50px;
-            i {
-              width: 50px;
-              height: 50px;
-              padding: 5px;
+
+    .div-con {
+        display: flex;
+
+        .form-contact {
+            margin-left: 10%;
+            width: 50%;
+
+            input {
+                width: 350px;
+                height: 50px;
+                font-family: "Poppins", sans-serif;
+                border: none;
+                margin: auto;
+                border-bottom: black solid 2px;
+                padding-bottom: 20px;
             }
-          }
-          .div-dir {
-            margin: 0%;
-            padding: 0%;
-            display: block;
-            width: 150px;
-            text-align: left;
-            p {
-              margin: 0%;
-              padding: 0%;
+
+            .input-msj {
+                height: 100px;
             }
-            .line-con {
-              margin: 0%;
-              padding: 0%;
-              width: 100%;
-              border-bottom: 1px solid gray;
+
+            .button-con {
+                margin-top: 40px;
+                width: 100px;
+                height: 30px;
+                border-radius: 100px;
+                border: 2px solid gray;
+                font-family: "Poppins", sans-serif;
             }
-          }
         }
-      }
+
+        .data-contact {
+            width: 50%;
+            padding-right: 5%;
+            display: inline-block;
+
+            div {
+                margin: 0%;
+                padding: 0%;
+                width: 200px;
+                margin-right: 50px;
+                margin-bottom: 30px;
+                display: flex;
+
+                .div-ic {
+                    margin: 0%;
+                    padding: 0%;
+                    width: 50px;
+
+                    i {
+                        width: 50px;
+                        height: 50px;
+                        padding: 5px;
+                    }
+                }
+
+                .div-dir {
+                    margin: 0%;
+                    padding: 0%;
+                    display: block;
+                    width: 150px;
+                    text-align: left;
+
+                    p {
+                        margin: 0%;
+                        padding: 0%;
+                    }
+
+                    .line-con {
+                        margin: 0%;
+                        padding: 0%;
+                        width: 100%;
+                        border-bottom: 1px solid gray;
+                    }
+                }
+            }
+        }
     }
-   
-   }
+
+}
