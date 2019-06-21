@@ -661,7 +661,7 @@ text-align: start;
 .redes{
     width: 20%;
     height: 80%;
-    margin-top: 10%;
+    margin-top: 15%;
     position: fixed;
     z-index: 2;
     .box_redes{
@@ -670,17 +670,20 @@ text-align: start;
         height: 100vh;
         flex-direction: column;
         padding: 0.5rem;
-     
         .button_redes{
-            width: 5rem;
-            height: 5rem;
+            width: 3rem;
+            height: 3rem;
             border-radius:100%;
-            margin-top:2rem;
+            margin-top:1rem;
+        }
+        .fb{
+            background: #ea1e52;
+            color:white;
         }
         ///pendiente preguntar que efecto tendran en el hover
-        // .button_redes::hover{
-        //     opacity: 0.6;
-        // }
+        .button_redes::hover{
+            opacity: 0.6;
+        }
 
     }
     
@@ -688,8 +691,12 @@ text-align: start;
 
 // // en esta parte pretendi agrandar los iconos de las redes 
 // en los botones pero no pude
-//  .button_redes{
-//      .size{
-//         //  width: 200%;
+//  .box_redes{
+//     .button_redes{
+//         //  .size{
+//         //     //  width: 200%;
+//         //  }
+      
 //      }
+
 //  }

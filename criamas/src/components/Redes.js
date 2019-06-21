@@ -7,7 +7,7 @@ class Redes extends Component {
             // Pendiente agregar los link src de cada una de las redes
             <div className="redes">
                 <div className="box_redes">  
-                <button className="button_redes"><i class="fab fa-facebook-f heart size"></i></button>
+                <button className="button_redes fb"><i class="fab fa-facebook-f size"></i></button>
                 <button className="button_redes"><i class="fab fa-instagram size"></i></button>
                 <button className="button_redes"> <i class="fab fa-whatsapp size"></i></button>
                 </div>
