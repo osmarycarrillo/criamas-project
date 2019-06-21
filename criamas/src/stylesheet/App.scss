@@ -656,3 +656,40 @@ text-align: start;
         }
     }
 }
+
+// Estilo componente Redes by AM
+.redes{
+    width: 20%;
+    height: 80%;
+    margin-top: 10%;
+    position: fixed;
+    z-index: 2;
+    .box_redes{
+        display: flex;
+        width: 50%;
+        height: 100vh;
+        flex-direction: column;
+        padding: 0.5rem;
+     
+        .button_redes{
+            width: 5rem;
+            height: 5rem;
+            border-radius:100%;
+            margin-top:2rem;
+        }
+        ///pendiente preguntar que efecto tendran en el hover
+        // .button_redes::hover{
+        //     opacity: 0.6;
+        // }
+
+    }
+    
+}
+
+// // en esta parte pretendi agrandar los iconos de las redes 
+// en los botones pero no pude
+//  .button_redes{
+//      .size{
+//         //  width: 200%;
+//      }
+//  }
