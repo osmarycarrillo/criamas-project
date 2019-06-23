@@ -2,7 +2,7 @@ import React from 'react';
 // import { Link } from "react-router-dom";
 import '../stylesheet/App.css';
 
-const Button = props => {
+const Button = (props) => {
     
     return (
         <div>
