@@ -434,10 +434,10 @@ $color_light_blue: #CCD0D7;
 
 //estilo componente somos, perteneciente a vista Home
 .somos {
-    margin-top:3.5rem;
+    background-color: #FBF0E7;
     .textsomos {
         text-align: center;
-
+        padding-top: 3.2rem;
         .title_somos {
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
@@ -767,14 +767,75 @@ $color_light_blue: #CCD0D7;
 
 .join {
 
-    background: aquamarine;
-
+    background-color: #FCB4B4;
+    background-image: url('../img_svg/fondo-02-01.svg');
     .join-box {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
         margin: auto;
         width: 80%;
+        // padding-top: 2rem;
+        // padding-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        .dog-black{
+           width: 20%;
+           height: 11.39rem;
+           margin-right: 2rem;
+           img{
+               width:100%;
+               height: auto;
+           }
+        }
+        .content_text{
+            width:80%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-family: 'Poppins', sans-serif;
+            .box_phrase{
+                width: 23%;
+                color: $color_dark_type;
+                height: 4.5rem;
+                margin-right: 1.5rem;
+                .text_first{
+                    font-weight: 300;
+                    font-size: 1.5rem;
+                    margin:0px;
+                    height: 1.6rem;
+                }
+                .text_second{
+                    font-weight: 700;
+                    font-size: 1.8rem;
+                    margin:0px;
+                    height: 2rem;
+                }
+
+            }
+            .box_input{
+                width: 50%;
+                height: 2.3125rem;
+                .input_join{
+                    width: 95%;
+                    border: none;
+                    border-radius: 1rem;
+                    height: 2.3125rem;
+                    font-family: 'Maven Pro', sans-serif;
+                    font-size: 0.8rem;
+                    color:#5B5959;
+                    padding-left: 5%;
+                    outline:none;
+                }
+            }
+            .box-button-subscribe{
+               width: 20%;
+               text-align: right;
+               .button_subscribe{
+                  @include style_button_solid($color_dark_type, white, 0.9rem , $color_grey_lil , white);
+                  height: 2.3125rem;
+                  padding: 0rem 1.125rem;
+                  width: 80%;
+               }
+            }
+        }
     }
 }
 

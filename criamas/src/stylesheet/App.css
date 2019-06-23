@@ -292,9 +292,10 @@
     text-transform: uppercase; }
 
 .somos {
-  margin-top: 3.5rem; }
+  background-color: #FBF0E7; }
   .somos .textsomos {
-    text-align: center; }
+    text-align: center;
+    padding-top: 3.2rem; }
     .somos .textsomos .title_somos {
       font-family: 'Poppins', sans-serif;
       font-weight: 600;
@@ -540,13 +541,73 @@
   margin-top: 2rem; }
 
 .join {
-  background: aquamarine; }
+  background-color: #FCB4B4;
+  background-image: url("../img_svg/fondo-02-01.svg"); }
   .join .join-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     margin: auto;
-    width: 80%; }
+    width: 80%;
+    display: flex;
+    flex-direction: row; }
+    .join .join-box .dog-black {
+      width: 20%;
+      height: 11.39rem;
+      margin-right: 2rem; }
+      .join .join-box .dog-black img {
+        width: 100%;
+        height: auto; }
+    .join .join-box .content_text {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-family: 'Poppins', sans-serif; }
+      .join .join-box .content_text .box_phrase {
+        width: 23%;
+        color: #282828;
+        height: 4.5rem;
+        margin-right: 1.5rem; }
+        .join .join-box .content_text .box_phrase .text_first {
+          font-weight: 300;
+          font-size: 1.5rem;
+          margin: 0px;
+          height: 1.6rem; }
+        .join .join-box .content_text .box_phrase .text_second {
+          font-weight: 700;
+          font-size: 1.8rem;
+          margin: 0px;
+          height: 2rem; }
+      .join .join-box .content_text .box_input {
+        width: 50%;
+        height: 2.3125rem; }
+        .join .join-box .content_text .box_input .input_join {
+          width: 95%;
+          border: none;
+          border-radius: 1rem;
+          height: 2.3125rem;
+          font-family: 'Maven Pro', sans-serif;
+          font-size: 0.8rem;
+          color: #5B5959;
+          padding-left: 5%;
+          outline: none; }
+      .join .join-box .content_text .box-button-subscribe {
+        width: 20%;
+        text-align: right; }
+        .join .join-box .content_text .box-button-subscribe .button_subscribe {
+          background-color: #282828;
+          color: white;
+          font-family: "Poppins", sans-serif;
+          border: none;
+          border-radius: 1.25rem;
+          font-size: 0.9rem;
+          text-decoration: none;
+          transition: all 0.7s ease-in-out 0s;
+          height: 2.3125rem;
+          padding: 0rem 1.125rem;
+          width: 80%; }
+          .join .join-box .content_text .box-button-subscribe .button_subscribe:hover {
+            background-color: #403944;
+            color: white;
+            transition: all 0.7s ease-in-out 0s; }
 
 .services {
   margin: 0%;
