@@ -9,7 +9,9 @@ class FormContact extends React.Component {
                 <input type="text" value="Email"></input>
                 <input type="text" value="Asunto"></input>
                 <input className="input-msj" type="text" value="Mensaje"></input>
-                <Button name="Enviar" style="button-con"></Button>
+                <div className="container_contact">
+                  <Button name="Enviar" styleCss="button-con"></Button>
+                </div>
             </div>
         )
     }
