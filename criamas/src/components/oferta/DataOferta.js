@@ -1,10 +1,10 @@
-import Bulldog from '../../img_photos/bulldog-oferta.png';
+import Bulldog from '../../img_photos/bulldog-oferta-01.png';
 
 const DataOferta = {
     banners: [
         {
             id: 0,
-            title: 'OFERTA!',
+            title: 'oferta!',
             tiempo: 'del mes',
             image: Bulldog,
             descuento: '20% OFF',
