@@ -8,8 +8,8 @@ class Textras extends Component {
            <div className="box-static">
                <div className="cont-trans">
                     <div className="box-p">
-                        <p className="red-trans"> Bienvenido a Traslados</p>
-                        <p className="tinfo">Aquí encontrará información <br />sobre nuestro servicio</p>
+                        <p className="title-red"> Bienvenido a Traslados</p>
+                        <p className="title-2">Aquí encontrará información <br />sobre nuestro servicio</p>
                         <p>Ante cualquier duda, podemos ayudarte.</p>
                     </div>
                     <div className="dog"> <img src="" alt="perro imagen para traslados"></img> </div>

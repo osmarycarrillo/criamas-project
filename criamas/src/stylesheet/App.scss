@@ -25,6 +25,9 @@ $color_pink: #ea1e52;
 $color_light_pink: #EFD0D1;
 $color_grey_lil: #403944;
 $color_light_blue: #CCD0D7;
+$color_more_light_pink: #FBF0E7;
+
+
 
 
 //mixin tipos de boton, tenemos 2 tipos: sólidos con color de fondo y bordeados y transparentes
@@ -65,59 +68,66 @@ $color_light_blue: #CCD0D7;
 }
 
 
-//Estilo componente transfers
+//Estilo componente transfers by AM
 /// porque esta el estilo metido en app?
+.transfers {
+    background:$color_more_light_pink;
+}
 
 .box-static {
     display: flex;
-    // border-top: 3.125rem;
     padding: 10%;
     background: #EFD0D1;
-    position: relative;
+    // position: relative;
     width: 100%;
     height: 100%;
 
     .cont-trans {
-        display: flex;
-        justify-content: center;
-        margin: auto;
+      width:80% ;
+      display: flex;
+      justify-content:space-evenly;
+      margin: auto;
+        .box-p{
+            font-family: "Maven Pro", sans-serif;
+        }
+        .dog{
+            border: #282828 solid 1px;
+        }
     }
 }
 
-.tinfo {
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: larger;
+.title-2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: larger;
 }
-
-.dog {
-    border: #282828 solid 1px;
-}
-
-.red-trans {
-    font-family: "Poppins", sans-serif;
+.p-red{
     color: #ea1e52;
-    font-size: 17px;
+    font-size: 16px;
+
 }
 
-.box-tras {
-    text-align: center;
-    font-family: "Maven Pro", sans-serif;
+.title-red {
+  font-family: "Poppins", sans-serif;
+  color: #ea1e52;
+  font-size: 17px;
 }
-
-.viñetas {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    .left {
-        text-align: start;
-    }
-
-    .rigth {
-        text-align: start;
-        margin-left: 8%;
-    }
+.box-tras{
+  text-align: center;
+  font-family: "Maven Pro", sans-serif;
+}
+.viñetas{
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  
+  .left{
+text-align: start;
+  }
+  .rigth{
+    text-align: start;
+    margin-left: 8%; 
+  }
 }
 
 //estilos componente nav, by MV
@@ -252,6 +262,7 @@ $color_light_blue: #CCD0D7;
         }
     }
 }
+
 
 .inner {
     .subtitle {
@@ -846,6 +857,8 @@ $color_light_blue: #CCD0D7;
 //tamaño de letra
 //por que toma distintos colores en la pagina
 //por que el cuadro de mensaje no es tan largo
+
+
 .services {
     margin: 0%;
     padding: 0%;
@@ -969,6 +982,39 @@ $color_light_blue: #CCD0D7;
             padding-right: 30px;
         }
     }
+}
+
+// Estilo componente Redes by AM
+.redes{
+    width: 20%;
+    height: 80%;
+    margin-top: 15%;
+    position: fixed;
+    z-index: 2;
+    .box_redes{
+        display: flex;
+        width: 50%;
+        height: 100vh;
+        flex-direction: column;
+        padding: 0.5rem;
+        .button_redes{
+            width: 3rem;
+            height: 3rem;
+            border: none;
+            border-radius:100%;
+            margin-top:1rem;
+        }
+        .fb{
+            background: #ea1e52;
+            color:white;
+        }
+        ///pendiente preguntar que efecto tendran en el hover
+        .button_redes::hover{
+            opacity: 0.6;
+        }
+
+    }
+    
 }
 
 
