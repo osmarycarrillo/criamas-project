@@ -3,6 +3,7 @@ import Card from './slider/Card';
 import Data from './slider/data/Data';
 import '../stylesheet/App.css';
 
+
 //class component
 class Bslider extends Component {
   constructor(props){
@@ -32,6 +33,7 @@ class Bslider extends Component {
     const {property} = this.state;
     return (
       <div className="box_slide">
+          
         <Card property={property}/>
         <div className="counter">
           <button className={property.id === 0 ? "button-disable" : "button_slide"} onClick={() => this.prevProperty()} disabled={property.id === 0}>

@@ -5,6 +5,7 @@ import '../stylesheet/App.css';
 import Button from './Button';
 
 
+
 class Navheader extends React.Component {
   
   render () {
@@ -46,6 +47,7 @@ class Navheader extends React.Component {
           </div>
         </div>       
       </nav>
+    
       </div>
     )
   }
