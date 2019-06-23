@@ -25,7 +25,7 @@ class Transfers extends Component {
                             <p className="">  <i className="fab fa-gratipay heart"></i>Controles en Fronteras (Veterinario y CITES)</p>
                             <p className="">  <i className="fab fa-gratipay heart"></i>Recogida/Entrega a domicilio</p>
                             <p className="">  <i className="fab fa-gratipay heart"></i>Tramitación de la documentación</p>
-                            <p className="">  <i className="fab fa-gratipay heart"></i>Visados</p>
+                            <p>  <i className="fab fa-gratipay heart"></i>Visados</p>
                         </div>
                         <div className="rigth">
                             <p className="">  <i className="fab fa-gratipay heart"></i>Disposición de Transportines</p>
