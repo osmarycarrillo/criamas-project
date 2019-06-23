@@ -17,7 +17,7 @@ class JoinUs extends Component {
                 <p className="bold"></p>
             </div>
             <input type="email" value="Ingresa tu email..." required/>
-            <Button name="suscribite" style="signin" identificator="register_button"></Button>
+            {/* <Button name="suscribite" style="signin" identificator="register_button"></Button> */}
         </div>
         </div>
         )
