@@ -23,8 +23,102 @@ $color_dark_type: #282828;
 $color_pink: #ea1e52;
 $color_light_pink: #efd0d1;
 $color_grey_lil: #403944;
-$color_light_blue: #ccd0d7;
-$color_more_light_pink: #fbf0e7;
+$color_light_blue: #CCD0D7;
+$color_more_light_pink: #FBF0E7;
+
+.information {
+    background-color: $color_dark_type;
+    color: white;
+    .footer-div {
+        display: flex;
+    .inf-div {
+        margin-left: 200px;
+        //no puedo poner el logo de color blanco
+        .logo-inf {
+            width: 150px;
+            height: auto;
+            color: white;
+        }
+        .line-inf {
+            margin: 0%;
+            padding: 0%;
+            width: 130px;
+            border: 0.03rem solid white;
+        }
+        .sn-but {
+            width: 30px;
+            height: 30px;
+            background-color: $color_dark_type;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin: 5px;
+            margin-top: 15px;
+            i {
+                color: white;
+            }
+        }
+    }
+    .inf-nav {
+        padding-left: 50px;
+        font-family: "Poppins", sans-serif;
+        margin: 30px;
+        ul {
+            margin: 0%;
+            padding: 0%;
+            .link-inf {
+                padding-bottom: 5px;
+                list-style: none;
+                text-align: left;
+                .link_url {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    }
+    .line-foot {
+        margin-top: 30px;
+        width: 72%;
+        height: 0%;
+        border: 1px solid white;
+        margin-left: 15%;
+    }
+    .footer {
+        display: flex;
+        font-size: 10px;
+        .footer-cri {
+            margin-left: 15%;
+            width: 20%;
+            margin-right: 30%;
+            text-transform: uppercase;
+            .foot-logo {
+                font-weight: bold;
+                text-transform: none;
+            }
+        }
+        .footer-data {
+            width: 30%;
+            text-transform: uppercase;
+            margin-top: 7px;
+            a {
+                margin: 4px;
+            }
+        }
+    }
+    .footer-sky {
+        background-color: $color_dark_type;
+        font-size: 12px;
+        margin-left: 15%;
+        height: 10px;
+        padding-bottom: 5%;
+    }
+}
+
 
 //mixin tipos de boton, tenemos 2 tipos: sólidos con color de fondo y bordeados y transparentes
 @mixin style_button_solid($background, $typeColor, $sizeType, $backgroundHover, $typeColorHover) {
