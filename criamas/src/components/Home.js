@@ -5,8 +5,8 @@ import '../stylesheet/App.css';
 import Comments from './Comments';
 import Somos from './Somos';
 import ContactHome from './ContactHome';
-import Information from './Information';
 import JoinUs from './JoinUs';
+import Footer from './Footer';
 
 class Home extends Component {
 
@@ -19,7 +19,7 @@ class Home extends Component {
         <Comments></Comments>
         <ContactHome></ContactHome>
         <JoinUs></JoinUs>
-        <Information></Information>
+        <Footer></Footer>
       </div>
     );
   }
