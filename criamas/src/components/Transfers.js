@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import ServiceRequest from './ServiceRequest';
 import Contact from './Contact';
 import Textras from './Textras';
-import Information from './Information';
 import Footer from './Footer';
 
 class Transfers extends Component {
@@ -46,7 +45,6 @@ class Transfers extends Component {
                 <Contact></Contact>
                 <ServiceRequest />
                 <Contact />
-                <Information />
                 <Footer />
             </div>
         )
