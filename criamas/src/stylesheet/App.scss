@@ -4,96 +4,97 @@
 @import url("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
 
 @font-face {
-    font-family: "Poppins", sans-serif;
-    src: url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap");
+  font-family: "Poppins", sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap");
 }
 
 @font-face {
-    font-family: "Maven Pro", sans-serif;
-    src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
+  font-family: "Maven Pro", sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
 }
 
 @font-face {
-    font-family: 'Salsa', cursive;
-    src: url("https://fonts.googleapis.com/css?family=Salsa&display=swap");
+  font-family: "Salsa", cursive;
+  src: url("https://fonts.googleapis.com/css?family=Salsa&display=swap");
 }
-
 
 //variables de color
 $color_dark_type: #282828;
 $color_pink: #ea1e52;
-$color_light_pink: #EFD0D1;
+$color_light_pink: #efd0d1;
 $color_grey_lil: #403944;
-$color_light_blue: #CCD0D7;
-$color_more_light_pink: #FBF0E7;
-
-
-
+$color_light_blue: #ccd0d7;
+$color_more_light_pink: #fbf0e7;
 
 //mixin tipos de boton, tenemos 2 tipos: sólidos con color de fondo y bordeados y transparentes
 @mixin style_button_solid($background, $typeColor, $sizeType, $backgroundHover, $typeColorHover) {
-    background-color: $background;
-    color: $typeColor;
-    font-family: "Poppins", sans-serif;
-    border: none;
-    border-radius: 1.25rem;
-    font-size: $sizeType;
-    text-decoration: none;
+  background-color: $background;
+  color: $typeColor;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 1.25rem;
+  font-size: $sizeType;
+  text-decoration: none;
+  transition: all 0.7s ease-in-out 0s;
+
+  &:hover {
+    background-color: $backgroundHover;
+    color: $typeColorHover;
     transition: all 0.7s ease-in-out 0s;
-
-    &:hover {
-        background-color: $backgroundHover;
-        color: $typeColorHover;
-        transition: all 0.7s ease-in-out 0s;
-    }
-
+  }
 }
 
 @mixin style_button_border($typeBorder, $typeColor, $sizeType, $backgroundHover, $typeColorHover) {
-    font-family: "Poppins", sans-serif;
-    border-radius: 1.25rem;
-    background-color: transparent;
-    padding: 0.5rem 0.9375rem;
-    color: $typeColor;
-    font-size: $sizeType;
-    border: $typeBorder;
-    text-decoration: none;
-    transition: all 0.7s ease-in-out 0s;
+  font-family: "Poppins", sans-serif;
+  border-radius: 1.25rem;
+  background-color: transparent;
+  padding: 0.5rem 0.9375rem;
+  color: $typeColor;
+  font-size: $sizeType;
+  border: $typeBorder;
+  text-decoration: none;
+  transition: all 0.7s ease-in-out 0s;
 
-    &:hover {
-        background-color: $backgroundHover;
-        color: $typeColorHover;
-        transition: all 0.7s ease-in-out 0s;
-    }
+  &:hover {
+    background-color: $backgroundHover;
+    color: $typeColorHover;
+    transition: all 0.7s ease-in-out 0s;
+  }
 }
 
+// Mixin para el estilo de la letra del formulario
+@mixin styleForm {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
 
 //Estilo componente transfers by AM
 /// porque esta el estilo metido en app?
 .transfers {
-    background:$color_more_light_pink;
+  background: $color_more_light_pink;
 }
 
 .box-static {
-    display: flex;
-    padding: 10%;
-    background: #EFD0D1;
-    // position: relative;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  padding: 10%;
+  background: #efd0d1;
+  // position: relative;
+  width: 100%;
+  height: 100%;
 
-    .cont-trans {
-      width:80% ;
-      display: flex;
-      justify-content:space-evenly;
-      margin: auto;
-        .box-p{
-            font-family: "Maven Pro", sans-serif;
-        }
-        .dog{
-            border: #282828 solid 1px;
-        }
+  .cont-trans {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    .box-p {
+      font-family: "Maven Pro", sans-serif;
     }
+    .dog {
+      border: #282828 solid 1px;
+    }
+  }
 }
 
 .title-2 {
@@ -101,10 +102,9 @@ $color_more_light_pink: #FBF0E7;
   font-weight: bold;
   font-size: larger;
 }
-.p-red{
-    color: #ea1e52;
-    font-size: 16px;
-
+.p-red {
+  color: #ea1e52;
+  font-size: 16px;
 }
 
 .title-red {
@@ -112,909 +112,880 @@ $color_more_light_pink: #FBF0E7;
   color: #ea1e52;
   font-size: 17px;
 }
-.box-tras{
+.box-tras {
   text-align: center;
   font-family: "Maven Pro", sans-serif;
 }
-.viñetas{
+.viñetas {
   display: flex;
   flex-direction: row;
-  justify-content:center;
-  
-  .left{
-text-align: start;
-  }
-  .rigth{
+  justify-content: center;
+
+  .left {
     text-align: start;
-    margin-left: 8%; 
+  }
+  .rigth {
+    text-align: start;
+    margin-left: 8%;
   }
 }
 
 //estilos componente nav, by MV
 .App {
+  .box_nav {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
 
-    .box_nav {
-        width: 100%;
-        position: fixed;
-        z-index: 2;
+    .nav_menu {
+      width: 80%;
+      height: 5.2rem;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
 
-        .nav_menu {
-            width: 80%;
-            height: 5.2rem;
-            margin: auto;
-            display: flex;
-            justify-content: space-between;
+      .logo_container {
+        width: 16%;
+        height: auto;
 
-            .logo_container {
-                width: 16%;
-                height: auto;
-
-                .logo {
-                    width: 90%;
-                    height: auto;
-                }
-            }
+        .logo {
+          width: 90%;
+          height: auto;
         }
+      }
     }
+  }
 }
 
 .container_buttons {
-    width: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+
+  .menu_row {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8125rem;
+    width: 75%;
+    margin: 0rem;
+    padding: 0rem;
+
+    li {
+      list-style: none;
+      position: relative;
+
+      .link_url {
+        text-decoration: none;
+        color: $color_dark_type;
+
+        &::after {
+          content: "";
+          transition: transform 0.25s ease-out;
+          background-color: $color_dark_type;
+          width: 95%;
+          transform: scaleX(0);
+          height: 0.0875rem;
+          bottom: -0.775rem;
+          left: 0;
+          position: absolute;
+          transform-origin: bottom left;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: botom left;
+        }
+
+        &:focus::after {
+          transform: scaleX(1);
+          transform-origin: botom left;
+        }
+      }
+    }
+  }
+}
+
+.container_buttons {
+  .box_buttons {
+    width: 25%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin-left: 0.625rem;
 
-    .menu_row {
-        display: flex;
-        justify-content: space-around;
-        font-size: 0.8125rem;
-        width: 75%;
-        margin: 0rem;
-        padding: 0rem;
-
-        li {
-            list-style: none;
-            position: relative;
-
-            .link_url {
-                text-decoration: none;
-                color: $color_dark_type;
-
-                &::after {
-                    content: '';
-                    transition: transform 0.25s ease-out;
-                    background-color: $color_dark_type;
-                    width: 95%;
-                    transform: scaleX(0);
-                    height: 0.0875rem;
-                    bottom: -0.775rem;
-                    left: 0;
-                    position: absolute;
-                    transform-origin: bottom left;
-                }
-
-                &:hover::after {
-                    transform: scaleX(1);
-                    transform-origin: botom left;
-                }
-
-                &:focus::after {
-                    transform: scaleX(1);
-                    transform-origin: botom left;
-                }
-            }
-        }
+    .signin {
+      @include style_button_solid(white, $color_pink, 0.75rem, $color_pink, white);
+      height: 2.3125rem;
+      padding: 0rem 1.125rem;
     }
-}
 
-.container_buttons {
-    .box_buttons {
-        width: 25%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-left: 0.625rem;
-
-        .signin {
-            @include style_button_solid(white, $color_pink, 0.75rem, $color_pink, white);
-            height: 2.3125rem;
-            padding: 0rem 1.125rem;
-        }
-
-        .login {
-            @include style_button_border(0.0625rem solid $color_pink, $color_pink, 0.75rem, $color_pink, white);
-            padding: 0rem 1.125rem;
-            height: 2.3125rem;
-        }
+    .login {
+      @include style_button_border(0.0625rem solid $color_pink, $color_pink, 0.75rem, $color_pink, white);
+      padding: 0rem 1.125rem;
+      height: 2.3125rem;
     }
+  }
 }
 
 //componente HOME by MV
-//estilos del componente slide, perteneciente a vista Home 
+//estilos del componente slide, perteneciente a vista Home
 .App {
-    .box_slide {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        z-index: 1;
-        background-color: $color_light_pink;
+  .box_slide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: $color_light_pink;
 
-        .box-center {
-            width: 80%;
-            margin: auto;
-            height: 100vh;
-            position: relative;
-
-        }
+    .box-center {
+      width: 80%;
+      margin: auto;
+      height: 100vh;
+      position: relative;
     }
+  }
 }
 
 .box-center {
-    .slider-content {
-        width: 100%;
-        display: flex;
-        height: 100vh;
-        align-items: center;
+  .slider-content {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    align-items: center;
 
-        .inner {
-            width: 32%;
-            font-family: 'Poppins', sans-serif;
-
-        }
+    .inner {
+      width: 32%;
+      font-family: "Poppins", sans-serif;
     }
+  }
 }
-
 
 .inner {
-    .subtitle {
-        color: $color_pink;
-        font-weight: 400;
-        margin: 0px;
-        font-size: 19px;
-    }
+  .subtitle {
+    color: $color_pink;
+    font-weight: 400;
+    margin: 0px;
+    font-size: 19px;
+  }
 
-    p {
-        margin: 0px;
-        font-size: 26px;
-        font-weight: 500;
-    }
+  p {
+    margin: 0px;
+    font-size: 26px;
+    font-weight: 500;
+  }
 
-    .span-raza {
-        font-weight: 500;
-        font-size: 17px;
-    }
+  .span-raza {
+    font-weight: 500;
+    font-size: 17px;
+  }
 
-    .raza-type {
-        font-weight: 400;
-        font-style: italic;
-        margin-left: 0.5rem;
-        font-size: 17px;
-    }
+  .raza-type {
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 0.5rem;
+    font-size: 17px;
+  }
 
-    .shop {
-        @include style_button_solid($color_pink, white, 0.95rem, white, $color_pink);
-        height: 2.3125rem;
-        padding: 0rem 1.325rem;
-        margin-top: 1rem;
-    }
+  .shop {
+    @include style_button_solid($color_pink, white, 0.95rem, white, $color_pink);
+    height: 2.3125rem;
+    padding: 0rem 1.325rem;
+    margin-top: 1rem;
+  }
 }
 
 .box-center {
-    .slider-content {
-        .image-slide {
-            width: 68%;
-            height: 100vh;
+  .slider-content {
+    .image-slide {
+      width: 68%;
+      height: 100vh;
 
-            .image_dog {
-                width: 100%;
-                height: auto;
-            }
-        }
+      .image_dog {
+        width: 100%;
+        height: auto;
+      }
     }
+  }
 }
-
 
 .counter {
-    position: absolute;
-    width: 10%;
-    bottom: 5%;
-    left: 50%;
-    margin-left: -3.5rem;
-    text-align: center;
+  position: absolute;
+  width: 10%;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -3.5rem;
+  text-align: center;
 
-    .button_slide {
-        border: 2px solid white;
-        background-color: transparent;
-        border-radius: 50%;
-        height: 1.5625rem;
-        width: 19%;
-        outline-color: transparent;
-        margin-right: 5px;
+  .button_slide {
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 1.5625rem;
+    width: 19%;
+    outline-color: transparent;
+    margin-right: 5px;
 
-        .fa-angle-left {
-            font-size: 12px;
-            color: white;
-            margin: 2px;
-
-        }
-
-        .fa-angle-right {
-            font-size: 12px;
-            color: white;
-            margin: 2px;
-        }
+    .fa-angle-left {
+      font-size: 12px;
+      color: white;
+      margin: 2px;
     }
 
-    .button-disable {
-        border: 2px solid white;
-        background-color: white;
-        border-radius: 50%;
-        height: 1.5625rem;
-        width: 19%;
-        outline-color: transparent;
-        color: grey;
-        margin-right: 5px;
-
+    .fa-angle-right {
+      font-size: 12px;
+      color: white;
+      margin: 2px;
     }
+  }
 
+  .button-disable {
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 50%;
+    height: 1.5625rem;
+    width: 19%;
+    outline-color: transparent;
+    color: grey;
+    margin-right: 5px;
+  }
 }
-
 
 //----------------------------------------
 
 // componente Oferta, perteneciente a vista Home
 .box_oferta {
-    background-color: #EA3968;
-    background-image: url(../img_svg/fondo-01.svg);
-    margin: 0px;
+  background-color: #ea3968;
+  background-image: url(../img_svg/fondo-01.svg);
+  margin: 0px;
 
-    .box_center_oferta {
-        width: 50%;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+  .box_center_oferta {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
-        .box_first {
-            width: 25%;
-            height: 6rem;
-            color: white;
-            margin-top: 0.4rem;
+    .box_first {
+      width: 25%;
+      height: 6rem;
+      color: white;
+      margin-top: 0.4rem;
 
-            .title_oferta {
-                font-family: 'Salsa', cursive;
-                color: white;
-                margin: 0px;
-                text-align: right;
-                font-size: 3.2rem;
-                height: 3rem;
-            }
+      .title_oferta {
+        font-family: "Salsa", cursive;
+        color: white;
+        margin: 0px;
+        text-align: right;
+        font-size: 3.2rem;
+        height: 3rem;
+      }
 
-            .subtitle_oferta {
-                font-family: 'Poppins', sans-serif;
-                font-size: 1.75rem;
-                font-style: italic;
-                font-weight: 500;
-                text-align: right;
-                margin: 0px;
-            }
-        }
+      .subtitle_oferta {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.75rem;
+        font-style: italic;
+        font-weight: 500;
+        text-align: right;
+        margin: 0px;
+      }
     }
+  }
 }
 
-
 .box_center_oferta {
-    .box_second {
-        width: 20%;
-        height: 8rem;
+  .box_second {
+    width: 20%;
+    height: 8rem;
 
-        .content_image {
-            width: 100%;
-            height: auto;
+    .content_image {
+      width: 100%;
+      height: auto;
 
-            .img_oferta {
-                width: 101%;
-                height: auto;
-                text-align: center;
-            }
-        }
+      .img_oferta {
+        width: 101%;
+        height: auto;
+        text-align: center;
+      }
+    }
+  }
+
+  .box_third {
+    width: 35%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: white;
+    height: 7rem;
+
+    .desc {
+      font-size: 3.5rem;
+      margin: 0px;
+      height: 4rem;
     }
 
-    .box_third {
-        width: 35%;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 600;
-        color: white;
-        height: 7rem;
-
-        .desc {
-            font-size: 3.5rem;
-            margin: 0px;
-            height: 4rem;
-        }
-
-        .products {
-            font-size: 1.32rem;
-            margin: 0px;
-            text-transform: uppercase;
-        }
-
+    .products {
+      font-size: 1.32rem;
+      margin: 0px;
+      text-transform: uppercase;
     }
+  }
 }
 
 //----------------------------------------------------
 
 //estilo componente somos, perteneciente a vista Home
 .somos {
-    background-color: #FBF0E7;
-    .textsomos {
-        text-align: center;
-        padding-top: 3.2rem;
-        .title_somos {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            font-size: 1rem;
-            .title_black{
-                font-size: 1.2rem,
-            }
-            .title_red {
-                font-family: 'Salsa', cursive;
-                color: $color_pink;
-                font-size: 1.3rem,
-            }
-        }
-        .bajada_somos{
-            font-family: "Maven Pro", sans-serif;
-            font-size: 1rem;
-            line-height: 1.4rem;
-        }
-
-        .why {
-            font-size: 22px;
-            font-family: 'Poppins', sans-serif;
-            margin: 5px 0px 50px 0px; 
-
-        }
+  background-color: #fbf0e7;
+  .textsomos {
+    text-align: center;
+    padding-top: 3.2rem;
+    .title_somos {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      .title_black {
+        font-size: 1.2rem;
+      }
+      .title_red {
+        font-family: "Salsa", cursive;
+        color: $color_pink;
+        font-size: 1.3rem;
+      }
+    }
+    .bajada_somos {
+      font-family: "Maven Pro", sans-serif;
+      font-size: 1rem;
+      line-height: 1.4rem;
     }
 
-    .somos-box {
-        width: 60%;
-        text-align: center;
-        display: flex;
-        margin: auto;
-
-        .somos-left {
-            width: 50%;
-            background: #fcb4b5;
-        }
-
-        .somos-rigth {
-            width: 50%;
-            background: #fed9be;
-        }
-
-        .icon {
-            margin-top: 12%;
-            font-size: 25px;
-        }
+    .why {
+      font-size: 22px;
+      font-family: "Poppins", sans-serif;
+      margin: 5px 0px 50px 0px;
     }
+  }
 
-    .gray {
-        color: #403843;
-
-    }
-
-    .line {
-        padding: 0%;
-        width: 200px;
-        border: 0.5px solid;
-    }
-}
-
-
-
-.parragraph_somos{
-    font-family: "Maven Pro", sans-serif;
-    font-size: 0.84rem;
-    color:#595959;
-    line-height: 1.6rem;
-    margin-bottom: 3rem;
-}
-    
-
-.img-somos {
+  .somos-box {
     width: 60%;
     text-align: center;
     display: flex;
     margin: auto;
-    margin-top: 1.4rem;
-    .img_content_somos{
-        width: 60%;
-        margin: auto;
-        height: auto;
-        box-sizing: content-box;
-        display: flex;
-        align-content: flex-end;
-        .dogs_somos{
-            width: 100%;
-            height: auto;
-        }
+
+    .somos-left {
+      width: 50%;
+      background: #fcb4b5;
     }
+
+    .somos-rigth {
+      width: 50%;
+      background: #fed9be;
+    }
+
+    .icon {
+      margin-top: 12%;
+      font-size: 25px;
+    }
+  }
+
+  .gray {
+    color: #403843;
+  }
+
+  .line {
+    padding: 0%;
+    width: 200px;
+    border: 0.5px solid;
+  }
+}
+
+.parragraph_somos {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 0.84rem;
+  color: #595959;
+  line-height: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.img-somos {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  margin-top: 1.4rem;
+  .img_content_somos {
+    width: 60%;
+    margin: auto;
+    height: auto;
+    box-sizing: content-box;
+    display: flex;
+    align-content: flex-end;
+    .dogs_somos {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .bold {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color:#3F3F3F;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #3f3f3f;
 }
 
-
 .heart {
-    color: #ea1e52;
+  color: #ea1e52;
 }
 
 //-------------------------------------------------
 //home, componente testimonios (debajo de somos)
 .comments {
-    font-family: "Poppins", sans-serif;
-    background-color: $color_light_blue;
-    .box_comments{
-        width: 60%;
+  font-family: "Poppins", sans-serif;
+  background-color: $color_light_blue;
+  .box_comments {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    padding: 3rem 0rem;
+    .box_button {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .button_comments {
+        border: 1px solid $color_grey_lil;
+        background-color: transparent;
+        border-radius: 50%;
+        height: 1.5625rem;
+        width: 1.6rem;
+        outline: none;
+      }
+    }
+  }
+}
+
+.comments {
+  .box_comments {
+    .div-com {
+      text-align: center;
+      width: 60%;
+      .box_comillas {
+        width: 30%;
+        height: 6rem;
         margin: auto;
-        display:flex;
-        padding: 3rem 0rem;
-        .box_button{
-            width: 20%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .button_comments{
-                border: 1px solid $color_grey_lil;
-                background-color: transparent;
-                border-radius: 50%;
-                height: 1.5625rem;
-                width:1.6rem;
-                outline: none;
-            }
-        }    
-       
-    }
-    
-}
-
-
-.comments{
-    .box_comments{
-        .div-com {
-            text-align: center;
-            width: 60%;
-            .box_comillas{
-                width: 30%;
-                height: 6rem;
-                margin:auto;
-                background-image: url('../img_svg/comillas-01.svg');
-                background-repeat: no-repeat;
-                background-size: 100%;
-                display: flex;
-                align-items: flex-end;
-                .content_comments{
-                    width: 53%;
-                    margin: auto;
-                    margin-bottom: 0px;
-                    height: 4.8rem;
-                    border-radius: 50%;
-                    border: 0.18rem solid white;
-                    .image_cliente{
-                       width: 100%;
-                       border-radius: 50%;
-                       height: 4.8rem;
-                    }
-                }
-            }
-            
-            .nombre_cliente{
-                font-family: 'Poppins', sans-serif;
-                font-weight: 400;
-                color: #353535;
-                font-size: 0.85rem;
-            
-                .cliente_occupation{
-                    font-weight: 700;
-                }
-            }
-            .testimony_cliente{
-                font-family: 'Maven Pro', sans-serif;
-                color: #5B6470;
-                font-size: 0.8rem;
-                line-height: 1.4rem;
-                margin-bottom: 2rem;
-            }
-                
+        background-image: url("../img_svg/comillas-01.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: flex;
+        align-items: flex-end;
+        .content_comments {
+          width: 53%;
+          margin: auto;
+          margin-bottom: 0px;
+          height: 4.8rem;
+          border-radius: 50%;
+          border: 0.18rem solid white;
+          .image_cliente {
+            width: 100%;
+            border-radius: 50%;
+            height: 4.8rem;
+          }
         }
-    }
-}
+      }
 
-.comments{
-    .box_comments{
-        .div-com{
-            .button_container{
-                .join-us {
-                    @include style_button_border(0.1225rem solid $color_grey_lil, $color_grey_lil , 0.7rem, $color_grey_lil , white );
-                    font-weight: 500;
-                }
-            }      
+      .nombre_cliente {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        color: #353535;
+        font-size: 0.85rem;
+
+        .cliente_occupation {
+          font-weight: 700;
         }
+      }
+      .testimony_cliente {
+        font-family: "Maven Pro", sans-serif;
+        color: #5b6470;
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        margin-bottom: 2rem;
+      }
     }
+  }
 }
 
+.comments {
+  .box_comments {
+    .div-com {
+      .button_container {
+        .join-us {
+          @include style_button_border(
+            0.1225rem solid $color_grey_lil,
+            $color_grey_lil,
+            0.7rem,
+            $color_grey_lil,
+            white
+          );
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
 
-.chevron_style{
-    color: $color_grey_lil;
-    font-size: 0.8rem;
+.chevron_style {
+  color: $color_grey_lil;
+  font-size: 0.8rem;
 }
 
 //-------------------------------------------------------
 
 //home, componente contacto
 .contact-home {
-    font-family: "Poppins", sans-serif;
-    .box_center_home{
-        width: 70%;
-        margin: auto;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        color: $color_dark_type;
+  font-family: "Poppins", sans-serif;
+  .box_center_home {
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: $color_dark_type;
 
-        .title_contact{
-            font-weight: 600;
-            font-size: 1rem;
-            text-align: center;
-
-        }
-        .bajada_contact{
-            font-family: 'Maven Pro', sans-serif;
-            font-size: 1rem; 
-            text-align: center;
-
-        }
+    .title_contact {
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: center;
     }
+    .bajada_contact {
+      font-family: "Maven Pro", sans-serif;
+      font-size: 1rem;
+      text-align: center;
+    }
+  }
 }
 
-.contact-home{
-    .box_center_home{
-        .div-con{
-            display: flex;
-            margin-top: 3rem;    
-            .form-contact {
-                width: 50%;
-                input {
-                    font-family: "Poppins", sans-serif;
-                    font-size: 0.8rem;
-                    font-weight: 300;
-                    padding-left: 1rem;   
-                    background-color: #F9F6F6;
-                    border-radius: 0.3rem;
-                    width: 90%;
-                    height: 3.5rem;
-                    border: none;
-                    border-bottom: 1.48px solid $color_grey_lil;
-                    margin-bottom: 1.5rem;
-                }   
-                .input-msj {
-                    height: 12rem;
+.contact-home {
+  .box_center_home {
+    .div-con {
+      display: flex;
+      margin-top: 3rem;
+      .form-contact {
+        width: 50%;
+        input {
+          @include styleForm();
+          padding-left: 1rem;
+          background-color: #f9f6f6;
+          border-radius: 0.3rem;
+          width: 90%;
+          height: 3.5rem;
+          border: none;
+          border-bottom: 1.48px solid $color_grey_lil;
+          margin-bottom: 1.5rem;
+        }
+        label {
+          @include styleForm();
+        }
+        .input-msj {
+          height: 12rem;
+        }
+        .container_contact {
+          .button-con {
+            @include style_button_border(2px solid $color_grey_lil, $color_grey_lil, 0.8rem, $color_grey_lil, white);
+            width: 23%;
+          }
+        }
+      }
+    }
+  }
+}
 
-                }
-                .container_contact{
-                    .button-con {
-                      @include style_button_border(2px solid $color_grey_lil, $color_grey_lil, 0.8rem, $color_grey_lil, white );
-                      width: 23%;
-                    }
-                }
-                
+.box_center_home {
+  .div-con {
+    .data-contact {
+      width: 50%;
+      .box_direction {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .content_box_contact {
+          margin: 0%;
+          padding: 0%;
+          width: 50%;
+          margin-bottom: 30px;
+          display: flex;
+          .div-ic {
+            margin: 0%;
+            padding-top: 0.1rem;
+            width: 10%;
+            margin-right: 0.5rem;
+            text-align: center;
+            i {
+              font-size: 1.2rem;
+              color: $color_grey_lil;
             }
+          }
+          .div-dir {
+            margin: 0%;
+            padding: 0%;
+            display: block;
+            width: 80%;
+            p {
+              margin: 0%;
+              padding: 0%;
+              font-size: 0.85rem;
+              color: #353535;
+            }
+            .line-con {
+              margin: 0%;
+              padding: 0%;
+              width: 80%;
+              border: 0.03rem solid $color_grey_lil;
+            }
+            .text_contact {
+              font-weight: 500;
+              margin-top: 0.4rem;
+            }
+          }
         }
+      }
     }
+  }
 }
 
-.box_center_home{
-    .div-con{
-        .data-contact {
-            width: 50%;            
-            .box_direction{
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                .content_box_contact{
-                    margin: 0%;
-                    padding: 0%;
-                    width: 50%;
-                    margin-bottom: 30px;
-                    display: flex;
-                    .div-ic {
-                        margin: 0%;
-                        padding-top: 0.1rem;
-                        width: 10%;
-                        margin-right: 0.5rem;
-                        text-align: center;
-                        i {
-                            font-size: 1.2rem;
-                            color: $color_grey_lil;
-                        }
-                    }
-                    .div-dir {
-                        margin: 0%;
-                        padding: 0%;
-                        display: block;
-                        width: 80%;
-                        p {
-                            margin: 0%;
-                            padding: 0%;
-                            font-size: 0.85rem;
-                            color: #353535;
-                        }
-                        .line-con {
-                            margin: 0%;
-                            padding: 0%;
-                            width: 80%;
-                            border: 0.03rem solid $color_grey_lil;
-                        }
-                        .text_contact{
-                            font-weight: 500;
-                            margin-top: 0.4rem;
-                        }
-                    }
-                }
-            }           
-        }
-    }
-}
-
-.data-contact{
-    .box_mapa{
-        margin-top: 2rem;
-    }
+.data-contact {
+  .box_mapa {
+    margin-top: 2rem;
+  }
 }
 
 // Estilado componente JoinUs, perteneciente a vista Home
 
 .join {
-
-    background-color: #FCB4B4;
-    background-image: url('../img_svg/fondo-02-01.svg');
-    .join-box {
-        margin: auto;
-        width: 80%;
-        // padding-top: 2rem;
-        // padding-bottom: 2rem;
-        display: flex;
-        flex-direction: row;
-        .dog-black{
-           width: 20%;
-           height: 11.39rem;
-           margin-right: 2rem;
-           img{
-               width:100%;
-               height: auto;
-           }
-        }
-        .content_text{
-            width:80%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            font-family: 'Poppins', sans-serif;
-            .box_phrase{
-                width: 23%;
-                color: $color_dark_type;
-                height: 4.5rem;
-                margin-right: 1.5rem;
-                .text_first{
-                    font-weight: 300;
-                    font-size: 1.5rem;
-                    margin:0px;
-                    height: 1.6rem;
-                }
-                .text_second{
-                    font-weight: 700;
-                    font-size: 1.8rem;
-                    margin:0px;
-                    height: 2rem;
-                }
-
-            }
-            .box_input{
-                width: 50%;
-                height: 2.3125rem;
-                .input_join{
-                    width: 95%;
-                    border: none;
-                    border-radius: 1rem;
-                    height: 2.3125rem;
-                    font-family: 'Maven Pro', sans-serif;
-                    font-size: 0.8rem;
-                    color:#5B5959;
-                    padding-left: 5%;
-                    outline:none;
-                }
-            }
-            .box-button-subscribe{
-               width: 20%;
-               text-align: right;
-               .button_subscribe{
-                  @include style_button_solid($color_dark_type, white, 0.9rem , $color_grey_lil , white);
-                  height: 2.3125rem;
-                  padding: 0rem 1.125rem;
-                  width: 80%;
-               }
-            }
-        }
+  background-color: #fcb4b4;
+  background-image: url("../img_svg/fondo-02-01.svg");
+  .join-box {
+    margin: auto;
+    width: 80%;
+    // padding-top: 2rem;
+    // padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    .dog-black {
+      width: 20%;
+      height: 11.39rem;
+      margin-right: 2rem;
+      img {
+        width: 100%;
+        height: auto;
+      }
     }
+    .content_text {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      .box_phrase {
+        width: 23%;
+        color: $color_dark_type;
+        height: 4.5rem;
+        margin-right: 1.5rem;
+        .text_first {
+          font-weight: 300;
+          font-size: 1.5rem;
+          margin: 0px;
+          height: 1.6rem;
+        }
+        .text_second {
+          font-weight: 700;
+          font-size: 1.8rem;
+          margin: 0px;
+          height: 2rem;
+        }
+      }
+      .box_input {
+        width: 50%;
+        height: 2.3125rem;
+        .input_join {
+          width: 95%;
+          border: none;
+          border-radius: 1rem;
+          height: 2.3125rem;
+          font-family: "Maven Pro", sans-serif;
+          font-size: 0.8rem;
+          color: #5b5959;
+          padding-left: 5%;
+          outline: none;
+        }
+      }
+      .box-button-subscribe {
+        width: 20%;
+        text-align: right;
+        .button_subscribe {
+          @include style_button_solid($color_dark_type, white, 0.9rem, $color_grey_lil, white);
+          height: 2.3125rem;
+          padding: 0rem 1.125rem;
+          width: 80%;
+        }
+      }
+    }
+  }
 }
-
-
-
 
 //componente traslado
 //tamaño de letra
 //por que toma distintos colores en la pagina
 //por que el cuadro de mensaje no es tan largo
 
-
 .services {
+  margin: 0%;
+  padding: 0%;
+  display: inline;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: $color_light_pink;
+
+  .title-serv {
+    text-transform: uppercase;
+  }
+
+  .line-form {
     margin: 0%;
     padding: 0%;
-    display: inline;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    background-color: $color_light_pink;
+    margin-left: 35%;
+    width: 500px;
+    border-bottom: 2px solid gray;
+  }
 
-    .title-serv {
-        text-transform: uppercase;
-    }
+  .container-serv {
+    display: flex;
+    padding-bottom: 50px;
 
-    .line-form {
-        margin: 0%;
-        padding: 0%;
-        margin-left: 35%;
-        width: 500px;
-        border-bottom: 2px solid gray;
-    }
+    .form {
+      width: 50%;
 
-    .container-serv {
+      /////////////////////////no me toma los estilos del boton
+      .buttonTrans {
+        width: 300px;
+        border-radius: 10%;
+        border: 2px solid gray;
+      }
+
+      .form-style {
+        width: 400px;
+        height: 50px;
+        font-family: "Poppins", sans-serif;
+        border: none;
+        margin: auto;
         display: flex;
-        padding-bottom: 50px;
+        border-bottom: black solid 2px;
 
-        .form {
-            width: 50%;
-
-            /////////////////////////no me toma los estilos del boton
-            .buttonTrans {
-                width: 300px;
-                border-radius: 10%;
-                border: 2px solid gray;
-            }
-
-            .form-style {
-                width: 400px;
-                height: 50px;
-                font-family: "Poppins", sans-serif;
-                border: none;
-                margin: auto;
-                display: flex;
-                border-bottom: black solid 2px;
-
-                .div-p {
-                    text-align: initial;
-                    width: 85%;
-                }
-
-                .div-button {
-                    width: 10%;
-                    padding-top: 10px;
-                }
-
-                .button-form {
-                    width: 30px;
-                    height: 30px;
-                    background-color: $color_light_pink;
-                    border-radius: 50%;
-                    border: 2px solid black;
-
-                    .select-form {
-                        display: none;
-                    }
-                }
-
-                .message {
-                    height: 400px;
-                }
-            }
+        .div-p {
+          text-align: initial;
+          width: 85%;
         }
+
+        .div-button {
+          width: 10%;
+          padding-top: 10px;
+        }
+
+        .button-form {
+          width: 30px;
+          height: 30px;
+          background-color: $color_light_pink;
+          border-radius: 50%;
+          border: 2px solid black;
+
+          .select-form {
+            display: none;
+          }
+        }
+
+        .message {
+          height: 400px;
+        }
+      }
+    }
+  }
+
+  //viajes
+  .travels {
+    width: 50%;
+    text-align: left;
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    .title-trav {
+      width: 400px;
+      border-bottom: 2px solid black;
     }
 
     //viajes
     .travels {
-        width: 50%;
-        text-align: left;
+      width: 50%;
+      text-align: left;
 
-        h3 {
-            text-transform: uppercase;
-        }
+      h3 {
+        text-transform: uppercase;
+      }
 
-        .title-trav {
-            width: 400px;
-            border-bottom: 2px solid black;
-        }
+      .title-trav {
+        width: 400px;
+        border-bottom: 2px solid black;
+      }
 
-        //viajes
-        .travels {
-            width: 50%;
-            text-align: left;
-
-            h3 {
-                text-transform: uppercase;
-            }
-
-            .title-trav {
-                width: 400px;
-                border-bottom: 2px solid black;
-            }
-
-            .div-trav {
-                width: 400px;
-                border-bottom: 2px solid gray;
-            }
-        }
+      .div-trav {
+        width: 400px;
+        border-bottom: 2px solid gray;
+      }
     }
+  }
 }
 
 //componente contact de transfer
 .contact {
-    padding-top: 40px;
+  padding-top: 40px;
+  text-align: center;
+
+  .data-div {
     text-align: center;
+    display: inline-flex;
 
-    .data-div {
-        text-align: center;
-        display: inline-flex;
-
-        .vertical-line {
-            color: gray;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
+    .vertical-line {
+      color: gray;
+      padding-left: 30px;
+      padding-right: 30px;
     }
+  }
 }
 
 // Estilo componente Redes by AM
-.redes{
-    width: 20%;
-    height: 80%;
-    margin-top: 15%;
-    position: fixed;
-    z-index: 2;
-    .box_redes{
-        display: flex;
-        width: 50%;
-        height: 100vh;
-        flex-direction: column;
-        padding: 0.5rem;
-        .button_redes{
-            width: 3rem;
-            height: 3rem;
-            border: none;
-            border-radius:100%;
-            margin-top:1rem;
-        }
-        .fb{
-            background: #ea1e52;
-            color:white;
-        }
-        ///pendiente preguntar que efecto tendran en el hover
-        .button_redes::hover{
-            opacity: 0.6;
-        }
-
+.redes {
+  width: 20%;
+  height: 80%;
+  margin-top: 15%;
+  position: fixed;
+  z-index: 2;
+  .box_redes {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+    padding: 0.5rem;
+    .button_redes {
+      width: 3rem;
+      height: 3rem;
+      border: none;
+      border-radius: 100%;
+      margin-top: 1rem;
     }
-    
+    .fb {
+      background: #ea1e52;
+      color: white;
+    }
+    ///pendiente preguntar que efecto tendran en el hover
+    .button_redes::hover {
+      opacity: 0.6;
+    }
+  }
 }
-
-
