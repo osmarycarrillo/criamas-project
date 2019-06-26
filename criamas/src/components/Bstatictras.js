@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import Cachorros from '../img_photos/cachorros.png';
-// import Schnauzer from '../../../img_photos/schnauzer.png';
 
 
 
-class Textras extends Component {
+
+class Bstatictras extends Component {
 
     render() {
         return (
@@ -23,20 +23,5 @@ class Textras extends Component {
         )
     }
 }
-export default Textras;
+export default  Bstatictras ;
 // Este componente realiza la descripcion del texto del banner
-// que pertenene a  las vistas  de traslados, AM
-
-// .box-center {
-//     .slider-content {
-//         .image-slide {
-//             width: 68%;
-//             height: 100vh;
-
-//             .image_dog {
-//                 width: 100%;
-//                 height: auto;
-//             }
-//         }
-//     }
-// }
