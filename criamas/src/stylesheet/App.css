@@ -424,6 +424,7 @@
 
 .parragraph_somos {
   font-family: "Maven Pro", sans-serif;
+  text-align: unset;
   font-size: 0.84rem;
   color: #595959;
   line-height: 1.6rem;
