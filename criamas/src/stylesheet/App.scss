@@ -78,11 +78,11 @@ $color_more_light_pink: #FBF0E7;
     background: #EFD0D1;
     position: relative;
     width: 100%;
-    // height: auto;
+
 
     .cont-trans {
       width:80% ;
-    //   height: 100vh;
+   
       display: flex;
       align-items: center;
       justify-content:space-evenly;
@@ -104,11 +104,6 @@ $color_more_light_pink: #FBF0E7;
     }
 }
  
-
-
-
-
-
 .title-2 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -123,7 +118,7 @@ $color_more_light_pink: #FBF0E7;
 .title-red {
   font-family: "Poppins", sans-serif;
   color: #ea1e52;
-  font-size: 17px;
+  font-size: 18px;
 }
 .box-tras{
   text-align: center;
