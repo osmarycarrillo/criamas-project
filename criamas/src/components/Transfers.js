@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import Bstatic from './Bstatic';
+
 import ServiceRequest from './ServiceRequest';
 import Contact from './Contact';
 import Textras from './Textras';

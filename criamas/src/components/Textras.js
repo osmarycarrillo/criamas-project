@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Cachorros from '../img_photos/cachorros.png';
+// import Schnauzer from '../../../img_photos/schnauzer.png';
+
 
 
 class Textras extends Component {
@@ -12,7 +15,7 @@ class Textras extends Component {
                         <p className="title-2">Aquí encontrará información <br />sobre nuestro servicio</p>
                         <p>Ante cualquier duda, podemos ayudarte.</p>
                     </div>
-                    <div className="dog"> <img src="" alt="perro imagen para traslados"></img> </div>
+                    <div className="dog"> <img className="dog" src={Cachorros} alt="perro imagen para traslados"></img> </div>
 
                 </div>
                
@@ -24,3 +27,16 @@ export default Textras;
 // Este componente realiza la descripcion del texto del banner
 // que pertenene a  las vistas  de traslados, AM
 
+// .box-center {
+//     .slider-content {
+//         .image-slide {
+//             width: 68%;
+//             height: 100vh;
+
+//             .image_dog {
+//                 width: 100%;
+//                 height: auto;
+//             }
+//         }
+//     }
+// }
