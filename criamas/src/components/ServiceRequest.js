@@ -6,14 +6,14 @@ class ServiceRequest extends React.Component {
     render() {
         return (
             <div className="services">
-                <p className="line-form"></p>
+                <hr className="line-form"/>
                 <h3 className="title-serv">Solicitud de servicio</h3>
                 <p>Rellena este formulario, obtendras el mejor servicio.</p>
                 <div className="container-serv">
                     <Form></Form>
                     <Travels></Travels>
                 </div>
-                <p className="line-form"></p>
+                <hr className="line-form"/>
             </div>
         )
     }

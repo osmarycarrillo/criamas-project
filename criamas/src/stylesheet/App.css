@@ -758,9 +758,6 @@
   font-family: "Poppins", sans-serif;
   background-color: #EFD0D1;
 }
-.services .title-serv {
-  text-transform: uppercase;
-}
 .services .line-form {
   margin: 0%;
   padding: 0%;
@@ -768,19 +765,18 @@
   width: 500px;
   border-bottom: 2px solid gray;
 }
+.services .title-serv {
+  text-transform: uppercase;
+}
+
 .services .container-serv {
   display: flex;
   padding-bottom: 50px;
 }
-.services .container-serv .form {
+.services .form {
   width: 50%;
 }
-.services .container-serv .form .buttonTrans {
-  width: 300px;
-  border-radius: 10%;
-  border: 2px solid gray;
-}
-.services .container-serv .form .form-style {
+.services .form .form-style {
   width: 400px;
   height: 50px;
   font-family: "Poppins", sans-serif;
@@ -789,50 +785,45 @@
   display: flex;
   border-bottom: black solid 2px;
 }
-.services .container-serv .form .form-style .div-p {
+.services .form .form-style .div-p {
   text-align: initial;
   width: 85%;
 }
-.services .container-serv .form .form-style .div-button {
+.services .form .form-style .div-button {
   width: 10%;
   padding-top: 10px;
 }
-.services .container-serv .form .form-style .button-form {
+.services .form .form-style .button-form {
   width: 30px;
   height: 30px;
   background-color: #EFD0D1;
   border-radius: 50%;
   border: 2px solid black;
 }
-.services .container-serv .form .form-style .button-form .select-form {
-  display: none;
-}
-.services .container-serv .form .form-style .message {
-  height: 400px;
-}
-.services .travels {
+
+.travels {
   width: 50%;
   text-align: left;
 }
-.services .travels h3 {
+.travels h3 {
   text-transform: uppercase;
 }
-.services .travels .title-trav {
+.travels .title-trav {
   width: 400px;
   border-bottom: 2px solid black;
 }
-.services .travels .travels {
+.travels .travels {
   width: 50%;
   text-align: left;
 }
-.services .travels .travels h3 {
+.travels .travels h3 {
   text-transform: uppercase;
 }
-.services .travels .travels .title-trav {
+.travels .travels .title-trav {
   width: 400px;
   border-bottom: 2px solid black;
 }
-.services .travels .travels .div-trav {
+.travels .travels .div-trav {
   width: 400px;
   border-bottom: 2px solid gray;
 }

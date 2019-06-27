@@ -38,7 +38,7 @@ class Form extends React.Component {
                             </button>
                         </div> 
                     </div>
-                    <input className="form-style message" type="text" value="Mensaje"></input>
+                    <textarea className="form-style message" type="text" value="Mensaje"></textarea>
                     <Button className="buttonTrans" name="Enviar"/>
                 </form>     
             </div>

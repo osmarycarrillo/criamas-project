@@ -860,15 +860,9 @@ text-align: start;
     }
 }
 
-
-
-
-//componente traslado
 //tamaño de letra
-//por que toma distintos colores en la pagina
 //por que el cuadro de mensaje no es tan largo
-
-
+//estilo del componente services request que forma parte de la vista del traslado por LR
 .services {
     margin: 0%;
     padding: 0%;
@@ -876,10 +870,6 @@ text-align: start;
     text-align: center;
     font-family: "Poppins", sans-serif;
     background-color: $color_light_pink;
-
-    .title-serv {
-        text-transform: uppercase;
-    }
 
     .line-form {
         margin: 0%;
@@ -889,20 +879,26 @@ text-align: start;
         border-bottom: 2px solid gray;
     }
 
+    .title-serv {
+        text-transform: uppercase;
+    }
+}
+
+.services {
     .container-serv {
         display: flex;
         padding-bottom: 50px;
+    }
 
+    //estilos del componente Form por LR
         .form {
             width: 50%;
-
-            /////////////////////////no me toma los estilos del boton
-            .buttonTrans {
-                width: 300px;
-                border-radius: 10%;
-                border: 2px solid gray;
-            }
-
+            //no me toma los estilos
+            // .buttonTrans {
+            //     width: 300px;
+            //     border-radius: 10%;
+            //     border: 2px solid gray;
+            // }
             .form-style {
                 width: 400px;
                 height: 50px;
@@ -928,15 +924,11 @@ text-align: start;
                     background-color: $color_light_pink;
                     border-radius: 50%;
                     border: 2px solid black;
-
-                    .select-form {
-                        display: none;
-                    }
                 }
-
-                .message {
-                    height: 400px;
-                }
+                //no me toma el height
+                // .message {
+                //     height: 400px;
+                // }
             }
         }
     }
@@ -975,7 +967,8 @@ text-align: start;
             }
         }
     }
-}
+
+
 
 //componente contact de transfer
 .contact {
@@ -1027,6 +1020,7 @@ text-align: start;
     
 }
 
+//estilos footer
 .information {
     background-color: $color_dark_type;
     color: white;
