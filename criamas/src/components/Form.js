@@ -39,7 +39,7 @@ class Form extends React.Component {
                         </div> 
                     </div>
                     <textarea className="form-style message" type="text" value="Mensaje"></textarea>
-                    <Button className="buttonTrans" name="Enviar"/>
+                    <Button styleCss="buttonTrans" name="Enviar"/>
                 </form>     
             </div>
         )

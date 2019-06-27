@@ -27,9 +27,6 @@ $color_grey_lil: #403944;
 $color_light_blue: #CCD0D7;
 $color_more_light_pink: #FBF0E7;
 
-
-
-
 //mixin tipos de boton, tenemos 2 tipos: sólidos con color de fondo y bordeados y transparentes
 @mixin style_button_solid($background, $typeColor, $sizeType, $backgroundHover, $typeColorHover) {
     background-color: $background;
@@ -893,12 +890,12 @@ text-align: start;
     //estilos del componente Form por LR
         .form {
             width: 50%;
-            //no me toma los estilos
-            // .buttonTrans {
-            //     width: 300px;
-            //     border-radius: 10%;
-            //     border: 2px solid gray;
-            // }
+            .buttonTrans {
+                @include style_button_border(0.0625rem solid $color_dark_type, $color_dark_type, 0.75rem, $color_dark_type, white);
+                padding: 0rem 1.125rem;
+                width: 5.000rem;
+                height: 1.600rem;
+            }
             .form-style {
                 width: 400px;
                 height: 50px;
