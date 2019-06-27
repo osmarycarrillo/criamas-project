@@ -5,14 +5,10 @@ class Travels extends React.Component {
     return (
       <div className="travels">
         <h3 className="title-trav">Próximos viajes</h3>
-        <div className="div-trav"><h3>Abril 03, 2019</h3><p>Europa - Sudamérica</p></div>
-        <div className="div-trav"><h3>Abril 03, 2019</h3><p>Europa - Sudamérica</p></div>
-        <div className="div-trav"><h3>Abril 03, 2019</h3><p>Europa - Sudamérica</p></div>
-        <div className="div-trav"><h3>Abril 03, 2019</h3><p>Europa - Sudamérica</p></div>
-        <div className="div-trav"><h3>Abril 03, 2019</h3><p>Europa - Sudamérica</p></div>
-        <div className="div-trav"><h3>Abril 03, 2019</h3><p>Europa - Sudamérica</p></div>
-        <div className="div-trav"><h3>Abril 03, 2019</h3><p>Europa - Sudamérica</p></div>
-        <div className="div-trav"><h3>Abril 03, 2019</h3><p>Europa - Sudamérica</p></div>
+        <div className="div-trav"><h4>Abril 03, 2019</h4><p>Europa - Sudamérica</p></div>
+        <div className="div-trav"><h4>Abril 03, 2019</h4><p>Europa - Sudamérica</p></div>
+        <div className="div-trav"><h4>Abril 03, 2019</h4><p>Europa - Sudamérica</p></div>
+        <div className="div-trav"><h4>Abril 03, 2019</h4><p>Europa - Sudamérica</p></div>
       </div>
     )
   }
