@@ -14,9 +14,21 @@ class Footer extends Component {
                     <p>lidiasisi@gmail.com</p>
                     <hr className="line-inf"></hr>
                     <div>
-                        <button className="sn-but"><i class="fab fa-whatsapp"></i></button>
-                        <button className="sn-but"><i class="fab fa-facebook-f"></i></button>
-                        <button className="sn-but"><i class="fab fa-instagram"></i></button>
+                        <a href="https://api.whatsapp.com/send?phone=541149752537&text=Quiero%20mas%20informacion%20Sobre%20las%20Razas%20de%20Perros%20Disponibles">
+                        <button className="sn-but">
+                        <i class="fab fa-whatsapp"></i>
+                        </button>
+                        </a>
+                        <a href="https://www.facebook.com/Criamasamor/">
+                        <button className="sn-but">
+                        <i class="fab fa-facebook-f"></i>
+                        </button>
+                        </a>
+                        <a href='https://instagram.com/criamasamor' target="_blank">
+                        <button className="sn-but">
+                        <i class="fab fa-instagram"></i>
+                        </button>
+                        </a>
                     </div>
                 </div>
                 <div className="inf-nav">
