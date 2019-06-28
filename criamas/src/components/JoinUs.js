@@ -17,7 +17,7 @@ class JoinUs extends Component {
                       <b className="text_second">Club!</b>
                     </div>
                     <div className="box_input">
-                      <input className="input_join" type="email" value="Ingresa tu email..." required/>
+                      <input className="input_join" type="email" placeholder="Ingresa tu email..." required/>
                     </div>
                     <div className="box-button-subscribe">
                       <Button name="suscribite" styleCss="button_subscribe" identificator="register_button"></Button>
