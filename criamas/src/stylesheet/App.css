@@ -667,6 +667,8 @@
 
 .data-contact .box_mapa {
   margin-top: 2rem;
+  width: 100%;
+  height: 70%;
 }
 
 .join {

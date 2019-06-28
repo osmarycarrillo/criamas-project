@@ -5,7 +5,8 @@ class Somos extends Component {
 
     render() {
         return (
-            <div className="somos">
+            <div className="somos"   href="">
+            <a href="#somos"></a>
             <div className="textsomos">
                     <p className="title_somos">SOMOS <span className="title_black">cria</span><span className="title_red">más</span></p>
                     <p className="bajada_somos">Utilizamos el mejor conocimiento para unir a los seres humanos con las mejores mascotas,<br />
