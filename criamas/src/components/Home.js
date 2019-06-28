@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
+import '../stylesheet/App.css';
 import Bslider from './Bslider';
 import Oferta from './Oferta';
-import '../stylesheet/App.css';
-import Comments from './Comments';
 import Somos from './Somos';
+import Comments from './Comments';
 import ContactHome from './ContactHome';
-import Footer from './Footer';
 import JoinUs from './JoinUs';
+import Footer from './Footer';
 
 class Home extends Component {
-
   render() {
     return (
       <div>
@@ -17,7 +16,7 @@ class Home extends Component {
         <Oferta></Oferta>
         <Somos></Somos>
         <Comments></Comments>
-        <ContactHome></ContactHome>
+        <ContactHome/>
         <JoinUs></JoinUs>
         <Footer></Footer>
       </div>

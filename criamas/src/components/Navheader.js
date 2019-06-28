@@ -1,9 +1,7 @@
 import React from 'react';
 import img_logo from '../img_svg/logo_criamas-01.svg';
-import {BrowserRouter, Switch, Link, Redirect} from "react-router-dom";
-// import '../stylesheet/App.css';
+import {Link} from "react-router-dom";
 import Button from './Button';
-import Somos from './Somos';
 
 class Navheader extends React.Component {
   render () {
@@ -19,7 +17,7 @@ class Navheader extends React.Component {
               <Link to="/" className="link_url">Home</Link>
             </li>
             <li>
-            <Link to="/nosotros" className="link_url">Nosotros</Link>
+              <Link to="/nosotros" className="link_url">Nosotros</Link>
             </li>
             <li>
               <Link to="/cachorros" className="link_url">Cachorros</Link>

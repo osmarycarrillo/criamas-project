@@ -16,12 +16,11 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <Navheader></Navheader>
-            <Redes></Redes> 
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/nosotros" component={Somos}/>
-            <Route exact path="/transfers" component={Transfers}/>
-            <Route exact path="/blog" component={Blog}/>
-            {/* <Route exact path="/contacto" component={Footer}/> */}
+            <Redes></Redes>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/nosotros" component={Somos} />
+            <Route exact path="/transfers" component={Transfers} />
+            <Route exact path="/blog" component={Blog} />  
           </div>
         </BrowserRouter>
       </div>

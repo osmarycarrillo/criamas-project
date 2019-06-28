@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from './Form';
+import FormTransfer from './FormTransfer';
 import Travels from './Travels';
 
 class ServiceRequest extends React.Component {
@@ -10,7 +10,7 @@ class ServiceRequest extends React.Component {
                 <h3 className="title-serv">Solicitud de servicio</h3>
                 <p>Rellena este formulario y obtené el mejor servicio.</p>
                 <div className="container-serv">
-                    <Form></Form>
+                    <FormTransfer></FormTransfer>
                     <Travels></Travels>
                 </div>
                 <hr className="line-form"/>
