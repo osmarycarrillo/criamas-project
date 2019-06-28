@@ -866,10 +866,14 @@
 }
 .redes .box_redes {
   display: flex;
-  width: 50%;
+  width: 25%;
   height: 100vh;
   flex-direction: column;
   padding: 0.5rem;
+}
+.redes .box_redes a {
+  cursor: default;
+  margin: 0%;
 }
 .redes .box_redes .button_redes {
   width: 3rem;
@@ -878,12 +882,8 @@
   border-radius: 100%;
   margin-top: 1rem;
 }
-.redes .box_redes .fb {
+.redes .box_redes .button_redes:hover {
   background: #ea1e52;
-  color: white;
-}
-.redes .box_redes .button_redes::hover {
-  opacity: 0.6;
 }
 
 .information {

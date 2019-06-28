@@ -985,24 +985,25 @@ text-align: start;
     z-index: 2;
     .box_redes{
         display: flex;
-        width: 50%;
+        width: 25%;
         height: 100vh;
         flex-direction: column;
         padding: 0.5rem;
+        a{
+            cursor:default; 
+            // pointer-events: none;
+            margin: 0%;
+        }
         .button_redes{
             width: 3rem;
             height: 3rem;
             border: none;
             border-radius:100%;
             margin-top:1rem;
-        }
-        .fb{
-            background: #ea1e52;
-            color:white;
-        }
-        ///pendiente preguntar que efecto tendran en el hover
-        .button_redes::hover{
-            opacity: 0.6;
+            &:hover{
+                background: #ea1e52;
+            }
+           
         }
 
     }
