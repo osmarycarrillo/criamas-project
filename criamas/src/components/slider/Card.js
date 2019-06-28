@@ -2,8 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from '../Button'
 
+
 const Card = ({property}) => {
-	const {id, description, button, image, raza} = property;
+	const {id, description, image, raza , url} = property;
 	return (
 		<div className="box-center">
 			<div id={`card-${id}`} className="slider-content">
@@ -12,7 +13,8 @@ const Card = ({property}) => {
 					<p>{description}</p>
 					<span className="span-raza">Raza:</span>
 					<span className="raza-type">{raza}</span>
-					<Button name={button} styleCss="shop" identificator="shop_button"></Button>
+					<Button url={url} name='Comprar' styleCss="shop" identificator="shop_button">
+					</Button>
 				</div>
 				<div className="image-slide">
 					<img className="image_dog" src={image} alt={raza}/>
