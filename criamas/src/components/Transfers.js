@@ -8,7 +8,11 @@ class Transfers extends Component {
     render() {
         return (
             <div className="transfers">
-                <Bstatictras/>
+                <Bstatictras 
+                 subtitle='Bienvenido a Traslados' 
+                 title="Aquí encontrará información sobre nuestro servicio"
+                 bajada='Ante cualquier duda, podemos ayudarte.'
+                />
                 <Texttras/>
                 <ServiceRequest/>
                 <Contact/>

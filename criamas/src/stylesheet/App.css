@@ -24,34 +24,37 @@
     width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     margin: auto; }
     .box-static .cont-trans .box-p {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: initial;
-      font-family: "Maven Pro", sans-serif; }
+      width: 40%;
+      font-family: "Poppins", sans-serif;
+      padding-top: 2rem; }
     .box-static .cont-trans .dog {
-      width: 100%;
+      width: 60%;
       height: auto;
-      align-items: center;
-      margin-bottom: 5rem; }
+      display: flex;
+      align-items: flex-end;
+      padding-top: 2rem; }
+      .box-static .cont-trans .dog .dog_img {
+        width: 93%; }
 
-.title-2 {
-  font-family: "Poppins", sans-serif;
-  font-weight: bold;
-  font-size: larger; }
+.box-p .title-red {
+  color: #ea1e52;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0rem; }
+.box-p .title-2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0rem; }
+.box-p .title-3 {
+  font-style: italic;
+  margin: 0rem;
+  font-size: 1rem; }
 
 .p-red {
   color: #ea1e52;
   font-size: 16px; }
-
-.title-red {
-  font-family: "Poppins", sans-serif;
-  color: #ea1e52;
-  font-size: 18px; }
 
 .box-tras {
   text-align: center;
@@ -778,8 +781,9 @@ a {
             color: white;
             text-decoration: none; }
       .information .footer-div .inf-nav img {
-        width: 50px;
-        height: 50px; }
+        width: 100px;
+        height: 100px;
+        margin-right: 10px; }
   .information .line-foot {
     margin-top: 30px;
     width: 72%;
