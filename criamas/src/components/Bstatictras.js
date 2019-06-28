@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Cachorros from '../img_photos/cachorros.png';
 
-
-
-
 class Bstatictras extends Component {
 
     render() {

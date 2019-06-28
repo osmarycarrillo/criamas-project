@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import img_somos from "../img_photos/somos.png";
 
 class Somos extends Component {
-
     render() {
         return (
             <div className="somos">

@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 
-
-
-
-
 class Texttras extends Component {
-
     render() {
         return (
            <div className="text-tras">
@@ -31,7 +26,6 @@ class Texttras extends Component {
                             <p className="">  <i className="fab fa-gratipay heart"></i>Hotel de animales</p>
                             <p className="">  <i className="fab fa-gratipay heart"></i>Teléfono 24 hrs. para emergencias</p>
                             <p className="">  <i className="fab fa-gratipay heart"></i>Servicio VIP</p>
-
                         </div>
                     </div>
                     <p>Todos nuestros servicios están orientados a conseguir el <span className= "p-red"> máximo bienestar y trato respetuoso y amoroso</span> <br />
@@ -39,11 +33,10 @@ class Texttras extends Component {
                         También podemos ofrecer de un servicio de <span className="bold"> hoteles para animales, con alojamientos específicos, con control <br />
                             de temperatura según sus necesidades</span>, utilizables en aquellos casos en los que sea necesario efectuar <br />
                         un tránsito o pasar una noche.</p>
-                </div>
-               
-               
+                </div>               
            </div>
-        )
+        );
     }
 }
+
 export default  Texttras ;

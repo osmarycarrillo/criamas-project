@@ -296,10 +296,20 @@ text-align: start;
         font-size: 17px;
         margin-right: 2rem;
     }
+<<<<<<< HEAD
     .shop {
         @include style_button_solid($color_pink, white, 0.95rem, white, $color_pink);
         padding: 0.635rem 1.325rem;
     } 
+=======
+   
+    .shop {
+        @include style_button_solid($color_pink, white, 0.95rem, white, $color_pink);
+        padding: 0.635rem  1.325rem;
+        margin-top: 1rem;
+       
+    }
+>>>>>>> b9d619d24e9617ec977cec517528ed9e69427988
 }
 
 
@@ -777,7 +787,10 @@ text-align: start;
 
 .data-contact{
     .box_mapa{
-        margin-top: 2rem;
+        margin-top: 1rem;
+        width: 100%;
+        height: 70%;
+        border: none;
     }
 }
 
@@ -984,25 +997,23 @@ text-align: start;
         width: 50%;
         height: 100vh;
         flex-direction: column;
-        padding: 0.5rem;
+        padding: 0.5rem; 
         .button_redes{
             width: 3rem;
             height: 3rem;
             border: none;
             border-radius:100%;
             margin-top:1rem;
-        }
-        .fb{
-            background: #ea1e52;
-            color:white;
-        }
-        ///pendiente preguntar que efecto tendran en el hover
-        .button_redes::hover{
-            opacity: 0.6;
-        }
+            &:hover{
+               background: #EA3968;
+            }
+        }   
 
     }
     
+}
+a{
+    cursor: default;
 }
 
 //estilos footer
