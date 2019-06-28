@@ -296,20 +296,10 @@ text-align: start;
         font-size: 17px;
         margin-right: 2rem;
     }
-<<<<<<< HEAD
     .shop {
         @include style_button_solid($color_pink, white, 0.95rem, white, $color_pink);
         padding: 0.635rem 1.325rem;
     } 
-=======
-   
-    .shop {
-        @include style_button_solid($color_pink, white, 0.95rem, white, $color_pink);
-        padding: 0.635rem  1.325rem;
-        margin-top: 1rem;
-       
-    }
->>>>>>> b9d619d24e9617ec977cec517528ed9e69427988
 }
 
 

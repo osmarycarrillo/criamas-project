@@ -1,53 +1,813 @@
-/*
-Error: Invalid CSS after "...528ed9e69427988": expected "{", was "}"
-        on line 313 of App.scss
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Salsa&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.9.0/css/all.css");
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,700,700i,800,800i&display=swap"); }
+@font-face {
+  font-family: "Maven Pro", sans-serif;
+  src: url("https://fonts.googleapis.com/css?family=Maven+Pro&display=swap"); }
+@font-face {
+  font-family: 'Salsa', cursive;
+  src: url("https://fonts.googleapis.com/css?family=Salsa&display=swap"); }
+.transfers {
+  background: #FBF0E7; }
 
-308:         padding: 0.635rem  1.325rem;
-309:         margin-top: 1rem;
-310:        
-311:     }
-312: >>>>>>> b9d619d24e9617ec977cec517528ed9e69427988
-313: }
-314: 
-315: 
-316: .box-center {
-317:     .slider-content {
-318:         .image-slide {
+.box-static {
+  display: flex;
+  background: #EFD0D1;
+  position: relative;
+  width: 100%; }
+  .box-static .cont-trans {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto; }
+    .box-static .cont-trans .box-p {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: initial;
+      font-family: "Maven Pro", sans-serif; }
+    .box-static .cont-trans .dog {
+      width: 100%;
+      height: auto;
+      align-items: center;
+      margin-bottom: 5rem; }
 
-Backtrace:
-App.scss:313
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1308:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1238:in `expected'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:1233:in `tok!'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:688:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:758:in `declaration_or_ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:708:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:689:in `block'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:681:in `ruleset'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:707:in `block_child'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:700:in `block_contents'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/scss/parser.rb:41:in `parse'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:414:in `_to_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...528ed9e69427988\": expected \"{\", was \"}\"\A         on line 313 of App.scss\A \A 308:         padding: 0.635rem  1.325rem;\A 309:         margin-top: 1rem;\A 310:        \A 311:     }\A 312: >>>>>>> b9d619d24e9617ec977cec517528ed9e69427988\A 313: }\A 314: \A 315: \A 316: .box-center {\A 317:     .slider-content {\A 318:         .image-slide {"; }
+.title-2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: larger; }
+
+.p-red {
+  color: #ea1e52;
+  font-size: 16px; }
+
+.title-red {
+  font-family: "Poppins", sans-serif;
+  color: #ea1e52;
+  font-size: 18px; }
+
+.box-tras {
+  text-align: center;
+  font-family: "Maven Pro", sans-serif; }
+
+.viñetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .viñetas .left {
+    text-align: start; }
+  .viñetas .rigth {
+    text-align: start;
+    margin-left: 8%; }
+
+.App .box_nav {
+  width: 100%;
+  position: fixed;
+  z-index: 2; }
+  .App .box_nav .nav_menu {
+    width: 80%;
+    height: 5.2rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; }
+    .App .box_nav .nav_menu .logo_container {
+      width: 16%;
+      height: auto; }
+      .App .box_nav .nav_menu .logo_container .logo {
+        width: 90%;
+        height: auto; }
+
+.container_buttons {
+  width: 80%;
+  display: flex;
+  align-items: center; }
+  .container_buttons .menu_row {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.8125rem;
+    width: 75%;
+    margin: 0rem;
+    padding: 0rem; }
+    .container_buttons .menu_row li {
+      list-style: none;
+      position: relative; }
+      .container_buttons .menu_row li .link_url {
+        text-decoration: none;
+        color: #282828; }
+        .container_buttons .menu_row li .link_url::after {
+          content: '';
+          transition: transform 0.25s ease-out;
+          background-color: #282828;
+          width: 95%;
+          transform: scaleX(0);
+          height: 0.0875rem;
+          bottom: -0.775rem;
+          left: 0;
+          position: absolute;
+          transform-origin: bottom left; }
+        .container_buttons .menu_row li .link_url:hover::after {
+          transform: scaleX(1);
+          transform-origin: botom left; }
+        .container_buttons .menu_row li .link_url:focus::after {
+          transform: scaleX(1);
+          transform-origin: botom left; }
+
+.container_buttons .box_buttons {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 0.625rem; }
+  .container_buttons .box_buttons .signin {
+    background-color: white;
+    color: #ea1e52;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    border-radius: 1.25rem;
+    font-size: 0.75rem;
+    text-decoration: none;
+    transition: all 0.7s ease-in-out 0s;
+    height: 2.3125rem;
+    padding: 0rem 1.125rem; }
+    .container_buttons .box_buttons .signin:hover {
+      background-color: #ea1e52;
+      color: white;
+      transition: all 0.7s ease-in-out 0s; }
+  .container_buttons .box_buttons .login {
+    font-family: "Poppins", sans-serif;
+    border-radius: 1.25rem;
+    background-color: transparent;
+    padding: 0.5rem 0.9375rem;
+    color: #ea1e52;
+    font-size: 0.75rem;
+    border: 0.0625rem solid #ea1e52;
+    text-decoration: none;
+    transition: all 0.7s ease-in-out 0s;
+    padding: 0rem 1.125rem;
+    height: 2.3125rem; }
+    .container_buttons .box_buttons .login:hover {
+      background-color: #ea1e52;
+      color: white;
+      transition: all 0.7s ease-in-out 0s; }
+
+.App .box_slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: #EFD0D1; }
+  .App .box_slide .box-center {
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    position: relative; }
+
+.box-center .slider-content {
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  align-items: center; }
+  .box-center .slider-content .inner {
+    width: 32%;
+    font-family: 'Poppins', sans-serif; }
+
+.inner .subtitle {
+  color: #ea1e52;
+  font-weight: 400;
+  margin: 0px;
+  font-size: 19px; }
+.inner p {
+  margin: 0px;
+  font-size: 26px;
+  font-weight: 500; }
+.inner .span-raza {
+  font-weight: 500;
+  font-size: 17px; }
+.inner .raza-type {
+  font-weight: 400;
+  font-style: italic;
+  margin-left: 0.5rem;
+  font-size: 17px;
+  margin-right: 2rem; }
+.inner .shop {
+  background-color: #ea1e52;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 1.25rem;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.7s ease-in-out 0s;
+  padding: 0.635rem 1.325rem; }
+  .inner .shop:hover {
+    background-color: white;
+    color: #ea1e52;
+    transition: all 0.7s ease-in-out 0s; }
+
+.box-center .slider-content .image-slide {
+  width: 68%;
+  height: 100vh; }
+  .box-center .slider-content .image-slide .image_dog {
+    width: 100%;
+    height: auto; }
+
+.counter {
+  position: absolute;
+  width: 10%;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -3.5rem;
+  text-align: center; }
+  .counter .button_slide {
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 50%;
+    height: 1.5625rem;
+    width: 19%;
+    outline-color: transparent;
+    margin-right: 5px; }
+    .counter .button_slide .fa-angle-left {
+      font-size: 12px;
+      color: white;
+      margin: 2px; }
+    .counter .button_slide .fa-angle-right {
+      font-size: 12px;
+      color: white;
+      margin: 2px; }
+  .counter .button-disable {
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 50%;
+    height: 1.5625rem;
+    width: 19%;
+    outline-color: transparent;
+    color: grey;
+    margin-right: 5px; }
+
+.box_oferta {
+  background-color: #EA3968;
+  background-image: url(../img_svg/fondo-01.svg);
+  margin: 0px; }
+  .box_oferta .box_center_oferta {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    .box_oferta .box_center_oferta .box_first {
+      width: 25%;
+      height: 6rem;
+      color: white;
+      margin-top: 0.4rem; }
+      .box_oferta .box_center_oferta .box_first .title_oferta {
+        font-family: 'Salsa', cursive;
+        color: white;
+        margin: 0px;
+        text-align: right;
+        font-size: 3.2rem;
+        height: 3rem; }
+      .box_oferta .box_center_oferta .box_first .subtitle_oferta {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.75rem;
+        font-style: italic;
+        font-weight: 500;
+        text-align: right;
+        margin: 0px; }
+
+.box_center_oferta .box_second {
+  width: 20%;
+  height: 8rem; }
+  .box_center_oferta .box_second .content_image {
+    width: 100%;
+    height: auto; }
+    .box_center_oferta .box_second .content_image .img_oferta {
+      width: 101%;
+      height: auto;
+      text-align: center; }
+.box_center_oferta .box_third {
+  width: 35%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white;
+  height: 7rem; }
+  .box_center_oferta .box_third .desc {
+    font-size: 3.5rem;
+    margin: 0px;
+    height: 4rem; }
+  .box_center_oferta .box_third .products {
+    font-size: 1.32rem;
+    margin: 0px;
+    text-transform: uppercase; }
+
+.somos {
+  background-color: #FBF0E7; }
+  .somos .textsomos {
+    text-align: center;
+    padding-top: 3.2rem; }
+    .somos .textsomos .title_somos {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 1rem; }
+      .somos .textsomos .title_somos .title_black {
+        font-size: 1.2rem; }
+      .somos .textsomos .title_somos .title_red {
+        font-family: 'Salsa', cursive;
+        color: #ea1e52;
+        font-size: 1.3rem; }
+    .somos .textsomos .bajada_somos {
+      font-family: "Maven Pro", sans-serif;
+      font-size: 1rem;
+      line-height: 1.4rem; }
+    .somos .textsomos .why {
+      font-size: 22px;
+      font-family: 'Poppins', sans-serif;
+      margin: 5px 0px 50px 0px; }
+  .somos .somos-box {
+    width: 60%;
+    text-align: center;
+    display: flex;
+    margin: auto; }
+    .somos .somos-box .somos-left {
+      width: 50%;
+      background: #fcb4b5; }
+    .somos .somos-box .somos-rigth {
+      width: 50%;
+      background: #fed9be; }
+    .somos .somos-box .icon {
+      margin-top: 12%;
+      font-size: 25px; }
+  .somos .gray {
+    color: #403843; }
+  .somos .line {
+    padding: 0%;
+    width: 200px;
+    border: 0.5px solid; }
+
+.parragraph_somos {
+  font-family: "Maven Pro", sans-serif;
+  text-align: unset;
+  font-size: 0.84rem;
+  color: #595959;
+  line-height: 1.6rem;
+  margin-bottom: 3rem; }
+
+.img-somos {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  margin-top: 1.4rem; }
+  .img-somos .img_content_somos {
+    width: 60%;
+    margin: auto;
+    height: auto;
+    box-sizing: content-box;
+    display: flex;
+    align-content: flex-end; }
+    .img-somos .img_content_somos .dogs_somos {
+      width: 100%;
+      height: auto; }
+
+.bold {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #3F3F3F; }
+
+.heart {
+  color: #ea1e52; }
+
+.comments {
+  font-family: "Poppins", sans-serif;
+  background-color: #CCD0D7; }
+  .comments .box_comments {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    padding: 3rem 0rem; }
+    .comments .box_comments .box_button {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .comments .box_comments .box_button .button_comments {
+        border: 1px solid #403944;
+        background-color: transparent;
+        border-radius: 50%;
+        height: 1.5625rem;
+        width: 1.6rem;
+        outline: none; }
+
+.comments .box_comments .div-com {
+  text-align: center;
+  width: 60%; }
+  .comments .box_comments .div-com .box_comillas {
+    width: 30%;
+    height: 6rem;
+    margin: auto;
+    background-image: url("../img_svg/comillas-01.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: flex-end; }
+    .comments .box_comments .div-com .box_comillas .content_comments {
+      width: 53%;
+      margin: auto;
+      margin-bottom: 0px;
+      height: 4.8rem;
+      border-radius: 50%;
+      border: 0.18rem solid white; }
+      .comments .box_comments .div-com .box_comillas .content_comments .image_cliente {
+        width: 100%;
+        border-radius: 50%;
+        height: 4.8rem; }
+  .comments .box_comments .div-com .nombre_cliente {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #353535;
+    font-size: 0.85rem; }
+    .comments .box_comments .div-com .nombre_cliente .cliente_occupation {
+      font-weight: 700; }
+  .comments .box_comments .div-com .testimony_cliente {
+    font-family: 'Maven Pro', sans-serif;
+    color: #5B6470;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    margin-bottom: 2rem; }
+
+.comments .box_comments .div-com .button_container .join-us {
+  font-family: "Poppins", sans-serif;
+  border-radius: 1.25rem;
+  background-color: transparent;
+  padding: 0.5rem 0.9375rem;
+  color: #403944;
+  font-size: 0.7rem;
+  border: 0.1225rem solid #403944;
+  text-decoration: none;
+  transition: all 0.7s ease-in-out 0s;
+  font-weight: 500; }
+  .comments .box_comments .div-com .button_container .join-us:hover {
+    background-color: #403944;
+    color: white;
+    transition: all 0.7s ease-in-out 0s; }
+
+.chevron_style {
+  color: #403944;
+  font-size: 0.8rem; }
+
+.contact-home {
+  font-family: "Poppins", sans-serif; }
+  .contact-home .box_center_home {
+    width: 70%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #282828; }
+    .contact-home .box_center_home .title_contact {
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: center; }
+    .contact-home .box_center_home .bajada_contact {
+      font-family: 'Maven Pro', sans-serif;
+      font-size: 1rem;
+      text-align: center; }
+
+.contact-home .box_center_home .div-con {
+  display: flex;
+  margin-top: 3rem; }
+  .contact-home .box_center_home .div-con .form-contact {
+    width: 50%; }
+    .contact-home .box_center_home .div-con .form-contact input {
+      font-family: "Poppins", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 300;
+      padding-left: 1rem;
+      background-color: #F9F6F6;
+      border-radius: 0.3rem;
+      width: 90%;
+      height: 3.5rem;
+      border: none;
+      border-bottom: 1.48px solid #403944;
+      margin-bottom: 1.5rem; }
+    .contact-home .box_center_home .div-con .form-contact .input-msj {
+      height: 12rem; }
+    .contact-home .box_center_home .div-con .form-contact .container_contact .button-con {
+      font-family: "Poppins", sans-serif;
+      border-radius: 1.25rem;
+      background-color: transparent;
+      padding: 0.5rem 0.9375rem;
+      color: #403944;
+      font-size: 0.8rem;
+      border: 2px solid #403944;
+      text-decoration: none;
+      transition: all 0.7s ease-in-out 0s;
+      width: 23%; }
+      .contact-home .box_center_home .div-con .form-contact .container_contact .button-con:hover {
+        background-color: #403944;
+        color: white;
+        transition: all 0.7s ease-in-out 0s; }
+
+.box_center_home .div-con .data-contact {
+  width: 50%; }
+  .box_center_home .div-con .data-contact .box_direction {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+    .box_center_home .div-con .data-contact .box_direction .content_box_contact {
+      margin: 0%;
+      padding: 0%;
+      width: 50%;
+      margin-bottom: 30px;
+      display: flex; }
+      .box_center_home .div-con .data-contact .box_direction .content_box_contact .div-ic {
+        margin: 0%;
+        padding-top: 0.1rem;
+        width: 10%;
+        margin-right: 0.5rem;
+        text-align: center; }
+        .box_center_home .div-con .data-contact .box_direction .content_box_contact .div-ic i {
+          font-size: 1.2rem;
+          color: #403944; }
+      .box_center_home .div-con .data-contact .box_direction .content_box_contact .div-dir {
+        margin: 0%;
+        padding: 0%;
+        display: block;
+        width: 80%; }
+        .box_center_home .div-con .data-contact .box_direction .content_box_contact .div-dir p {
+          margin: 0%;
+          padding: 0%;
+          font-size: 0.85rem;
+          color: #353535; }
+        .box_center_home .div-con .data-contact .box_direction .content_box_contact .div-dir .line-con {
+          margin: 0%;
+          padding: 0%;
+          width: 80%;
+          border: 0.03rem solid #403944; }
+        .box_center_home .div-con .data-contact .box_direction .content_box_contact .div-dir .text_contact {
+          font-weight: 500;
+          margin-top: 0.4rem; }
+
+.data-contact .box_mapa {
+  margin-top: 1rem;
+  width: 100%;
+  height: 70%;
+  border: none; }
+
+.join {
+  background-color: #FCB4B4;
+  background-image: url("../img_svg/fondo-02-01.svg"); }
+  .join .join-box {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row; }
+    .join .join-box .dog-black {
+      width: 20%;
+      height: 11.39rem;
+      margin-right: 2rem; }
+      .join .join-box .dog-black img {
+        width: 100%;
+        height: auto; }
+    .join .join-box .content_text {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-family: 'Poppins', sans-serif; }
+      .join .join-box .content_text .box_phrase {
+        width: 23%;
+        color: #282828;
+        height: 4.5rem;
+        margin-right: 1.5rem; }
+        .join .join-box .content_text .box_phrase .text_first {
+          font-weight: 300;
+          font-size: 1.5rem;
+          margin: 0px;
+          height: 1.6rem; }
+        .join .join-box .content_text .box_phrase .text_second {
+          font-weight: 700;
+          font-size: 1.8rem;
+          margin: 0px;
+          height: 2rem; }
+      .join .join-box .content_text .box_input {
+        width: 50%;
+        height: 2.3125rem; }
+        .join .join-box .content_text .box_input .input_join {
+          width: 95%;
+          border: none;
+          border-radius: 1rem;
+          height: 2.3125rem;
+          font-family: 'Maven Pro', sans-serif;
+          font-size: 0.8rem;
+          color: #5B5959;
+          padding-left: 5%;
+          outline: none; }
+      .join .join-box .content_text .box-button-subscribe {
+        width: 20%;
+        text-align: right; }
+        .join .join-box .content_text .box-button-subscribe .button_subscribe {
+          background-color: #282828;
+          color: white;
+          font-family: "Poppins", sans-serif;
+          border: none;
+          border-radius: 1.25rem;
+          font-size: 0.9rem;
+          text-decoration: none;
+          transition: all 0.7s ease-in-out 0s;
+          height: 2.3125rem;
+          padding: 0rem 1.125rem;
+          width: 80%; }
+          .join .join-box .content_text .box-button-subscribe .button_subscribe:hover {
+            background-color: #403944;
+            color: white;
+            transition: all 0.7s ease-in-out 0s; }
+
+.services {
+  margin: 0%;
+  padding: 0%;
+  display: inline;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background-color: #EFD0D1; }
+  .services .line-form {
+    margin: 0%;
+    padding: 0%;
+    margin-left: 35%;
+    width: 500px;
+    border-bottom: 2px solid gray; }
+  .services .title-serv {
+    text-transform: uppercase; }
+
+.services .container-serv {
+  display: flex;
+  padding-bottom: 50px; }
+.services .form {
+  width: 50%; }
+  .services .form .buttonTrans {
+    font-family: "Poppins", sans-serif;
+    border-radius: 1.25rem;
+    background-color: transparent;
+    padding: 0.5rem 0.9375rem;
+    color: #282828;
+    font-size: 0.75rem;
+    border: 0.0625rem solid #282828;
+    text-decoration: none;
+    transition: all 0.7s ease-in-out 0s;
+    padding: 0rem 1.125rem;
+    width: 5.000rem;
+    height: 1.600rem; }
+    .services .form .buttonTrans:hover {
+      background-color: #282828;
+      color: white;
+      transition: all 0.7s ease-in-out 0s; }
+  .services .form .form-style {
+    width: 400px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    margin: auto;
+    display: flex;
+    border-bottom: black solid 2px; }
+    .services .form .form-style .div-p {
+      text-align: initial;
+      width: 85%; }
+    .services .form .form-style .div-button {
+      width: 10%;
+      padding-top: 10px; }
+    .services .form .form-style .button-form {
+      width: 30px;
+      height: 30px;
+      background-color: #EFD0D1;
+      border-radius: 50%;
+      border: 2px solid black; }
+
+.travels {
+  padding: 0%;
+  margin: 0%;
+  font-size: 15px;
+  width: 50%;
+  text-align: left; }
+  .travels h4 {
+    text-transform: uppercase; }
+  .travels .title-trav {
+    width: 400px;
+    border-bottom: 2px solid black; }
+  .travels .div-trav {
+    width: 400px;
+    border-bottom: 2px solid gray; }
+
+.contact {
+  padding-top: 40px;
+  text-align: center; }
+  .contact .data-div {
+    text-align: center;
+    display: inline-flex; }
+    .contact .data-div .vertical-line {
+      color: gray;
+      padding-left: 30px;
+      padding-right: 30px; }
+
+.redes {
+  width: 20%;
+  height: 80%;
+  margin-top: 15%;
+  position: fixed;
+  z-index: 2; }
+  .redes .box_redes {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+    padding: 0.5rem; }
+    .redes .box_redes .button_redes {
+      width: 3rem;
+      height: 3rem;
+      border: none;
+      border-radius: 100%;
+      margin-top: 1rem; }
+      .redes .box_redes .button_redes:hover {
+        background: #EA3968; }
+
+a {
+  cursor: default; }
+
+.information {
+  background-color: #282828;
+  color: white; }
+  .information .footer-div {
+    display: flex; }
+    .information .footer-div .inf-div {
+      margin-left: 200px; }
+      .information .footer-div .inf-div .logo-inf {
+        width: 150px;
+        height: auto;
+        color: white; }
+      .information .footer-div .inf-div .line-inf {
+        margin: 0%;
+        padding: 0%;
+        width: 130px;
+        border: 0.03rem solid white; }
+      .information .footer-div .inf-div .sn-but {
+        width: 30px;
+        height: 30px;
+        background-color: #282828;
+        border: 2px solid white;
+        border-radius: 50%;
+        margin: 5px;
+        margin-top: 15px; }
+        .information .footer-div .inf-div .sn-but i {
+          color: white; }
+    .information .footer-div .inf-nav {
+      padding-left: 50px;
+      font-family: "Poppins", sans-serif;
+      margin: 30px; }
+      .information .footer-div .inf-nav ul {
+        margin: 0%;
+        padding: 0%; }
+        .information .footer-div .inf-nav ul .link-inf {
+          padding-bottom: 5px;
+          list-style: none;
+          text-align: left; }
+          .information .footer-div .inf-nav ul .link-inf .link_url {
+            color: white;
+            text-decoration: none; }
+      .information .footer-div .inf-nav img {
+        width: 50px;
+        height: 50px; }
+  .information .line-foot {
+    margin-top: 30px;
+    width: 72%;
+    height: 0%;
+    border: 1px solid white;
+    margin-left: 15%; }
+  .information .footer {
+    display: flex;
+    font-size: 10px; }
+    .information .footer .footer-cri {
+      margin-left: 15%;
+      width: 20%;
+      margin-right: 30%;
+      text-transform: uppercase; }
+      .information .footer .footer-cri .foot-logo {
+        font-weight: bold;
+        text-transform: none; }
+    .information .footer .footer-data {
+      width: 30%;
+      text-transform: uppercase;
+      margin-top: 7px; }
+      .information .footer .footer-data a {
+        margin: 4px; }
+  .information .footer-sky {
+    background-color: #282828;
+    font-size: 12px;
+    margin-left: 15%;
+    height: 10px;
+    padding-bottom: 5%; }
+
+/*# sourceMappingURL=App.css.map */
