@@ -243,8 +243,7 @@
   font-size: 0.95rem;
   text-decoration: none;
   transition: all 0.7s ease-in-out 0s;
-  height: 2.3125rem;
-  padding: 0rem 1.325rem;
+  padding: 0.635rem 1.325rem;
   margin-top: 1rem;
 }
 .inner .shop:hover {
@@ -667,9 +666,6 @@
 
 .data-contact .box_mapa {
   margin-top: 2rem;
-  width: 100%;
-  height: 70%;
-  border: none;
 }
 
 .join {
@@ -866,14 +862,10 @@
 }
 .redes .box_redes {
   display: flex;
-  width: 25%;
+  width: 50%;
   height: 100vh;
   flex-direction: column;
   padding: 0.5rem;
-}
-.redes .box_redes a {
-  cursor: default;
-  margin: 0%;
 }
 .redes .box_redes .button_redes {
   width: 3rem;
@@ -882,8 +874,12 @@
   border-radius: 100%;
   margin-top: 1rem;
 }
-.redes .box_redes .button_redes:hover {
+.redes .box_redes .fb {
   background: #ea1e52;
+  color: white;
+}
+.redes .box_redes .button_redes::hover {
+  opacity: 0.6;
 }
 
 .information {

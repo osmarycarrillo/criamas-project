@@ -1,49 +1,48 @@
 import React from 'react';
+import Input from './Input';
 import Button from './Button';
 
-class Form extends React.Component {
+class FormTransfer extends React.Component {
     render() {
         return (
-            <div className="form">
-                <form>
-                    <input className="form-style" type="text" value="Nombre"></input>
-                    <div className="form-style">
+            <div className="form-contact">
+                    <Input type="text" styleCss="input" placeholder="Nombre"/>
+                    <div styleCss="input">
                         <div className="div-p">
                             <p className="">Tipo de perro:</p>
                         </div>
                         <div className="div-button">
-                            <button className="button-form"> 
+                            <Button className="button-form"> 
                                 <i class="fas fa-chevron-down">
-                                    {/* <select className="select-form" defaultValue={1}>
+                                    <select className="select-form" defaultValue={1}>
                                         <option value="1">Caniche</option>
                                         <option value="2">Bulldog</option>
                                         <option value="3">Mestizo</option>
-                                    </select> */}
+                                    </select>
                                 </i>
-                            </button>
+                            </Button>
                         </div>     
-                    </div>  
-                    <input className="form-style" type="text" value="Lugar de destino"></input>
-                    <div className="form-style">
+                    </div>
+                    <Input type="text" styleCss="input" placeholder="Lugar de destino"/>
+                    <div styleCss="input">
                         <div className="div-p">
                             <p className="">Tipo de traslado:</p>
                         </div>
                         <div className="div-button">
-                            <button className="button-form">
+                            <Button styleCss="button-form">
                                 <i class="fas fa-chevron-down">
-                                {/* <input type="radio" name="" value="1"/> Avión
+                                <input type="radio" name="" value="1"/> Avión
                                 <p className="line-form"></p>
-                                <input type="radio" name="" value="2"/> Terrestre */}
+                                <input type="radio" name="" value="2"/> Terrestre
                                 </i>
-                            </button>
+                            </Button>
                         </div> 
                     </div>
-                    <textarea className="form-style message" type="text" value="Mensaje"></textarea>
+                    <textarea type="text" styleCss="input-msj" placeholder="Mensaje" required="" maxLength="140"/>
                     <Button styleCss="buttonTrans" name="Enviar"/>
-                </form>     
             </div>
-        )
+        );
     }
 }
 
-export default Form;
+export default FormTransfer;
