@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import img_somos from "../img_photos/somos.png";
 
 class Somos extends Component {
-
     render() {
         return (
-            <div className="somos">
+            <div className="somos">     
             <div className="textsomos">
                     <p className="title_somos">SOMOS <span className="title_black">cria</span><span className="title_red">más</span></p>
                     <p className="bajada_somos">Utilizamos el mejor conocimiento para unir a los seres humanos con las mejores mascotas,<br />

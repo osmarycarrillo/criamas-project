@@ -762,7 +762,7 @@
   padding: 0%;
   margin-left: 35%;
   width: 500px;
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid #CCD0D7;
 }
 .services .title-serv {
   text-transform: uppercase;

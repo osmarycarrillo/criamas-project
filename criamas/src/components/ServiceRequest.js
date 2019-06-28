@@ -8,7 +8,7 @@ class ServiceRequest extends React.Component {
             <div className="services">
                 <hr className="line-form"/>
                 <h3 className="title-serv">Solicitud de servicio</h3>
-                <p>Rellena este formulario, obtendras el mejor servicio.</p>
+                <p>Rellena este formulario y obtené el mejor servicio.</p>
                 <div className="container-serv">
                     <Form></Form>
                     <Travels></Travels>

@@ -1,13 +1,11 @@
 import React from 'react';
 import img_logo from '../img_svg/logo_criamas-01.svg';
-import { Link } from "react-router-dom";
-import '../stylesheet/App.css';
+import {BrowserRouter, Switch, Link, Redirect} from "react-router-dom";
+// import '../stylesheet/App.css';
 import Button from './Button';
-
-
+import Somos from './Somos';
 
 class Navheader extends React.Component {
-  
   render () {
     return (
       <div className="box_nav">
@@ -21,7 +19,7 @@ class Navheader extends React.Component {
               <Link to="/" className="link_url">Home</Link>
             </li>
             <li>
-              <Link to="/" className="link_url">Nosotros</Link>
+            <Link to="/nosotros" className="link_url">Nosotros</Link>
             </li>
             <li>
               <Link to="/cachorros" className="link_url">Cachorros</Link>
@@ -36,7 +34,7 @@ class Navheader extends React.Component {
               <Link to="/blog" className="link_url">Blog</Link>
             </li>
             <li>
-              <Link to="" className="link_url">Contacto</Link>
+              <Link to="/contacto" className="link_url">Contacto</Link>
             </li>                      
           </ul>
           <div className="box_buttons">
@@ -47,7 +45,6 @@ class Navheader extends React.Component {
           </div>
         </div>       
       </nav>
-    
       </div>
     )
   }

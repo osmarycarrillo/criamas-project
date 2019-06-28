@@ -688,7 +688,7 @@ text-align: start;
             margin-top: 3rem;    
             .form-contact {
                 width: 50%;
-                input {
+                .input {
                     font-family: "Poppins", sans-serif;
                     font-size: 0.8rem;
                     font-weight: 300;
@@ -862,15 +862,13 @@ text-align: start;
     text-align: center;
     font-family: "Poppins", sans-serif;
     background-color: $color_light_pink;
-
     .line-form {
         margin: 0%;
         padding: 0%;
         margin-left: 35%;
         width: 500px;
-        border-bottom: 2px solid gray;
+        border-bottom: 1px solid $color_light_blue;
     }
-
     .title-serv {
         text-transform: uppercase;
     }
@@ -880,50 +878,77 @@ text-align: start;
     .container-serv {
         display: flex;
         padding-bottom: 50px;
+        .form-contact {
+            width: 50%;
+            .input {
+                font-family: "Poppins", sans-serif;
+                font-size: 0.8rem;
+                font-weight: 300;
+                padding-left: 1rem;   
+                background-color: #F9F6F6;
+                border-radius: 0.3rem;
+                width: 90%;
+                height: 3.5rem;
+                border: none;
+                border-bottom: 1.48px solid $color_grey_lil;
+                margin-bottom: 1.5rem;
+            }   
+            .input-msj {
+                height: 12rem;
+
+            }
+            .container_contact{
+                .button-con {
+                  @include style_button_border(2px solid $color_grey_lil, $color_grey_lil, 0.8rem, $color_grey_lil, white );
+                  width: 23%;
+                }
+            }
+            
+        }
     }
 
     //estilos del componente Form por LR
-        .form {
-            width: 50%;
-            .buttonTrans {
-                @include style_button_border(0.0625rem solid $color_dark_type, $color_dark_type, 0.75rem, $color_dark_type, white);
-                padding: 0rem 1.125rem;
-                width: 5.000rem;
-                height: 1.600rem;
-            }
-            .form-style {
-                width: 400px;
-                height: 50px;
-                font-family: "Poppins", sans-serif;
-                border: none;
-                margin: auto;
-                display: flex;
-                border-bottom: black solid 2px;
+    //     .form {
+    //         width: 50%;
+    //         .buttonTrans {
+    //             @include style_button_border(0.0625rem solid $color_dark_type, $color_dark_type, 0.75rem, $color_dark_type, white);
+    //             padding: 0rem 1.125rem;
+    //             width: 5.000rem;
+    //             height: 1.600rem;
+    //         }
+    //         .form-style {
+    //             width: 400px;
+    //             height: 50px;
+    //             font-family: "Poppins", sans-serif;
+    //             border: none;
+    //             margin: auto;
+    //             display: flex;
+    //             border-bottom: black solid 2px;
 
-                .div-p {
-                    text-align: initial;
-                    width: 85%;
-                }
+    //             .div-p {
+    //                 text-align: initial;
+    //                 width: 85%;
+    //             }
 
-                .div-button {
-                    width: 10%;
-                    padding-top: 10px;
-                }
+    //             .div-button {
+    //                 width: 10%;
+    //                 padding-top: 10px;
+    //             }
 
-                .button-form {
-                    width: 30px;
-                    height: 30px;
-                    background-color: $color_light_pink;
-                    border-radius: 50%;
-                    border: 2px solid black;
-                }
-                //no me toma el height
-                // .message {
-                //     height: 400px;
-                // }
-            }
-        }
-    }
+    //             .button-form {
+    //                 width: 30px;
+    //                 height: 30px;
+    //                 background-color: $color_light_pink;
+    //                 border-radius: 50%;
+    //                 border: 2px solid black;
+    //             }
+    //             //no me toma el height
+    //             // .message {
+    //             //     height: 400px;
+    //             // }
+    //         }
+    //     }
+    // }
 
     //estilo componente Travels por LR
         .travels {
@@ -1000,7 +1025,7 @@ text-align: start;
     
 }
 
-//estilos footer
+//estilos footer por LR
 .information {
     background-color: $color_dark_type;
     color: white;
@@ -1051,8 +1076,8 @@ text-align: start;
             }
         }
         img {
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 100px;
         }
     }
     }
