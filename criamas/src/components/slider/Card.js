@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import PropTypes from 'prop-types';
-import Button from '../Button'
 
 
 const Card = ({property}) => {
@@ -13,10 +11,12 @@ const Card = ({property}) => {
 				    <h4 className="subtitle">Bienvenido a <b>Criamás</b></h4>
 					<p>{description}</p>
 					<span className="span-raza">Raza:</span>
-					<span className="raza-type">{raza}</span>
-					<Button url={url} name='Comprar' styleCss="shop" identificator="shop_button">
-					</Button>
+					<span className="raza-type">{raza}</span>					
+					<a href={url} id='shop_button' className='shop'>
+						Comprar
+					</a>
 				</div>
+				
 				<div className="image-slide">
 					<img className="image_dog" src={image} alt={raza}/>
 				</div>

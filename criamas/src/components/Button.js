@@ -5,7 +5,7 @@ import '../stylesheet/App.css';
 const Button = (props) => {
     
     return (
-        <div>
+        <div className='container_box_component'>
             <Link to={props.url}>
                 <button id={props.identificator} className={props.styleCss}>
                     {props.name}
