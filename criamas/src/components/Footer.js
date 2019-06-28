@@ -82,6 +82,15 @@ class Footer extends Component {
                     <a href='https://instagram.com/criamasamor' target="_blank">
                         <img class='labnol' src='https://scontent-iad3-1.cdninstagram.com/vp/7c3b787344d2f2596bf46db93fc59f19/5DBF16A3/t51.2885-15/fr/e15/s1080x1080/61160788_2371274363118906_2951131890010056232_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com' />
                     </a>
+                    <a href='https://instagram.com/criamasamor' target="_blank">
+                        <img class='labnol' src='https://scontent-iad3-1.cdninstagram.com/vp/7c3b787344d2f2596bf46db93fc59f19/5DBF16A3/t51.2885-15/fr/e15/s1080x1080/61160788_2371274363118906_2951131890010056232_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com' />
+                    </a>
+                    <a href='https://instagram.com/criamasamor' target="_blank">
+                        <img class='labnol' src='https://scontent-iad3-1.cdninstagram.com/vp/7c3b787344d2f2596bf46db93fc59f19/5DBF16A3/t51.2885-15/fr/e15/s1080x1080/61160788_2371274363118906_2951131890010056232_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com' />
+                    </a>
+                    <a href='https://instagram.com/criamasamor' target="_blank">
+                        <img class='labnol' src='https://scontent-iad3-1.cdninstagram.com/vp/7c3b787344d2f2596bf46db93fc59f19/5DBF16A3/t51.2885-15/fr/e15/s1080x1080/61160788_2371274363118906_2951131890010056232_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com' />
+                    </a>
                 </div>
             </div>
             <hr className="line-foot"></hr>
