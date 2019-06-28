@@ -16,8 +16,6 @@ class Somos extends Component {
                     <div className="somos-left">
                         <i className="fas fa-heart icon heart"></i>
                         <p className="bold">NUESTROS VALORES</p>
-                        {/* esta linea se debe pintar de rosa 
-                        pero no me esta tomando la clase heart */}
                         <hr className="line heart"></hr>
                         <p className="parragraph_somos">Educacion sobre el respeto por la vida animal <br />
                             Respeto por los seres vivientes <br />
@@ -29,10 +27,10 @@ class Somos extends Component {
                         <i className="fas fa-file-alt icon gray"></i>
                         <p className="bold">NUESTRO CATÁLOGO</p>
                         <hr className="line"></hr>
-                        <p className="parragraph_somos"> Proveemos al mundo un portafolio completísimo 
-                        <br />de Razas de calidad que anticipan <br /> y satisfacen los deseos y necesidades. <br />
-                          Lorem ipsum Lorem ipsum Lorem ipsum Lorem <br />
-                          ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+                        <p className="parragraph_somos"> Proveemos a nuestros clientes un portafolio completísimo 
+                        <br />de Razas de calidad con un nivel de detalles importantes<br /> para satisfacer sus deseos y necesidades. <br />
+                          Todo esto le ayudara a decidir cual es el mejor <br />
+                           candidato para ser el nuevo integrante de su familia.
                         </p>
                     </div>
                 </div>

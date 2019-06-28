@@ -3,8 +3,10 @@ import { BrowserRouter, Route} from 'react-router-dom';
 import '../stylesheet/App.css';
 import Home from './Home';
 import Navheader from './Navheader';
+import Footer from './Footer';
 import Transfers from './Transfers';
 import Redes from './Redes'
+import Blog from './Blog'
 
 
 class App extends Component {
@@ -19,6 +21,7 @@ class App extends Component {
         
             <Route exact path="/" component={Home} />
             <Route exact path="/transfers" component={Transfers} />
+            <Route exact path="/blog" component={Blog} />
           </div>
         </BrowserRouter>
       </div>

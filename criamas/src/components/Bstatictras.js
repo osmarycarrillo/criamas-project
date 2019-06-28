@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import Cachorros from '../img_photos/cachorros.png';
 
 
-class Textras extends Component {
+
+
+class Bstatictras extends Component {
 
     render() {
         return (
@@ -12,7 +15,7 @@ class Textras extends Component {
                         <p className="title-2">Aquí encontrará información <br />sobre nuestro servicio</p>
                         <p>Ante cualquier duda, podemos ayudarte.</p>
                     </div>
-                    <div className="dog"> <img src="" alt="perro imagen para traslados"></img> </div>
+                    <div className="dog"> <img className="dog" src={Cachorros} alt="perro imagen para traslados"></img> </div>
 
                 </div>
                
@@ -20,7 +23,5 @@ class Textras extends Component {
         )
     }
 }
-export default Textras;
+export default  Bstatictras ;
 // Este componente realiza la descripcion del texto del banner
-// que pertenene a  las vistas  de traslados, AM
-

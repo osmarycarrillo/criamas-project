@@ -15,120 +15,36 @@
   font-family: "Salsa", cursive;
   src: url("https://fonts.googleapis.com/css?family=Salsa&display=swap");
 }
-.information {
-  background-color: #282828;
-  color: white;
-}
-.information .footer-div {
-  display: flex;
-}
-.information .footer-div .inf-div {
-  margin-left: 200px;
-}
-.information .footer-div .inf-div .logo-inf {
-  width: 150px;
-  height: auto;
-  color: white;
-}
-.information .footer-div .inf-div .line-inf {
-  margin: 0%;
-  padding: 0%;
-  width: 130px;
-  border: 0.03rem solid white;
-}
-.information .footer-div .inf-div .sn-but {
-  width: 30px;
-  height: 30px;
-  background-color: #282828;
-  border: 2px solid white;
-  border-radius: 50%;
-  margin: 5px;
-  margin-top: 15px;
-}
-.information .footer-div .inf-div .sn-but i {
-  color: white;
-}
-.information .footer-div .inf-nav {
-  padding-left: 50px;
-  font-family: "Poppins", sans-serif;
-  margin: 30px;
-}
-.information .footer-div .inf-nav ul {
-  margin: 0%;
-  padding: 0%;
-}
-.information .footer-div .inf-nav ul .link-inf {
-  padding-bottom: 5px;
-  list-style: none;
-  text-align: left;
-}
-.information .footer-div .inf-nav ul .link-inf .link_url {
-  color: white;
-  text-decoration: none;
-}
-.information .footer-div .inf-nav img {
-  width: 50px;
-  height: 50px;
-}
-.information .line-foot {
-  margin-top: 30px;
-  width: 72%;
-  height: 0%;
-  border: 1px solid white;
-  margin-left: 15%;
-}
-.information .footer {
-  display: flex;
-  font-size: 10px;
-}
-.information .footer .footer-cri {
-  margin-left: 15%;
-  width: 20%;
-  margin-right: 30%;
-  text-transform: uppercase;
-}
-.information .footer .footer-cri .foot-logo {
-  font-weight: bold;
-  text-transform: none;
-}
-.information .footer .footer-data {
-  width: 30%;
-  text-transform: uppercase;
-  margin-top: 7px;
-}
-.information .footer .footer-data a {
-  margin: 4px;
-}
-.information .footer-sky {
-  background-color: #282828;
-  font-size: 12px;
-  margin-left: 15%;
-  height: 10px;
-  padding-bottom: 5%;
-}
-
 .transfers {
   background: #FBF0E7;
 }
 
 .box-static {
   display: flex;
-  padding: 10%;
-  background: #efd0d1;
+  background: #EFD0D1;
+  position: relative;
   width: 100%;
-  height: 100%;
 }
 .box-static .cont-trans {
   width: 80%;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   margin: auto;
 }
 .box-static .cont-trans .box-p {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: initial;
   font-family: "Maven Pro", sans-serif;
 }
 .box-static .cont-trans .dog {
-  border: #282828 solid 1px;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  margin-bottom: 5rem;
 }
 
 .title-2 {
@@ -145,7 +61,7 @@
 .title-red {
   font-family: "Poppins", sans-serif;
   color: #ea1e52;
-  font-size: 17px;
+  font-size: 18px;
 }
 
 .box-tras {
@@ -277,7 +193,7 @@
   width: 100%;
   height: 100vh;
   z-index: 1;
-  background-color: #efd0d1;
+  background-color: #EFD0D1;
 }
 .App .box_slide .box-center {
   width: 80%;
@@ -385,7 +301,7 @@
 }
 
 .box_oferta {
-  background-color: #ea3968;
+  background-color: #EA3968;
   background-image: url(../img_svg/fondo-01.svg);
   margin: 0px;
 }
@@ -451,7 +367,7 @@
 }
 
 .somos {
-  background-color: #fbf0e7;
+  background-color: #FBF0E7;
 }
 .somos .textsomos {
   text-align: center;
@@ -509,6 +425,7 @@
 
 .parragraph_somos {
   font-family: "Maven Pro", sans-serif;
+  text-align: unset;
   font-size: 0.84rem;
   color: #595959;
   line-height: 1.6rem;
@@ -538,7 +455,7 @@
 .bold {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  color: #3f3f3f;
+  color: #3F3F3F;
 }
 
 .heart {
@@ -608,7 +525,7 @@
 }
 .comments .box_comments .div-com .testimony_cliente {
   font-family: "Maven Pro", sans-serif;
-  color: #5b6470;
+  color: #5B6470;
   font-size: 0.8rem;
   line-height: 1.4rem;
   margin-bottom: 2rem;
@@ -670,18 +587,13 @@
   font-size: 0.8rem;
   font-weight: 300;
   padding-left: 1rem;
-  background-color: #f9f6f6;
+  background-color: #F9F6F6;
   border-radius: 0.3rem;
   width: 90%;
   height: 3.5rem;
   border: none;
   border-bottom: 1.48px solid #403944;
   margin-bottom: 1.5rem;
-}
-.contact-home .box_center_home .div-con .form-contact label {
-  font-family: "Poppins", sans-serif;
-  font-size: 0.8rem;
-  font-weight: 300;
 }
 .contact-home .box_center_home .div-con .form-contact .input-msj {
   height: 12rem;
@@ -758,7 +670,7 @@
 }
 
 .join {
-  background-color: #fcb4b4;
+  background-color: #FCB4B4;
   background-image: url("../img_svg/fondo-02-01.svg");
 }
 .join .join-box {
@@ -812,7 +724,7 @@
   height: 2.3125rem;
   font-family: "Maven Pro", sans-serif;
   font-size: 0.8rem;
-  color: #5b5959;
+  color: #5B5959;
   padding-left: 5%;
   outline: none;
 }
@@ -845,10 +757,7 @@
   display: inline;
   text-align: center;
   font-family: "Poppins", sans-serif;
-  background-color: #efd0d1;
-}
-.services .title-serv {
-  text-transform: uppercase;
+  background-color: #EFD0D1;
 }
 .services .line-form {
   margin: 0%;
@@ -857,19 +766,37 @@
   width: 500px;
   border-bottom: 2px solid gray;
 }
+.services .title-serv {
+  text-transform: uppercase;
+}
+
 .services .container-serv {
   display: flex;
   padding-bottom: 50px;
 }
-.services .container-serv .form {
+.services .form {
   width: 50%;
 }
-.services .container-serv .form .buttonTrans {
-  width: 300px;
-  border-radius: 10%;
-  border: 2px solid gray;
+.services .form .buttonTrans {
+  font-family: "Poppins", sans-serif;
+  border-radius: 1.25rem;
+  background-color: transparent;
+  padding: 0.5rem 0.9375rem;
+  color: #282828;
+  font-size: 0.75rem;
+  border: 0.0625rem solid #282828;
+  text-decoration: none;
+  transition: all 0.7s ease-in-out 0s;
+  padding: 0rem 1.125rem;
+  width: 5rem;
+  height: 1.6rem;
 }
-.services .container-serv .form .form-style {
+.services .form .buttonTrans:hover {
+  background-color: #282828;
+  color: white;
+  transition: all 0.7s ease-in-out 0s;
+}
+.services .form .form-style {
   width: 400px;
   height: 50px;
   font-family: "Poppins", sans-serif;
@@ -878,50 +805,37 @@
   display: flex;
   border-bottom: black solid 2px;
 }
-.services .container-serv .form .form-style .div-p {
+.services .form .form-style .div-p {
   text-align: initial;
   width: 85%;
 }
-.services .container-serv .form .form-style .div-button {
+.services .form .form-style .div-button {
   width: 10%;
   padding-top: 10px;
 }
-.services .container-serv .form .form-style .button-form {
+.services .form .form-style .button-form {
   width: 30px;
   height: 30px;
-  background-color: #efd0d1;
+  background-color: #EFD0D1;
   border-radius: 50%;
   border: 2px solid black;
 }
-.services .container-serv .form .form-style .button-form .select-form {
-  display: none;
-}
-.services .container-serv .form .form-style .message {
-  height: 400px;
-}
-.services .travels {
+
+.travels {
+  padding: 0%;
+  margin: 0%;
+  font-size: 15px;
   width: 50%;
   text-align: left;
 }
-.services .travels h3 {
+.travels h4 {
   text-transform: uppercase;
 }
-.services .travels .title-trav {
+.travels .title-trav {
   width: 400px;
   border-bottom: 2px solid black;
 }
-.services .travels .travels {
-  width: 50%;
-  text-align: left;
-}
-.services .travels .travels h3 {
-  text-transform: uppercase;
-}
-.services .travels .travels .title-trav {
-  width: 400px;
-  border-bottom: 2px solid black;
-}
-.services .travels .travels .div-trav {
+.travels .div-trav {
   width: 400px;
   border-bottom: 2px solid gray;
 }
@@ -967,6 +881,98 @@
 }
 .redes .box_redes .button_redes::hover {
   opacity: 0.6;
+}
+
+.information {
+  background-color: #282828;
+  color: white;
+}
+.information .footer-div {
+  display: flex;
+}
+.information .footer-div .inf-div {
+  margin-left: 200px;
+}
+.information .footer-div .inf-div .logo-inf {
+  width: 150px;
+  height: auto;
+  color: white;
+}
+.information .footer-div .inf-div .line-inf {
+  margin: 0%;
+  padding: 0%;
+  width: 130px;
+  border: 0.03rem solid white;
+}
+.information .footer-div .inf-div .sn-but {
+  width: 30px;
+  height: 30px;
+  background-color: #282828;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 5px;
+  margin-top: 15px;
+}
+.information .footer-div .inf-div .sn-but i {
+  color: white;
+}
+.information .footer-div .inf-nav {
+  padding-left: 50px;
+  font-family: "Poppins", sans-serif;
+  margin: 30px;
+}
+.information .footer-div .inf-nav ul {
+  margin: 0%;
+  padding: 0%;
+}
+.information .footer-div .inf-nav ul .link-inf {
+  padding-bottom: 5px;
+  list-style: none;
+  text-align: left;
+}
+.information .footer-div .inf-nav ul .link-inf .link_url {
+  color: white;
+  text-decoration: none;
+}
+.information .footer-div .inf-nav img {
+  width: 50px;
+  height: 50px;
+}
+.information .line-foot {
+  margin-top: 30px;
+  width: 72%;
+  height: 0%;
+  border: 1px solid white;
+  margin-left: 15%;
+}
+.information .footer {
+  display: flex;
+  font-size: 10px;
+}
+.information .footer .footer-cri {
+  margin-left: 15%;
+  width: 20%;
+  margin-right: 30%;
+  text-transform: uppercase;
+}
+.information .footer .footer-cri .foot-logo {
+  font-weight: bold;
+  text-transform: none;
+}
+.information .footer .footer-data {
+  width: 30%;
+  text-transform: uppercase;
+  margin-top: 7px;
+}
+.information .footer .footer-data a {
+  margin: 4px;
+}
+.information .footer-sky {
+  background-color: #282828;
+  font-size: 12px;
+  margin-left: 15%;
+  height: 10px;
+  padding-bottom: 5%;
 }
 
 /*# sourceMappingURL=App.css.map */

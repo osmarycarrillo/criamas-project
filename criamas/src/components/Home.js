@@ -5,8 +5,8 @@ import '../stylesheet/App.css';
 import Comments from './Comments';
 import Somos from './Somos';
 import ContactHome from './ContactHome';
-import JoinUs from './JoinUs';
 import Footer from './Footer';
+import JoinUs from './JoinUs';
 
 class Home extends Component {
 
