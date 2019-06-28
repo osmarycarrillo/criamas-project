@@ -27,9 +27,6 @@ $color_grey_lil: #403944;
 $color_light_blue: #CCD0D7;
 $color_more_light_pink: #FBF0E7;
 
-
-
-
 //mixin tipos de boton, tenemos 2 tipos: sólidos con color de fondo y bordeados y transparentes
 @mixin style_button_solid($background, $typeColor, $sizeType, $backgroundHover, $typeColorHover) {
     background-color: $background;
@@ -69,33 +66,42 @@ $color_more_light_pink: #FBF0E7;
 
 
 //Estilo componente transfers by AM
-/// porque esta el estilo metido en app?
 .transfers {
     background:$color_more_light_pink;
 }
 
 .box-static {
     display: flex;
-    padding: 10%;
     background: #EFD0D1;
-    // position: relative;
+    position: relative;
     width: 100%;
-    height: 100%;
+
 
     .cont-trans {
       width:80% ;
       display: flex;
+      align-items: center;
       justify-content:space-evenly;
       margin: auto;
         .box-p{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // margin-top:auto;
+            text-align: initial;
             font-family: "Maven Pro", sans-serif;
         }
         .dog{
-            border: #282828 solid 1px;
+            width: 100%;
+            height: auto;
+            align-items: center;
+            margin-bottom: 5rem;
+         
         }
     }
 }
-
+ 
 .title-2 {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
@@ -110,7 +116,7 @@ $color_more_light_pink: #FBF0E7;
 .title-red {
   font-family: "Poppins", sans-serif;
   color: #ea1e52;
-  font-size: 17px;
+  font-size: 18px;
 }
 .box-tras{
   text-align: center;
@@ -311,6 +317,7 @@ text-align: start;
         }
     }
 }
+
 
 
 .counter {
@@ -514,6 +521,7 @@ text-align: start;
 
 .parragraph_somos{
     font-family: "Maven Pro", sans-serif;
+    text-align: unset;
     font-size: 0.84rem;
     color:#595959;
     line-height: 1.6rem;
@@ -850,15 +858,9 @@ text-align: start;
     }
 }
 
-
-
-
-//componente traslado
 //tamaño de letra
-//por que toma distintos colores en la pagina
 //por que el cuadro de mensaje no es tan largo
-
-
+//estilo del componente services request que forma parte de la vista del traslado por LR
 .services {
     margin: 0%;
     padding: 0%;
@@ -866,10 +868,6 @@ text-align: start;
     text-align: center;
     font-family: "Poppins", sans-serif;
     background-color: $color_light_pink;
-
-    .title-serv {
-        text-transform: uppercase;
-    }
 
     .line-form {
         margin: 0%;
@@ -879,20 +877,26 @@ text-align: start;
         border-bottom: 2px solid gray;
     }
 
+    .title-serv {
+        text-transform: uppercase;
+    }
+}
+
+.services {
     .container-serv {
         display: flex;
         padding-bottom: 50px;
+    }
 
+    //estilos del componente Form por LR
         .form {
             width: 50%;
-
-            /////////////////////////no me toma los estilos del boton
             .buttonTrans {
-                width: 300px;
-                border-radius: 10%;
-                border: 2px solid gray;
+                @include style_button_border(0.0625rem solid $color_dark_type, $color_dark_type, 0.75rem, $color_dark_type, white);
+                padding: 0rem 1.125rem;
+                width: 5.000rem;
+                height: 1.600rem;
             }
-
             .form-style {
                 width: 400px;
                 height: 50px;
@@ -918,39 +922,24 @@ text-align: start;
                     background-color: $color_light_pink;
                     border-radius: 50%;
                     border: 2px solid black;
-
-                    .select-form {
-                        display: none;
-                    }
                 }
-
-                .message {
-                    height: 400px;
-                }
+                //no me toma el height
+                // .message {
+                //     height: 400px;
+                // }
             }
         }
     }
 
-    //viajes
-    .travels {
-        width: 50%;
-        text-align: left;
-
-        h3 {
-            text-transform: uppercase;
-        }
-
-        .title-trav {
-            width: 400px;
-            border-bottom: 2px solid black;
-        }
-
-        //viajes
+    //estilo componente Travels por LR
         .travels {
+            padding: 0%;
+            margin: 0%;
+            font-size: 15px;
             width: 50%;
             text-align: left;
 
-            h3 {
+            h4 {
                 text-transform: uppercase;
             }
 
@@ -964,10 +953,10 @@ text-align: start;
                 border-bottom: 2px solid gray;
             }
         }
-    }
-}
 
-//componente contact de transfer
+
+
+//componente Contact por LR
 .contact {
     padding-top: 40px;
     text-align: center;
@@ -1015,6 +1004,100 @@ text-align: start;
 
     }
     
+}
+
+//estilos footer
+.information {
+    background-color: $color_dark_type;
+    color: white;
+    .footer-div {
+        display: flex;
+    .inf-div {
+        margin-left: 200px;
+        //no puedo poner el logo de color blanco
+        .logo-inf {
+            width: 150px;
+            height: auto;
+            color: white;
+        }
+        .line-inf {
+            margin: 0%;
+            padding: 0%;
+            width: 130px;
+            border: 0.03rem solid white;
+        }
+        .sn-but {
+            width: 30px;
+            height: 30px;
+            background-color: $color_dark_type;
+            border: 2px solid white;
+            border-radius: 50%;
+            margin: 5px;
+            margin-top: 15px;
+            i {
+                color: white;
+            }
+        }
+    }
+    .inf-nav {
+        padding-left: 50px;
+        font-family: "Poppins", sans-serif;
+        margin: 30px;
+        ul {
+            margin: 0%;
+            padding: 0%;
+            .link-inf {
+                padding-bottom: 5px;
+                list-style: none;
+                text-align: left;
+                .link_url {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+    }
+    .line-foot {
+        margin-top: 30px;
+        width: 72%;
+        height: 0%;
+        border: 1px solid white;
+        margin-left: 15%;
+    }
+    .footer {
+        display: flex;
+        font-size: 10px;
+        .footer-cri {
+            margin-left: 15%;
+            width: 20%;
+            margin-right: 30%;
+            text-transform: uppercase;
+            .foot-logo {
+                font-weight: bold;
+                text-transform: none;
+            }
+        }
+        .footer-data {
+            width: 30%;
+            text-transform: uppercase;
+            margin-top: 7px;
+            a {
+                margin: 4px;
+            }
+        }
+    }
+    .footer-sky {
+        background-color: $color_dark_type;
+        font-size: 12px;
+        margin-left: 15%;
+        height: 10px;
+        padding-bottom: 5%;
+    }
 }
 
 

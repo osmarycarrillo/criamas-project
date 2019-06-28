@@ -38,8 +38,8 @@ class Form extends React.Component {
                             </button>
                         </div> 
                     </div>
-                    <input className="form-style message" type="text" value="Mensaje"></input>
-                    <Button className="buttonTrans" name="Enviar"/>
+                    <textarea className="form-style message" type="text" value="Mensaje"></textarea>
+                    <Button styleCss="buttonTrans" name="Enviar"/>
                 </form>     
             </div>
         )
