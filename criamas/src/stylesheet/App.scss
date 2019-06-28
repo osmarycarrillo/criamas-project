@@ -296,22 +296,12 @@ text-align: start;
         font-size: 17px;
     }
 
-<<<<<<< HEAD
-  .shop {
-    @include style_button_solid($color_pink, white, 0.95rem, white, $color_pink);
-    height: 2.3125rem;
-    padding: 0rem 1.325rem;
-    margin-top: 1rem;
-    
-  }
-=======
     .shop {
         @include style_button_solid($color_pink, white, 0.95rem, white, $color_pink);
         height: 2.3125rem;
         padding: 0rem 1.325rem;
         margin-top: 1rem;
     }
->>>>>>> 5e19574bc52ccf4a62473c3894b66181e057bd46
 }
 
 .box-center {
