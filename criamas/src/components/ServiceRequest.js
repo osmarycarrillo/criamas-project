@@ -1,6 +1,7 @@
 import React from 'react';
 import FormTransfer from './FormTransfer';
 import Travels from './Travels';
+import '../stylesheet/App.css';
 
 class ServiceRequest extends React.Component {
     render() {

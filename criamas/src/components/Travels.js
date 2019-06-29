@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../stylesheet/App.css';
 
 class Travels extends React.Component {
   render () {
