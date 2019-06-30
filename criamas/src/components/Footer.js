@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import img_logo from '../img_svg/logo_criamas-01.svg';
+import img_logo from '../img_svg/logo_criamas-02.svg';
 import { Link } from "react-router-dom";
 
 class Footer extends Component {
