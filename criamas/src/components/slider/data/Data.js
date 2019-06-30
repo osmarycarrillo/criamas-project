@@ -1,5 +1,6 @@
 import Pomerania from '../../../img_photos/pomerania.png';
 import Schnauzer from '../../../img_photos/schnauzer.png';
+import Caniche from '../../../img_photos/caniche.png'
 
 const Data = {
     banners: [
@@ -22,7 +23,7 @@ const Data = {
             id: 2,
             description:
                 'Todo nuestro amor y asesoría a tu servicio.',
-            image: 'https://ihatetomatoes.net/demos/_rw/01-real-estate/tn_property03.jpg',
+            image: Caniche,
             raza: 'Caniche'
         }
     ]

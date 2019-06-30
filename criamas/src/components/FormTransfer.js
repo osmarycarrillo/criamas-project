@@ -28,7 +28,10 @@ class FormTransfer extends React.Component {
                 <label className="label-transfer">Tipo de perro:
                     <button>
                         <select value={this.state.value} onChange={this.handleChange} className="select">
-                            <option value="Beagle">Beagle</option>
+                            <option value="Dogo Burdeo">Grande</option>           
+                            <option value="Fox Terrier">Mediano</option>
+                            <option value="Gran Danes">Chico</option>
+                            {/* <option value="Beagle">Beagle</option>
                             <option value="Dogo Argetino">Dogo Argetino</option>
                             <option value="Boston Terrier">Boston Terrier</option>
                             <option value="Bulldog Frances">Bulldog Frances</option>
@@ -38,7 +41,7 @@ class FormTransfer extends React.Component {
                             <option value="Baset Hound">Baset Hound</option>           
                             <option value="Dogo Burdeo">Dogo Burdeo</option>           
                             <option value="Fox Terrier">Fox Terrier</option>
-                            <option value="Gran Danes">Gran Danes</option>    
+                            <option value="Gran Danes">Gran Danes</option>     */}
                         </select>
                         <i class="fas fa-chevron-down"/>
                     </button>

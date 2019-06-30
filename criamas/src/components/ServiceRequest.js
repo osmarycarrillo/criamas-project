@@ -9,12 +9,12 @@ class ServiceRequest extends React.Component {
             <div className="services">
                 <hr className="line-form"/>
                 <h3 className="title-serv">Solicitud de servicio</h3>
-                <p>Rellena este formulario y obtené el mejor servicio.</p>
+                <p className='bajada-serv'>Rellena este formulario y obtené el mejor servicio.</p>
                 <div className="container-serv">
                     <FormTransfer></FormTransfer>
                     <Travels></Travels>
                 </div>
-                <hr className="line-form"/>
+                <hr className="line-form-bottom"/>
             </div>
         )
     }
