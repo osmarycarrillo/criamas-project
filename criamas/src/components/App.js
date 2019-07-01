@@ -10,7 +10,9 @@ import Blog from './Blog';
 import FormHome from './FormHome';
 import Footer from './Footer';
 
+
 class App extends Component {
+  
   render() {
     return (
       <div className="App">
