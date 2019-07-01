@@ -2,7 +2,6 @@ import React from 'react';
 import Button from './Button';
 import Input from './Input';
 
-
 class FormHome extends React.Component {
     state={
         email: {
