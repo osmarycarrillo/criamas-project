@@ -12,7 +12,7 @@ const Card = ({property}) => {
 					<p>{description}</p>
 					<span className="span-raza">Raza:</span>
 					<span className="raza-type">{raza}</span>					
-					<a href={url} id='shop_button' className='shop'>
+					<a href={url} target="_blank" id='shop_button' className='shop'>
 						Comprar
 					</a>
 				</div>

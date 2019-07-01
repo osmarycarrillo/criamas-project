@@ -17,14 +17,16 @@ const Data = {
             description:
                 'Ofrecemos el mejor servicio para tu próxima mascota.',
             image: Schnauzer,
-            raza: 'Schnauzer'
+            raza: 'Schnauzer',
+            url: 'https://www.mercadopago.com/mla/checkout/start?pref_id=158902303-5289b582-2fdb-4de4-a73c-892a2bd1554b'
         },
         {
             id: 2,
             description:
                 'Todo nuestro amor y asesoría a tu servicio.',
             image: Caniche,
-            raza: 'Caniche'
+            raza: 'Caniche',
+            url: 'https://www.mercadopago.com/mla/checkout/start?pref_id=158902303-4b261292-5c6f-4cc1-9f65-5d30c8482f67'
         }
     ]
 };

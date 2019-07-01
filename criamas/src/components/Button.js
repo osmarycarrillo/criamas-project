@@ -7,6 +7,7 @@ const Button = (props) => {
        <div className='container_box_component'>
          <Link to={props.url}>
            <button 
+            onClick={props.onClick}
             id={props.identificator} 
             className={props.styleCss} >
             {props.name}
